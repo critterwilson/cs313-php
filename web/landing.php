@@ -4,19 +4,13 @@
 	<title>Christopher Wilson</title>
 </head>
 <body>
+	<div class="topnav">
+		<a class=active href="landing.php">Home</a>
+		<a href="landing_1.php">About Me</a>
+	</div>
+	Hiya!
 	<?php
-		$pages = scandir('ponder02');
-		
-		// echo '<div class="menu">';
 
-		// foreach ($pages as $page) {
-		// 	if (!in_array($page, $notWanted){
-		// 		$safeName = strtoupper(str_replace('.php', '', $page));
-		// 		$link = 'ponder02'.$page;
-		// 		echo '<a heref="'.$link.'">'.$safeName.'</a>';
-		// 	}
-		// }
-		// echo '</div>';
 	?>
 
 </body>
