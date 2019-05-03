@@ -5,7 +5,7 @@
 </head>
 <body>
 	<?php
-		// $pages = scandir('ponder02');
+		$pages = scandir('ponder02');
 		
 		// echo '<div class="menu">';
 
