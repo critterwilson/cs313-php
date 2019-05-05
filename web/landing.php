@@ -8,6 +8,9 @@
 	<div class="topnav">
 		<a class="active" href="landing.php">About Me</a>
 		<a href="landing_1.php">Assignment List</a>
+		<?php
+		echo date("h:i:sa");
+		?>
 	</div>
 	<div class="flex-container">
 		<div class="col">
@@ -31,9 +34,7 @@
 		</div>
 	</div>
 
-	<!-- <?php
-
-	?> -->
+	
 
 </body>
 </html>
