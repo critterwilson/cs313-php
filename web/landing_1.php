@@ -8,6 +8,9 @@
 	<div class="topnav">
 		<a href="landing.php">About Me</a>
 		<a class="active" href="landing_1.html">Assignment List</a>
+		<?php
+		echo "<p>".date("d/m/Y")."</p>";
+		?>
 	</div>
 	<div class="flex-container">
 		<div class="col">

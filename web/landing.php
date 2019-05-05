@@ -9,7 +9,7 @@
 		<a class="active" href="landing.php">About Me</a>
 		<a href="landing_1.php">Assignment List</a>
 		<?php
-		echo "<p>".date("h:i:sa")."</p>";
+		echo "<p>".date("d/m/Y")."</p>";
 		?>
 	</div>
 	<div class="flex-container">
