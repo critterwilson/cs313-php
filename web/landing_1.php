@@ -9,6 +9,7 @@
 		<a href="landing.php">About Me</a>
 		<a class="active" href="landing_1.html">Assignment List</a>
 		<?php
+		date_default_timezone_set("MST");
 		echo "<p>".date("d/m/Y")."</p>";
 		?>
 	</div>
