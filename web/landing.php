@@ -10,12 +10,21 @@
 		<a href="landing_1.php">About Me</a>
 	</div>
 	
-	<div class="">
-
+	<div class="bio">
+		<p><b>Name</b>: Christopher Wilson<br>
+			<b>Major</b>: Software Engineering<br>
+			<b>Hometown</b>: Denver, Colorado</p>
 	</div>
 
-	<div class="">
-		
+	<div class="interests">
+		<ul id="interests">
+			<li>Guitar</li>
+			<li>Dogs</li>
+			<li>Drums/Percussion</li>
+			<li>Hockey (Colorado Avalanche)</li>
+			<li>Rugby</li>
+			<li>Slacklining</li>
+		</ul>
 	</div>
 
 	<?php
