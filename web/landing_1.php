@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="topnav">
-		<a href="landing.html">About Me</a>
+		<a href="landing.php">About Me</a>
 		<a class="active" href="landing_1.html">Assignment List</a>
 	</div>
 	<div class="flex-container">
