@@ -2,9 +2,37 @@
 
 body {
   font-family: Verdana;
-  background-image: linear-gradient(to top-left, #A2AAAD, white);
+  background-image: linear-gradient(to bottom right, white, #A2AAAD);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+#me {
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+@media screen and (max-width: 630px) {
+  .flex-container {
+    display: block;
+  }
+  #me {
+    width: 330px%;
+  }
+}
+.col {
+  padding-left:10px;
+}
+
+.col2 {
+  padding-left:10px;
+}
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -12,7 +40,7 @@ body {
 
 .topnav a {
   float: left;
-  color: #A2AAAD;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -26,5 +54,9 @@ body {
 
 .topnav a.active {
   background-color: #6F263D;
+  color: white;
+}
+.topnav a.active:hover {
+  background-color: #235192;
   color: white;
 }
