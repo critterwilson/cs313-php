@@ -10,7 +10,9 @@
 	Your major is <?php echo $_POST["major"];?><br>
 	Comments: <?php echo $_POST["comments"];?><br>
 	Countries you've visited: <?php 
-		for ($i=0; $i < 7; $i++) 
+		$visited = $_POST['visited'];
+		$V = count($visited);
+		for ($i=0; $i < $V; $i++) 
 		{
 			echo $visited[$i]." ";
 		}
