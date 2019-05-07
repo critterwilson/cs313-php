@@ -9,5 +9,11 @@
 	Your email address is <?php echo $_POST["email"];?><br>
 	Your major is <?php echo $_POST["major"];?><br>
 	Comments: <?php echo $_POST["comments"];?><br>
+	Countries you've visited: <?php 
+		for ($i=0; $i < 7; $i++) 
+		{
+			echo $visited[$i]." ";
+		}
+	?>
 </body>
 </html>
