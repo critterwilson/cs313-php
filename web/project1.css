@@ -1,0 +1,46 @@
+body {
+  font-family: Verdana;
+  background-image: linear-gradient(to bottom right, white, #A2AAAD);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: #2F76B6;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav p {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style: 0px;
+}
+
+.topnav a:hover {
+  background-color: #548EC3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #276195;
+  color: white;
+}
+.topnav a.active:hover {
+  background-color: #548EC3;
+  color: white;
+}
