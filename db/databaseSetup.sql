@@ -1,0 +1,18 @@
+CREATE TABLE course (
+id SERIAL NOT NULL PRIMARY KEY, 
+prefix VARCHAR(10) NOT NULL,
+postfix SMALLINT NOT NULL
+);
+
+CREATE TABLE professor (
+id SERIAL NOT NULL PRIMARY KEY,
+name_first VARCHAR(20),
+name_last VARCHAR(20)
+);
+
+CREATE TABLE section (
+id SERIAL NOT NULL PRIMARY KEY,
+course_id SERIAL REFERENCES course(id) NOT NULL,
+section_number SMALLINT NOT NULL,
+professor_id SERIAL REFERENCES professor(id) NOT NULL
+);
