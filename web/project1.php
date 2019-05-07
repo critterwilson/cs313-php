@@ -6,9 +6,10 @@
 </head>
 <body>
 	<div class="topnav">
-		<a class="active" href="project1.php">Home</a>
-		<a href="project1_1.php">Read Info</a>
+		<a class="active" href="project1.php">Read Info</a>
+		<a href="project1_1.php">Write Info</a>
 	</div>
 
+	<div class="info to read">
 </body>
 </html>
