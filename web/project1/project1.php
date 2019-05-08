@@ -10,6 +10,30 @@
 		<a href="project1_1.php">Write Info</a>
 	</div>
 
+	<?php 
+		try
+		{
+			$dbURL = getenv('DATABASE_URL');
+			
+			$dbInfo = parse_url($dbUrl);
+
+			$dbHost = $dbInfo["host"];
+			$dbPort = $dbInfo["port"];
+			$dbUser = $dbInfo["user"];
+			$dbPassword = $dbInfo["pass"];
+			$dbName = ltrim($dbInfo["path"],'/');
+
+			$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMOD_EXCEPTION);
+		}
+		catch (PDOException $ex)
+		{
+			echo 'Error: '.$ex->getMessage();
+			die();
+		}
+	?>
+
 	<div class="info to read">
 </body>
 </html>
