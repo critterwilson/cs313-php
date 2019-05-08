@@ -39,7 +39,7 @@
 		echo '<select>';
 		foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
 		{
-		  	echo "<option value=$row['name_last']>$row['name_last'],$row['name_first']</option>";
+		  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].','.$row['name_first'].'</option>';
 		}
 		echo '</select>'
 	?>
