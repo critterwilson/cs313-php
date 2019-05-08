@@ -13,24 +13,24 @@
 	<?php 
 		try
 		{
-			$dbURL = getenv('DATABASE_URL');
-			
-			$dbInfo = parse_url($dbUrl);
+		  $dbUrl = getenv('DATABASE_URL');
 
-			$dbHost = $dbInfo["host"];
-			$dbPort = $dbInfo["port"];
-			$dbUser = $dbInfo["user"];
-			$dbPassword = $dbInfo["pass"];
-			$dbName = ltrim($dbInfo["path"],'/');
+		  $dbOpts = parse_url($dbUrl);
 
-			$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+		  $dbHost = $dbOpts["host"];
+		  $dbPort = $dbOpts["port"];
+		  $dbUser = $dbOpts["user"];
+		  $dbPassword = $dbOpts["pass"];
+		  $dbName = ltrim($dbOpts["path"],'/');
 
-			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMOD_EXCEPTION);
+		  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+		  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
 		catch (PDOException $ex)
 		{
-			echo 'Error: '.$ex->getMessage();
-			die();
+		  echo 'Error!: ' . $ex->getMessage();
+		  die();
 		}
 	?>
 
