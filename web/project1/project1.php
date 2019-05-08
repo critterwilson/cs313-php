@@ -10,6 +10,7 @@
 		<a href="project1_1.php">Write Info</a>
 	</div>
 
+	<!-- Database Connection -->
 	<?php 
 		try
 		{
@@ -33,7 +34,15 @@
 		  die();
 		}
 	?>
-
+	<!-- Database Queries -->
+	<?php
+		echo '<select>';
+		foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
+		{
+		  	echo "<option value=$row['name_last']>$row['name_last'],$row['name_first']</option>";
+		}
+		echo '</select>'
+	?>
 	<div class="info to read">
 </body>
 </html>
