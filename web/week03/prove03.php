@@ -2,13 +2,13 @@
 	session_start();
 	$_SESSION['cart'] = array();
 
-	function addItem {
-		echo "it is working";
-	}
+	// function addItem {
+	// 	echo "it is working";
+	// }
 
-	if(array_key_exists('test',$_POST)){
-		addItem();
-	}
+	// if(array_key_exists('test',$_POST)){
+	// 	addItem();
+	// }
 ?>
 <!DOCTYPE html>
 <html>
