@@ -4,12 +4,18 @@
 	if(empty($_SESSION['cart'])) {
 		$_SESSION['cart'] = array();
 	}
+
+	if(!empty($_POST)) {
+		var_dump($_POST);
+	}
+	
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="prove03.css">
-	<!-- <script src="prove03.js"></script> -->
+	<script src="prove03.js"></script>
 	<title></title>
 </head>
 <body>
@@ -22,11 +28,11 @@
 	<div class="flex-container" id="itemList">
 		<div class="item" id="item1">
 			Item 1<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item1");?>">
+			<form method="post" action="prove03.php">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
-		<div class="item" id="item2">
+		<!-- <div class="item" id="item2">
 			Item 2<br>
 			<form method="post" action="<?php array_push($_SESSION['cart'], "item2"); ?>">
 				<input type="submit" value="Add to Cart">
@@ -49,7 +55,7 @@
 			<form method="post" action="<?php array_push($_SESSION['cart'], "item5"); ?>">
 				<input type="submit" value="Add to Cart">
 			</form>
-		</div>
+		</div> -->
 	</div>
 </body>
 </html>
