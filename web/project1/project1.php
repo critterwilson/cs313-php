@@ -7,8 +7,8 @@
 </head>
 <body>
 	<div class="topnav">
-		<a class="active" href="project1.php">Read Info</a>
-		<a href="project1_1.php">Write Info</a>
+		<a class="active" href="project1.php">Write Info</a>
+		<a href="project1_1.php">Read Info</a>
 	</div>
 
 	<!-- Database Connection -->
@@ -46,6 +46,7 @@
 			}
 			echo '</select>'
 		?>
+
 		<select id="numCourses" onchange="courseSignUp()">
 			<option value="0">0</option>
 			<option value="1">1</option>
@@ -54,8 +55,11 @@
 			<option value="4">4</option>
 			<option value="5">5</option>
 			<option value="6">6</option>
-		</select>
+		</select><br>
 
+		<div id="courseSignUp">
+
+		</div>
 
 	</form>
 
