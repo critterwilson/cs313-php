@@ -4,6 +4,9 @@
 	if(empty($_SESSION['cart'])) {
 		$_SESSION['cart'] = array();
 	}
+	else {
+		array_push($_SESSION['cart'], $_POST['item']);
+	}
 
 	if(!empty($_POST)) {
 		var_dump($_POST);
@@ -29,7 +32,7 @@
 		<div class="item" id="item1">
 			Item 1<br>
 			<form method="post" action="prove03.php">
-				<input type="text" name="key" value="item1">
+				<input type="text" class="noShow" name="item" value="item1">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
