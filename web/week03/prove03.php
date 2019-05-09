@@ -16,9 +16,11 @@
 	</div>
 
 	<div class="flex-container" id="itemList">
-		<div class="item">
-			<checkbox class="itemSelect" value="item1">Item 1</checkbox>
-			
+		<div class="item" id="item2">
+			<input type="checkbox" name="itemSelect[]" value="item1">Item 1</div>
+		</div>
+		<div class="item" id="item1">
+			<input type="checkbox" name="itemSelect[]" value="item1">Item 1</div>
 		</div>
 	</div>
 </body>
