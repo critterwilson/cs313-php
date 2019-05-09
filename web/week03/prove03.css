@@ -1,3 +1,8 @@
-#item2 {
+#itemList {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	padding: 20px;
 }
