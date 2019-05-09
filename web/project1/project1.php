@@ -57,7 +57,16 @@
 			<option value="6">6</option>
 		</select><br>
 
-		<div id="courseSignUp">
+		<div id="courseSignUp_0">
+			<?php
+				echo '<select id="course">';
+				foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
+				{
+				  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
+				}
+				echo '</select>'
+
+			?>
 
 		</div>
 
