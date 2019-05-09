@@ -1,14 +1,6 @@
 <?php
 	session_start();
 	$_SESSION['cart'] = array();
-
-	// function addItem {
-	// 	echo "it is working";
-	// }
-
-	// if(array_key_exists('test',$_POST)){
-	// 	addItem();
-	// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,23 +10,19 @@
 	<title></title>
 </head>
 <body>
-	<?php
-	function addItem($item) {
-		$cart;
-		array_push($cart, $item);
-		echo($cart);
-	}
-	?>
+
 	<div class="topnav">
 		<a class="active" href="prove03.php">Browse</a>
-		<a href="prove03_1.php">View Cart</a>
+		<a href="cart.php">View Cart</a>
 	</div>
 
 	<div class="flex-container" id="itemList">
 		<div class="item" id="item1">
 			Item 1<br>
-			<form method="post">
-				<input type="submit" name="test" id="test" value="Add to Cart" /><br/>
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item1")?>">
+				Name: <input type="text" name="fname">
+				<input type="submit">
+
 			</form>
 		</div>
 		<div class="item" id="item2">
