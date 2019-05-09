@@ -17,7 +17,7 @@
 	<a href="cart.php">View Cart</a>
 </div>
 
-<form method="post" action="<?php session_unset(); ?>">
+<form method="post" action="<?php session_destroy(); ?>">
 	<input type="submit" value="Clear Cart">
 </form>
 
