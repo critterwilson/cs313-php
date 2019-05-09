@@ -1,6 +1,9 @@
 <?php
 	session_start();
-	$_SESSION['cart'] = array();
+
+	if(empty($_SESSION['cart'])) {
+		$_SESSION['cart'] = array();
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,8 +23,7 @@
 		<div class="item" id="item1">
 			Item 1<br>
 			<form method="post" action="<?php array_push($_SESSION['cart'], "item1")?>">
-				<input type="submit">
-
+				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
 		<div class="item" id="item2">
