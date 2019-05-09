@@ -22,31 +22,36 @@
 	<div class="flex-container" id="itemList">
 		<div class="item" id="item1">
 			Item 1<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item1")?>">
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item1");
+			echo "added 5"; ?>">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
 		<div class="item" id="item2">
 			Item 2<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item2")?>">
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item2");
+			echo "added 5"; ?>">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
 		<div class="item" id="item3">
 			Item 3<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item3")?>">
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item3"); 
+			echo "added 5";?>">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
 		<div class="item" id="item4">
 			Item 4<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item4")?>">
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item4");
+			echo "added 5"; ?>">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
 		<div class="item" id="item5">
 			Item 5<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item5")?>">
+			<form method="post" action="<?php array_push($_SESSION['cart'], "item5"); 
+				echo "added 5"; ?>">
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
