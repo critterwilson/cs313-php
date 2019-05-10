@@ -23,7 +23,7 @@
 		<div class="item" id="item1">
 			Item 1<br>
 			<form method="post" action="prove03.php">
-				<button type='button' onclick="document.write('<?php array_push($_SESSION['cart'], "item") ?>');">Run my PHP code</button>
+				<button type='button' onclick="insertPHP('item1')">
 			</form>
 		</div>
 	</div>
