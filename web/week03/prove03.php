@@ -36,30 +36,6 @@
 				<input type="submit" value="Add to Cart">
 			</form>
 		</div>
-		<!-- <div class="item" id="item2">
-			Item 2<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item2"); ?>">
-				<input type="submit" value="Add to Cart">
-			</form>
-		</div>
-		<div class="item" id="item3">
-			Item 3<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item3"); ?>">
-				<input type="submit" value="Add to Cart">
-			</form>
-		</div>
-		<div class="item" id="item4">
-			Item 4<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item4"); ?>">
-				<input type="submit" value="Add to Cart">
-			</form>
-		</div>
-		<div class="item" id="item5">
-			Item 5<br>
-			<form method="post" action="<?php array_push($_SESSION['cart'], "item5"); ?>">
-				<input type="submit" value="Add to Cart">
-			</form>
-		</div> -->
 	</div>
 </body>
 </html>

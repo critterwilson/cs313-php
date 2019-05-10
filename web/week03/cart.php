@@ -3,7 +3,7 @@
 
 	var_dump($_SESSION['cart']);
 
-	session_unset();
+	session_destroy();
 ?>
 
 <!DOCTYPE html>
