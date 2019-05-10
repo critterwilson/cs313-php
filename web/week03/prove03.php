@@ -4,10 +4,6 @@
 	if(empty($_SESSION['cart'])) {
 		$_SESSION['cart'] = array();
 	}
-	else {
-		echo $_POST['item'];
-		array_push($_SESSION['cart'], $_POST['item']);
-	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,8 +23,7 @@
 		<div class="item" id="item1">
 			Item 1<br>
 			<form method="post" action="prove03.php">
-				<input type="text" class="noShow" name="item" value="item1">
-				<input type="submit" value="Add to Cart">
+				<button type='button' onclick="document.write('<?php array_push($_SESSION['cart'], "item") ?>');">Run my PHP code</button>
 			</form>
 		</div>
 	</div>

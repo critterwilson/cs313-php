@@ -3,7 +3,6 @@
 
 	var_dump($_SESSION['cart']);
 
-	session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@
 </div>
 
 <form method="post" action="">
-	<input type="submit" value="Clear Cart">
+	<button type='button' onclick="document.write('<?php session_unset(); ?>');">Run my PHP code</button>
 </form>
 
 </body>
