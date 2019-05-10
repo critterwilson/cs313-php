@@ -5,14 +5,9 @@
 		$_SESSION['cart'] = array();
 	}
 	else {
+		echo $_POST['item'];
 		array_push($_SESSION['cart'], $_POST['item']);
 	}
-
-	if(!empty($_POST)) {
-		var_dump($_POST);
-	}
-	
-
 ?>
 <!DOCTYPE html>
 <html>
