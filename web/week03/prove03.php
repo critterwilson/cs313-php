@@ -5,11 +5,10 @@
 		$_SESSION['cart'] = array();
 	}
 
-	var_dump($_SESSION['cart']);
+	//var_dump($_SESSION['cart']);
 
-	if(isset($_POST)) {
+	if(isset($_POST['item'])) {
 		array_push($_SESSION['cart'], $_POST['item']);
-		
 	}
 ?>
 <!DOCTYPE html>
