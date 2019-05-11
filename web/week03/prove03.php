@@ -28,7 +28,8 @@
 		<div class="item" id="item1">
 			Item 1<br>
 			<form method="post" action="prove03.php">
-				<button type='submit' value='Add to Cart'>
+				<input type="text" value="item1" class="noShow">
+				<button type="submit" value="Add to Cart">
 			</form>
 		</div>
 	</div>
