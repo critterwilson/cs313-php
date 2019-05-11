@@ -66,5 +66,7 @@
 			</form>
 		</div>
 	</div>
+
+	<a href="checkout.php">Check Out</a>
 </body>
 </html>

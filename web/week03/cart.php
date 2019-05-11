@@ -13,14 +13,16 @@
 </head>
 <body>
 
-<div class="topnav">
-	<a class="active" href="prove03.php">Browse</a>
-	<a href="cart.php">View Cart</a>
-</div>
+	<div class="topnav">
+		<a href="prove03.php">Browse</a>
+		<a class="active" href="cart.php">View Cart</a>
+	</div>
 
-<form method="post" action="">
-	<button type='button' onclick="document.write('<?php session_unset(); ?>');">Run my PHP code</button>
-</form>
+	<form method="post" action="">
+		<button type='button' onclick="document.write('<?php session_unset(); ?>');">Run my PHP code</button>
+	</form>
+
+	<a href="checkout.php">Check Out</a>
 
 </body>
 </html>
