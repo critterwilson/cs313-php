@@ -9,7 +9,7 @@
 		array_push($_SESSION['cart'], $_POST['item']);
 	}
 
-	var_dump($_SESSION['cart']);
+	echo $_SESSION['cart'];
 ?>
 <!DOCTYPE html>
 <html>
