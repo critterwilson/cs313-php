@@ -3,6 +3,7 @@
 
 	var_dump($_SESSION['cart']);
 
+	echo session_id();
 ?>
 
 <!DOCTYPE html>
