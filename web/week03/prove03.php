@@ -6,12 +6,13 @@
 	}
 
 	if(isset($_POST['item'])) {
+		echo 'Item: '.$_POST['item'];
 		array_push($_SESSION['cart'], $_POST['item']);
 	}
 
 	var_dump($_SESSION['cart']);
 
-	echo session_id();
+	//echo session_id();
 ?>
 <!DOCTYPE html>
 <html>
