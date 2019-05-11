@@ -32,6 +32,36 @@
 				<button type="submit" name="item" value="item1">Add to Cart</button>
 			</form>
 		</div>
+		<div class="item" id="item2">
+			Item 2<br>
+			<form method="post" action="prove03.php">
+				<button type="submit" name="item" value="item2">Add to Cart</button>
+			</form>
+		</div>
+		<div class="item" id="item3">
+			Item 3<br>
+			<form method="post" action="prove03.php">
+				<button type="submit" name="item" value="item3">Add to Cart</button>
+			</form>
+		</div>
+		<div class="item" id="item4">
+			Item 4<br>
+			<form method="post" action="prove03.php">
+				<button type="submit" name="item" value="item4">Add to Cart</button>
+			</form>
+		</div>
+		<div class="item" id="item5">
+			Item 5<br>
+			<form method="post" action="prove03.php">
+				<button type="submit" name="item" value="item5">Add to Cart</button>
+			</form>
+		</div>
+		<div class="item" id="item6">
+			Item 6<br>
+			<form method="post" action="prove03.php">
+				<button type="submit" name="item" value="item6">Add to Cart</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
