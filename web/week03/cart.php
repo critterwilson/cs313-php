@@ -45,11 +45,11 @@
 		// 		case 'item6':
 		// 			$price = 14.95;
 		// 			break;
-			}
+		//	}
 
 			//$total += $price;
 			//echo "<li>$item, $price</li>";
-		}
+		//}
 		?>
 	</ul>
 
