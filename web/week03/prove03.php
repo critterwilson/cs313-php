@@ -17,7 +17,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="prove03.css">
-	<script src="prove03.js"></script>
 	<title>The Random Things Store</title>
 </head>
 <body>

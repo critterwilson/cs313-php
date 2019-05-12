@@ -15,7 +15,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="prove03.css">
+	<title>Cart</title>
 </head>
 <body>
 	<div class="topnav">

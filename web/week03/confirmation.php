@@ -12,9 +12,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="prove03.css">
+	<title>Order Confirmation</title>
 </head>
 <body>
+	<div class="topnav">
+		<a href="prove03.php">Browse</a>
+		<a href="cart.php">View Cart</a>
+		<a class="active">Confirmation</a>
+	</div>
+
 <h2>Confirmation Page</h2>
 Shipping to:
 <?php
