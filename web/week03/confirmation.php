@@ -21,7 +21,7 @@ Shipping to:
 	echo "$first $last <br> $address1 $address2, $city, $state, $zip";
 ?>
 
-Your Items:<br>
+<br>Purchased items Items:<br>
 <ul>
 <?php
 	foreach ($_SESSION['cart'] as $item) {
