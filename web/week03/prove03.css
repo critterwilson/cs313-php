@@ -8,7 +8,7 @@ h1 {
 	color:#F76C5E;
 }
 
-button {
+.button {
   background-color: white; 
   color: #F76C5E; 
   border: 2px solid #F76C5E;
@@ -23,7 +23,7 @@ button {
   border-radius: 7px;
 }
 
-button:hover {
+.button:hover {
   background-color: #F76C5E;
   color: white;
 }

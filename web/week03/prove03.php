@@ -32,7 +32,7 @@
 			<h4>Whosie</h4>
 			<h5>Price: $11.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Whosie">Add to Cart</button>
+				<button type="submit" name="item" value="Whosie" class="button">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
@@ -40,7 +40,7 @@
 			<h4>Whatsit</h4>
 			<h5>Price: $12.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Whatsit">Add to Cart</button>
+				<button type="submit" name="item" value="Whatsit" class="button">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
@@ -48,7 +48,7 @@
 			<h4>Thingy</h4>
 			<h5>Price: $13.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Thingy">Add to Cart</button>
+				<button type="submit" name="item" value="Thingy"class="button">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
@@ -56,7 +56,7 @@
 			<h4>Mabob</h4>
 			<h5>Price: $14.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Mabob">Add to Cart</button>
+				<button type="submit" name="item" value="Mabob" class="button">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
@@ -64,7 +64,7 @@
 			<h4>Gizmo</h4>
 			<h5>Price: $15.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Gizmo">Add to Cart</button>
+				<button type="submit" name="item" value="Gizmo" class="button">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
@@ -72,7 +72,7 @@
 			<h4>Snorfblat</h4>
 			<h5>Price: $15.95</h5>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="Snorfblat">Add to Cart</button>
+				<button type="submit" name="item" value="Snorfblat" class="button">Add to Cart</button>
 			</form>
 		</div>
 	</div>
