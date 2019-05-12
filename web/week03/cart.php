@@ -73,7 +73,7 @@
 
 
 	<form method="post" action="cart.php">
-		<button type="submit" name="unset" value="true">Clear Cart</button>
+		<button type="submit" name="unset" value="true" class="button">Clear Cart</button>
 	</form>
 	<a href="checkout.php" class="button">Check Out</a>
 
