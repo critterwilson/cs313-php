@@ -50,8 +50,8 @@
 
 			$total += $price;
 			echo "<li>$item, $".money_format('%i', $price)."</li>";
-			echo "<form method='post' action='prove03.php'>
-				    <button type='submit' name='item' value='item5'>Add to Cart</button>
+			echo "<form method='post' action='cart.php'>
+				    <button type='submit' name='remove' value='$item'>Remove</button>
 				 </form>";
 		}
 		echo "</ul>";
