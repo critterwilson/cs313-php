@@ -20,7 +20,5 @@
 	<form method="post" action="">
 	</form>
 
-	<a href="checkout.php">Check Out</a>
-
 </body>
 </html>
