@@ -5,7 +5,10 @@
 
 	//echo session_id();
 	if(isset($_POST['remove'])) {
-		echo $_POST['remove'];
+		// echo $_POST['remove'];
+		$location = array_search($_POST['remove'], $_SESSION['cart']);
+		array_splice($_SESSION['cart'], $location, 1);
+
 	}
 ?>
 
