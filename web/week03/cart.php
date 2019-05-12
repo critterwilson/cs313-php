@@ -5,10 +5,6 @@
 
 	//echo session_id();
 
-	if((isset($_POST['unset'])) && ($_POST['unset'] == true)) {
-		session_unset();
-		echo "Cart is Empty";
-	}
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +20,11 @@
 
 	<ul id="fullCart">
 		<?php
+		if((isset($_POST['unset'])) && ($_POST['unset'] == true)) {
+			session_unset();
+			echo "Cart is Empty";
+		}
+
 		$total = 0.00;
 		foreach ($_SESSION['cart'] as $item) {
 			switch ($item) {
@@ -50,8 +51,9 @@
 			$total += $price;
 			echo "<li>$item, $price</li>";
 		}
+		echo "</ul>";
+		echo "<b>Total: </b>$total";
 		?>
-	</ul>
 
 	<form method="post" action="">
 	</form>
