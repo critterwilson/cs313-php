@@ -24,7 +24,7 @@
 		<label>City:</label>       <input type="text" name="city"><br>
 		<label>State:</label>      <input type="text" name="state"><br>
 		<label>Zip:</label>        <input type="text" name="zip"><br>
-		<button type="submit">Add to Cart</button>
+		<button type="submit" id="confirmOrder" class="button">Submit Order</button>
 	</form>
 </body>
 </html>
