@@ -1,8 +1,6 @@
 <?php
 	session_start();
 
-	
-
 	//echo session_id();
 ?>
 
@@ -22,7 +20,6 @@
 	</div>
 
 	<form method="post" action="">
-		<button type='button' onclick="document.write('<?php session_unset(); ?>');">Run my PHP code</button>
 	</form>
 
 	<a href="checkout.php">Check Out</a>
