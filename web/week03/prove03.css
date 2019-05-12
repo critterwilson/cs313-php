@@ -78,6 +78,18 @@ body {
 }
 }
 
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
 .topnav {
   background: linear-gradient(240deg, #586BA4 60%, #324376 60%);
   overflow: hidden;

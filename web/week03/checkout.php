@@ -17,13 +17,13 @@
 	</div>
 
 	<form id="userInfo" method="post" action="confirmation.php">
-		First Name: <input type="text" name="name_first"><br>
-		Last Name:  <input type="text" name="name_last"><br>
-		Address 1:  <input type="text" name="address1"><br>
-		Address 2:  <input type="text" name="address2"><br>
-		City:       <input type="text" name="city"><br>
-		State:      <input type="text" name="state"><br>
-		Zip:        <input type="text" name="zip"><br>
+		<label>First Name:</label> <input type="text" name="name_first"><br>
+		<label>Last Name:</label>  <input type="text" name="name_last"><br>
+		<label>Address 1:</label>  <input type="text" name="address1"><br>
+		<label>Address 2:</label>  <input type="text" name="address2"><br>
+		<label>City:</label>       <input type="text" name="city"><br>
+		<label>State:</label>      <input type="text" name="state"><br>
+		<label>Zip:</label>        <input type="text" name="zip"><br>
 		<button type="submit">Add to Cart</button>
 	</form>
 </body>

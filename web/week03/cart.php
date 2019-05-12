@@ -59,7 +59,7 @@
 			}
 
 			$total += $price;
-			echo "<li>$item, $".money_format('%i', $price)."</li>";
+			echo "<li><b>$item, $".money_format('%i', $price)."</b></li>";
 			echo "<form method='post' action='cart.php'>
 				    <button type='submit' name='remove' value='$item'>Remove</button>
 				 </form>";
