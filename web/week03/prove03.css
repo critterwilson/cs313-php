@@ -95,8 +95,7 @@ input {
     display: inline-block;
     float: left;
     clear: left;
-    width: 100px;
-    text-align: right;
+    text-align: center;
 }
 
 
