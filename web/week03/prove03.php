@@ -7,7 +7,7 @@
 	//echo session_id();
 
 	if(isset($_POST['item'])) {
-		echo 'Item: '.$_POST['item'];
+		//echo 'Item: '.$_POST['item'];
 		array_push($_SESSION['cart'], $_POST['item']);
 	}
 

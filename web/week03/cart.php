@@ -22,6 +22,14 @@
 		<a class="active" href="cart.php">View Cart</a>
 	</div>
 
+	<ul id="fullCart">
+		<?php
+			foreach ($_SESSION['cart'] as $item) {
+				echo "<li>$item</li>";
+			}
+		?>
+	</ul>
+
 	<form method="post" action="">
 	</form>
 
