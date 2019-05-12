@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	var_dump($_SESSION['cart']);
+	
 
 	//echo session_id();
 ?>
@@ -12,6 +12,9 @@
 	<title></title>
 </head>
 <body>
+	<?php
+		var_dump($_SESSION['cart']);
+	?>
 
 	<div class="topnav">
 		<a href="prove03.php">Browse</a>
