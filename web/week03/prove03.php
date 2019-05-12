@@ -5,6 +5,13 @@
 		$_SESSION['cart'] = array();
 	}
 	//echo session_id();
+
+	if(isset($_POST['item'])) {
+		echo 'Item: '.$_POST['item'];
+		array_push($_SESSION['cart'], $_POST['item']);
+	}
+
+	var_dump($_SESSION['cart']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,16 +21,6 @@
 	<title></title>
 </head>
 <body>
-
-	<?php
-		if(isset($_POST['item'])) {
-			echo 'Item: '.$_POST['item'];
-			array_push($_SESSION['cart'], $_POST['item']);
-		}
-
-		var_dump($_SESSION['cart']);
-	?>
-
 	<div class="topnav">
 		<a class="active" href="prove03.php">Browse</a>
 		<a href="cart.php">View Cart</a>
@@ -67,7 +64,5 @@
 			</form>
 		</div>
 	</div>
-
-	<a href="checkout.php">Check Out</a>
 </body>
 </html>
