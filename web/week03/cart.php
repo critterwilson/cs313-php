@@ -25,7 +25,7 @@
 	<ul id="fullCart">
 		<?php
 		$total = 0.00
-//		foreach ($_SESSION['cart'] as $item) {
+		foreach ($_SESSION['cart'] as $item) {
 		// 	switch ($item) {
 		// 		case 'item1':
 		// 			$price = 14.95;
@@ -49,7 +49,7 @@
 
 			//$total += $price;
 			//echo "<li>$item, $price</li>";
-		//}
+		}
 		?>
 	</ul>
 
