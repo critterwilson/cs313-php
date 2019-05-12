@@ -82,7 +82,7 @@ label{
     display: inline-block;
     float: left;
     clear: left;
-    width: 100px;
+    width: 150px;
     text-align: right;
     font-size: 17px;
 }
@@ -90,6 +90,13 @@ input {
   display: inline-block;
   float: left;
   font-size: 14px;
+}
+#confirmOrder {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
 }
 
 

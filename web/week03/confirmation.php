@@ -28,7 +28,7 @@
 	echo "$first $last<br>$address1 $address2<br>$city, $state, $zip";
 ?>
 
-<h4>Purchased Items:</h4>>
+<h4>Purchased Items:</h4>
 <ul>
 <?php
 	foreach ($_SESSION['cart'] as $item) {
