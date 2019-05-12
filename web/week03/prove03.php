@@ -27,37 +27,37 @@
 
 	<div class="flex-container" id="itemList">
 		<div class="item">
-			Item 1<br>
+			Whosie<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Whosie">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
-			Item 2<br>
+			Whatsit<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Whatsit">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
-			Item 3<br>
+			Thingy<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Thingy">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
-			Item 4<br>
+			Mabob<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Mabob">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
-			Item 5<br>
+			Gizmo<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Gizmo">Add to Cart</button>
 			</form>
 		</div>
 		<div class="item">
-			Item 6<br>
+			Snorfblat<br>
 			<form method="post" action="prove03.php">
 				<button type="submit" name="item" value="Snorfblat">Add to Cart</button>
 			</form>
