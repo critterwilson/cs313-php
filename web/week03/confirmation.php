@@ -23,12 +23,12 @@
 	</div>
 
 <h2>Confirmation Page</h2>
-Shipping to:<br>
+<h4>Shipping to:</h4>
 <?php
 	echo "$first $last<br>$address1 $address2<br>$city, $state, $zip";
 ?>
 
-<br>Purchased items Items:<br>
+<h4>Purchased Items:</h4>>
 <ul>
 <?php
 	foreach ($_SESSION['cart'] as $item) {
