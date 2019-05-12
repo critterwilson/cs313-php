@@ -1,12 +1,13 @@
 <?php
 	session_start();
 
-	var_dump($_SESSION['cart']);
+	//var_dump($_SESSION['cart']);
 
 	//echo session_id();
 
 	if((isset($_POST['unset'])) && ($_POST['unset'] == true)) {
 		session_unset();
+		echo "Cart is Empty";
 	}
 ?>
 
