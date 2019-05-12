@@ -49,10 +49,10 @@
 			}
 
 			$total += $price;
-			echo "<li>$item, ".money_format('%i', $price)."</li>";
+			echo "<li>$item, $".money_format('%i', $price)."</li>";
 		}
 		echo "</ul>";
-		echo "<b>Total: </b>$total";
+		echo "<b>Total: $".money_format('%i', $total)."</b>;
 		?>
 
 	<form method="post" action="">
