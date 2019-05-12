@@ -30,7 +30,7 @@
 			echo "Cart is Empty";
 		}
 
-		if (!isset($_SESSION['cart']) {
+		if (!isset($_SESSION['cart'])) {
 			echo "Cart is Empty";
 		}
 
