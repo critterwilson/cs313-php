@@ -16,9 +16,12 @@
 	</div>
 
 	<form id="userInfo" method="post" action="confirmation.php">
-		Name: <input type="text"><br>
-		
-	
+		First Name: <input type="text" name="name_first"><br>
+		Last Name: <input type="text" name="name_last"><br>
+		Address: <input type="text" name="address"><br>
+		City: <input type="text" name="city"><br>
+		State: <input type="text" name="state"><br>
+		Zip: <input type="text" name="zip"><br>
 	</form>
 </body>
 </html>
