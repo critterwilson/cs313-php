@@ -29,9 +29,7 @@
 		if((isset($_POST['unset'])) && ($_POST['unset'] == true)) {
 			session_unset();
 			echo "Cart is Empty";
-		}
-
-		if (!isset($_SESSION['cart'])) {
+		} elseif (!isset($_SESSION['cart'])) {
 			echo "Cart is Empty";
 		}
 
