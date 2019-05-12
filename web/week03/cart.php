@@ -4,7 +4,9 @@
 	//var_dump($_SESSION['cart']);
 
 	//echo session_id();
-
+	if(isset($_POST['remove'])) {
+		echo $_POST['remove'];
+	}
 ?>
 
 <!DOCTYPE html>
