@@ -18,7 +18,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="prove03.css">
 	<script src="prove03.js"></script>
-	<title></title>
+	<title>The Random Things Store</title>
 </head>
 <body>
 	<div class="topnav">
@@ -27,40 +27,40 @@
 	</div>
 
 	<div class="flex-container" id="itemList">
-		<div class="item" id="item1">
+		<div class="item">
 			Item 1<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item1">Add to Cart</button>
+				<button type="submit" name="item" value="Whosie">Add to Cart</button>
 			</form>
 		</div>
-		<div class="item" id="item2">
+		<div class="item">
 			Item 2<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item2">Add to Cart</button>
+				<button type="submit" name="item" value="Whatsit">Add to Cart</button>
 			</form>
 		</div>
-		<div class="item" id="item3">
+		<div class="item">
 			Item 3<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item3">Add to Cart</button>
+				<button type="submit" name="item" value="Thingy">Add to Cart</button>
 			</form>
 		</div>
-		<div class="item" id="item4">
+		<div class="item">
 			Item 4<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item4">Add to Cart</button>
+				<button type="submit" name="item" value="Mabob">Add to Cart</button>
 			</form>
 		</div>
-		<div class="item" id="item5">
+		<div class="item">
 			Item 5<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item5">Add to Cart</button>
+				<button type="submit" name="item" value="Gizmo">Add to Cart</button>
 			</form>
 		</div>
-		<div class="item" id="item6">
+		<div class="item">
 			Item 6<br>
 			<form method="post" action="prove03.php">
-				<button type="submit" name="item" value="item6">Add to Cart</button>
+				<button type="submit" name="item" value="Snorfblat">Add to Cart</button>
 			</form>
 		</div>
 	</div>
