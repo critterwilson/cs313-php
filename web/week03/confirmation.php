@@ -23,9 +23,9 @@
 	</div>
 
 <h2>Confirmation Page</h2>
-Shipping to:
+Shipping to:<br>
 <?php
-	echo "$first $last <br> $address1 $address2, $city, $state, $zip";
+	echo "$first $last<br>$address1 $address2<br>$city, $state, $zip";
 ?>
 
 <br>Purchased items Items:<br>
