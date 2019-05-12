@@ -47,8 +47,8 @@
 		// 			break;
 			}
 
-			$total += $price;
-			echo "<li>$item, $price</li>";
+			//$total += $price;
+			//echo "<li>$item, $price</li>";
 		}
 		?>
 	</ul>
