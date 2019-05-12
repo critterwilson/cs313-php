@@ -30,6 +30,10 @@
 			echo "Cart is Empty";
 		}
 
+		if (!isset($_SESSION['cart']) {
+			echo "Cart is Empty";
+		}
+
 		$total = 0.00;
 		foreach ($_SESSION['cart'] as $item) {
 			switch ($item) {
