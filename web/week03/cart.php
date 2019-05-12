@@ -37,22 +37,22 @@
 		$total = 0.00;
 		foreach ($_SESSION['cart'] as $item) {
 			switch ($item) {
-				case 'item1':
+				case 'Whosie':
 					$price = 11.95;
 					break;
-				case 'item2':
+				case 'Whatsit':
 					$price = 12.95;
 					break;
-				case 'item3':
+				case 'Thingy':
 					$price = 13.95;
 					break;
-				case 'item4':
+				case 'Mabob':
 					$price = 14.95;
 					break;
-				case 'item5':
+				case 'Gizmo':
 					$price = 15.95;
 					break;
-				case 'item6':
+				case 'Snorfblat':
 					$price = 16.95;
 					break;
 			}

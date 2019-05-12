@@ -23,6 +23,7 @@
 		City:       <input type="text" name="city"><br>
 		State:      <input type="text" name="state"><br>
 		Zip:        <input type="text" name="zip"><br>
+		<button type="submit">Add to Cart</button>
 	</form>
 </body>
 </html>
