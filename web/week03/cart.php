@@ -52,7 +52,7 @@
 			echo "<li>$item, $".money_format('%i', $price)."</li>";
 		}
 		echo "</ul>";
-		echo "<b>Total: $".money_format('%i', $total)."</b>;
+		echo "<b>Total: $".money_format('%i', $total)."</b>";
 		?>
 
 	<form method="post" action="">
