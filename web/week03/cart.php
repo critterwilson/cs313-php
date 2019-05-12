@@ -29,27 +29,27 @@
 		foreach ($_SESSION['cart'] as $item) {
 			switch ($item) {
 				case 'item1':
-					$price = 14.95;
+					$price = 11.95;
 					break;
 				case 'item2':
-					$price = 14.95;
+					$price = 12.95;
 					break;
 				case 'item3':
-					$price = 14.95;
+					$price = 13.95;
 					break;
 				case 'item4':
 					$price = 14.95;
 					break;
 				case 'item5':
-					$price = 14.95;
+					$price = 15.95;
 					break;
 				case 'item6':
-					$price = 14.95;
+					$price = 16.95;
 					break;
 			}
 
 			$total += $price;
-			echo "<li>$item, $price</li>";
+			echo "<li>$item, ".money_format('%i', $price)."</li>";
 		}
 		echo "</ul>";
 		echo "<b>Total: </b>$total";
