@@ -37,17 +37,23 @@
 		}
 	?>
 
-	<form id="numSections">
+	<form id="numSections" action="insertSection.php">
 	<!-- Database Query to fetch all professors -->
 		<?php
-			foreach ($db->query('SELECT prefix, postfix FROM course') as $row)
+			foreach ($db->query('SELECT prefix, postfix, id FROM course') as $row)
 			{
+				// Label for user
 				echo '<label>'.$row['prefix'].' '.$row['postfix'].': </label>';
-			  	echo '<input class="numSectionInput" type="text" name='.$row['postfix'];
-			  	echo '" size="5" maxlength="3"><br>';
+				// hidden text input to store course_id
+				echo '<input type="hidden" name="section[course_id]" value='.$row['id'].'>'
+				// text input to store amount of sections
+			  	echo '<input class="numSectionInput" type="text" name="section[amount]"';
+			  	// edits the size of the text input
+			  	echo ' size="5" maxlength="3"><br>';
 			}
 			echo '</select>'
 		?>
+		<button type="submit">
 	</form>
 
 
