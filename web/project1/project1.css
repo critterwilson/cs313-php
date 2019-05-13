@@ -2,11 +2,11 @@ body {
   font-family: Verdana;
 }
 
-.numSectionInput {
-	size: 5;
-	maxlength: 3;
-
-}
+#numSections > label {
+	display: inline-block;
+  	width: 140px;
+  	text-align: right;
+}​
 
 .topnav {
   background-color: #2F76B6;
