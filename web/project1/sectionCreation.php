@@ -43,7 +43,8 @@
 			foreach ($db->query('SELECT prefix, postfix FROM course') as $row)
 			{
 				echo '<label>'.$row['prefix'].' '.$row['postfix'].': </label>';
-			  	echo '<input class="numSectionInput" type="text" name='.$row['postfix'].'><br>';
+			  	echo '<input class="numSectionInput" type="text" name='.$row['postfix'];
+			  	echo 'size="5" maxlength"3"><br>';
 			}
 			echo '</select>'
 		?>
