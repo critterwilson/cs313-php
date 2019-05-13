@@ -37,7 +37,7 @@
 		}
 	?>
 
-	<form id="numSections" action="insertSection.php">
+	<form id="numSections" action="insertSection.php" method="POST">
 	<!-- Database Query to fetch all professors -->
 		<?php
 			foreach ($db->query('SELECT prefix, postfix, id FROM course') as $row)
