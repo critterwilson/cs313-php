@@ -2,6 +2,12 @@ body {
   font-family: Verdana;
 }
 
+.numSectionInput {
+	size: 5;
+	maxlength: 3;
+
+}
+
 .topnav {
   background-color: #2F76B6;
   overflow: hidden;
