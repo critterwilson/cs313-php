@@ -62,12 +62,10 @@
 				echo '<select id="course">';
 				foreach ($db->query('SELECT prefix, postfix FROM course') as $row)
 				{
-				  	echo '<option value='.$row['postfix'].'>'.$row['prefix'].', '.$row['postfix'].'</option>';
+				  	echo '<option value='.$row['postfix'].'>'.$row['prefix'].' '.$row['postfix'].'</option>';
 				}
 				echo '</select>'
-
 			?>
-
 		</div>
 	</form>
 
