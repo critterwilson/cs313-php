@@ -2,11 +2,6 @@ body {
   font-family: Verdana;
 }
 
-#numSections > label {
-  	width: 140px;
-  	text-align: right;
-}​
-
 .topnav {
   background-color: #2F76B6;
   overflow: hidden;
