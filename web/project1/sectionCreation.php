@@ -37,26 +37,16 @@
 		}
 	?>
 
-	<form id="teacherSignUp">
+	<form id="numSections">
 	<!-- Database Query to fetch all professors -->
 		<?php
-			echo '<select id="professor">';
-			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
+			foreach ($db->query('SELECT prefix, postfix FROM course') as $row)
 			{
-			  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
+				echo '<label>'.$row['prefix'].' '.$row['postfix'].': </label>';
+			  	echo '<input type="text" value='.$row['postfix'].'><br>';
 			}
 			echo '</select>'
 		?>
-
-		<select id="numCourses" onchange="courseSignUp()">
-			<option value="0">0</option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-		</select><br>
 	</form>
 
 
