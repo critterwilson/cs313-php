@@ -60,9 +60,9 @@
 		<div id="courseSignUp_0">
 			<?php
 				echo '<select id="course">';
-				foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
+				foreach ($db->query('SELECT prefix, postfix FROM course') as $row)
 				{
-				  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
+				  	echo '<option value='.$row['postfix'].'>'.$row['prefix'].', '.$row['postfix'].'</option>';
 				}
 				echo '</select>'
 
