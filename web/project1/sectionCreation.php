@@ -44,7 +44,7 @@
 			{
 				echo '<label>'.$row['prefix'].' '.$row['postfix'].': </label>';
 			  	echo '<input class="numSectionInput" type="text" name='.$row['postfix'];
-			  	echo 'size="5" maxlength"3"><br>';
+			  	echo '"size="5" maxlength"3"><br>';
 			}
 			echo '</select>'
 		?>
