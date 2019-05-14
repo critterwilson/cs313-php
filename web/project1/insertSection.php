@@ -5,21 +5,15 @@
 	// For every course in the list
 	for ($i = 0; $i < count($_POST['course_id']); $i++) { 
 		for ($j = 1; $j <= $_POST['amount'][$i]; $j++) { 
+
 			$course_id = $_POST['course_id'][$i];
+			// INSERT INTO section(course_id, section_number, professor_id) VALUES course_id, index, NULL) ON CONFLICT DO NOTHING;
 			$stmt = $db->prepare('INSERT INTO section(course_id, section_number, professor_id) VALUES (:course_id,'.$j.', NULL) ON CONFLICT DO NOTHING;');
+			
 			$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
-			// $stmt->bindValue(":j", $j, PDO::PARAM_INT);
-
-			var_dump($stmt);
-			echo '<br>';
-
-			// echo "INSERT INTO section (course_id, section_number, professor_id) ";
-			// echo "VALUES (".$_POST['course_id'][$i].", ".$j.", NULL) ";
-			// echo "ON CONFLICT DO NOTHING;<br>";
+			
+			$stmt->execute();
 		}
-
-		// $n = $_POST['amount'][$i];
-		// echo $_POST['course_id'][$i].': '.$n.'<br>';
 	}
 
 ?>
