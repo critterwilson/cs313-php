@@ -16,7 +16,8 @@ CREATE TABLE section (
 id SERIAL NOT NULL PRIMARY KEY,
 course_id SERIAL REFERENCES course(id) NOT NULL,
 section_number SMALLINT NOT NULL,
-professor_id SERIAL REFERENCES professor(id) NOT NULL
+professor_id SERIAL REFERENCES professor(id),
+UNIQUE (course_id, section_number)
 );
 
 INSERT INTO course (prefix, postfix, name) VALUES ('REL','100', 'Introduction to the Church of Jesus Christ of Latter-day Saints');
