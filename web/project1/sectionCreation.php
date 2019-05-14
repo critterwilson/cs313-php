@@ -15,7 +15,6 @@
 		<a href="project1.php">Write Info</a>
 		<a href="project1_1.php">Read Info</a>
 		<a href="sectionCreation.php" class="active">Sections</a>
-		<a href="clearSections.php" class="death">Clear All</a>
 	</div>
 
 	<form id="numSections" action="insertSection.php" method="POST">
