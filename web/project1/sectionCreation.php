@@ -19,7 +19,7 @@
 	</div>
 
 	<form id="numSections" action="insertSection.php" method="POST">
-	<!-- Database Query to fetch all professors -->
+	<!-- Database Query to fetch all courses and display them -->
 		<?php
 			foreach ($db->query('SELECT prefix, postfix, id FROM course') as $row)
 			{
@@ -34,9 +34,12 @@
 			}
 			echo '</select>'
 		?>
-		<button type="submit">
+		<button type="submit">Submit</button><
 	</form>
 
-
+	<form id="resetSections" action="resetSections.php" method="POST" 
+		onsubmit="return confirm('Reset all section data?');">
+		<button type="submit" >Reset All Sections</button>
+	</form>
 </body>
 </html>
