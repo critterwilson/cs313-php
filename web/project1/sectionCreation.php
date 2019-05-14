@@ -45,9 +45,9 @@
 				// Label for user
 				echo '<label>'.$row['prefix'].' '.$row['postfix'].': </label>';
 				// hidden text input to store course_id
-				echo '<input type="hidden" name="course_id[]]" value='.$row['id'].'>';
+				echo '<input type="hidden" name="course_id[]" value='.$row['id'].'>';
 				// text input to store amount of sections
-			  	echo '<input class="numSectionInput" type="amount[]"';
+			  	echo '<input class="numSectionInput" type="text" name="amount[]"';
 			  	// edits the size of the text input
 			  	echo ' size="5" maxlength="3"><br>';
 			}
