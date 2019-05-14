@@ -34,7 +34,7 @@
 			}
 			echo '</select>'
 		?>
-		<button type="submit">Submit</button><
+		<button type="submit">Submit</button>
 	</form>
 
 	<form id="resetSections" action="resetSections.php" method="POST" 
