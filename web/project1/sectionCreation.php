@@ -1,3 +1,8 @@
+<?php
+	require('databaseConnection.php');
+	$db = get_db();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,31 +16,6 @@
 		<a href="project1_1.php">Read Info</a>
 		<a href="sectionCreation.php" class="active">Sections</a>
 	</div>
-
-	<!-- Database Connection -->
-	<?php 
-		try
-		{
-		  $dbUrl = getenv('DATABASE_URL');
-
-		  $dbOpts = parse_url($dbUrl);
-
-		  $dbHost = $dbOpts["host"];
-		  $dbPort = $dbOpts["port"];
-		  $dbUser = $dbOpts["user"];
-		  $dbPassword = $dbOpts["pass"];
-		  $dbName = ltrim($dbOpts["path"],'/');
-
-		  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-		  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		}
-		catch (PDOException $ex)
-		{
-		  echo 'Error!: ' . $ex->getMessage();
-		  die();
-		}
-	?>
 
 	<form id="numSections" action="insertSection.php" method="POST">
 	<!-- Database Query to fetch all professors -->
