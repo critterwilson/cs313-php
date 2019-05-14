@@ -26,7 +26,7 @@
 	for ($i = 0; $i < count($_POST['course_id']); $i++) { 
 		for ($j = 0; $j < $_POST['amount'][$i]; $j++) { 
 			echo "insert into section (course_id, section_number)";
-			echo "values (".$_POST['course_id'][$i].", ".$_POST['amount'][$j].")<br>";
+			echo "values (".$_POST['course_id'][$i].", ".$j.")<br>";
 		}
 
 		// $n = $_POST['amount'][$i];
