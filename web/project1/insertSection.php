@@ -10,7 +10,7 @@
 			$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
 			// $stmt->bindValue(":j", $j, PDO::PARAM_INT);
 
-			//echo $stmt.'<br>';
+			echo $stmt;
 
 			// echo "INSERT INTO section (course_id, section_number, professor_id) ";
 			// echo "VALUES (".$_POST['course_id'][$i].", ".$j.", NULL) ";
