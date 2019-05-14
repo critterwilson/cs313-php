@@ -42,7 +42,7 @@ body {
   color: white;
 }
 
-.topnam a.death {
+.topnam a.death:hover {
 	background-color: red;
 
 }
