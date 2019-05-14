@@ -25,7 +25,7 @@
 	// For every course in the list
 	for ($i = 0; $i < count($_POST['course_id']); $i++) { 
 		for ($j = 1; $j <= $_POST['amount'][$i]; $j++) { 
-			echo "INSTER INTO section (course_id, section_number) ";
+			echo "INSERT INTO section (course_id, section_number) ";
 			echo "VALUES (".$_POST['course_id'][$i].", ".$j.") ";
 			echo "ON CONFLICT DO NOTHING;<br>";
 		}
