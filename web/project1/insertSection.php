@@ -11,6 +11,7 @@
 			// $stmt->bindValue(":j", $j, PDO::PARAM_INT);
 
 			var_dump($stmt);
+			echo '<br>';
 
 			// echo "INSERT INTO section (course_id, section_number, professor_id) ";
 			// echo "VALUES (".$_POST['course_id'][$i].", ".$j.", NULL) ";
