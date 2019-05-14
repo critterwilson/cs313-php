@@ -26,7 +26,7 @@
 	for ($i = 0; $i < count($_POST['course_id']); $i++) { 
 		
 		$n = $_POST['amount'][$i];
-		echo $n;
+		echo $_POST['course_id'][$i].': '.$n;
 	}
 
 ?>
