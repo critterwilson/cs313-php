@@ -18,9 +18,9 @@
 	</div>
 
 	View:<select id="viewType" onchange="viewChange()">
-		<option value="0">Teachers</option>
-		<option value="1">Sections</option>
-		<option value="2">Courses</option>
+		<option value="1">Teachers</option>
+		<option value="2">Sections</option>
+		<option value="3">Courses</option>
 	</section>
 
 	<span id="viewInfo">
