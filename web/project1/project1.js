@@ -9,7 +9,7 @@ function courseSignUp() {
     }
 }
 
-function projectChange() {
+function viewChange() {
 	var view = document.getElementById("viewType");
 	
 	var xmlhttp = new XMLHttpRequest();
