@@ -1,5 +1,5 @@
 function viewChange() {
-	var view = document.getElementById("viewType");
+	var view = document.getElementById("viewType").value;
 	
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
