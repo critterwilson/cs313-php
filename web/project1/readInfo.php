@@ -23,8 +23,8 @@
 		<option value="2">Courses</option>
 	</section>
 
-	<div id="viewInfo">
-	</div>
+	<span id="viewInfo">
+	</span>
 
 </body>
 </html>
