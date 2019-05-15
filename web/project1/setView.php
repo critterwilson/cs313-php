@@ -6,7 +6,7 @@
 			{
 			  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
 			}
-			echo '</select>'
+			echo '</select>';
 			break;
 		case 1:
 			echo "Case 1";
