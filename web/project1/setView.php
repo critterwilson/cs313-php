@@ -1,12 +1,13 @@
 <?php
 	switch($_REQUEST["q"]) {
 		case 0:
-			echo '<select id="professor">';
+			$str = '<select id="professor">';
 			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
 			{
-			  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
+			  	$str += '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
 			}
-			echo '</select>';
+			$str += '</select>';
+			echo $tr;
 			break;
 		case 1:
 			echo "Case 1";
