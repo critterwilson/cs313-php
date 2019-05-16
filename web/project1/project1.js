@@ -1,4 +1,4 @@
-function viewChange() {
+window.onload = function viewChange() {
 	var view = document.getElementById("viewType").value;
 	
 	var xmlhttp = new XMLHttpRequest();
