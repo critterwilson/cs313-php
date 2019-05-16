@@ -15,13 +15,13 @@
 		}
 		
 		//SELECT * FROM section WHERE course_id = :course_id AND section_number > :amount;
+		if ($amount != "") {
+			$stmt = $db->prepare('DELETE FROM section WHERE course_id = :course_id AND section_number > :amount;');
+			$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
+			$stmt->bindValue(':amount',  $amount, PDO::PARAM_INT);
+			$stmt->execute();
+		}
 
-		$stmt = $db->prepare('DELETE FROM section WHERE course_id = :course_id AND section_number > :amount;');
-		echo $amount.'<br>';
-		echo $course_id.'<br>';
-		// $stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
-		// $stmt->bindValue(':amount',  $amount, PDO::PARAM_INT);
-		// $stmt->execute();
 	}
 
  	//$new_page = "sectionCreation.php";
