@@ -22,8 +22,8 @@
 		<option value="3">Courses</option>
 	</section>
 
-	<span id="viewInfo">
-	</span>
+	<div id="viewInfo">
+	</div>
 
 	<script src="project1.js"></script>
 </body>
