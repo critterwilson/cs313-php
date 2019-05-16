@@ -20,11 +20,15 @@
 	<form id="teacherSignUp">
 	<!-- Database Query to fetch all professors -->
 		<?php
+			// start select tag
 			echo '<select id="professor">';
+			// SELECT name_first, name_last FROM professor
 			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
 			{
+				// <option value=name_last>Last, First</option 
 			  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
 			}
+			// close select tag
 			echo '</select>'
 		?>
 
