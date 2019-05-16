@@ -16,13 +16,13 @@
 		
 		//SELECT * FROM section WHERE course_id = :course_id AND section_number > :amount;
 
-		$stmt = $db->prepare('SELECT * FROM section WHERE course_id = :course_id AND section_number > :amount;');
+		$stmt = $db->prepare('DELETE FROM section WHERE course_id = :course_id AND section_number > :amount;');
 		$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
 		$stmt->bindValue(':amount',  $amount, PDO::PARAM_INT);
-		echo $stmt;
+		$stmt->execute();
 	}
 
- 	$new_page = "sectionCreation.php";
- 	header("Location: $new_page");
- 	die();
+ 	//$new_page = "sectionCreation.php";
+ 	//header("Location: $new_page");
+ 	//die();
 ?>
