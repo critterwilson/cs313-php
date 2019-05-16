@@ -1,7 +1,7 @@
 function viewChange() {
 	var view = document.getElementById("viewType").value;
 	
-	document.getElementById("output");
+	document.getElementById("output").innerHTML = "hello";
 
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
