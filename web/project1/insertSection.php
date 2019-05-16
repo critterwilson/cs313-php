@@ -13,13 +13,13 @@
 			$stmt->execute();
 		}
 		
-		$stmt = $db->prepare('SELECT * FROM section WHERE section_number > :amount AND course_id = :course_id;');
-		$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
-		$stmt->bindValue(':amount',  $amount, PDO::PARAM_INT);
-		echo $stmt;
+		// $stmt = $db->prepare('SELECT * FROM section WHERE section_number > :amount AND course_id = :course_id;');
+		// $stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
+		// $stmt->bindValue(':amount',  $amount, PDO::PARAM_INT);
+		// echo $stmt;
 	}
 
-// 	$new_page = "sectionCreation.php";
-// 	header("Location: $new_page");
-// 	die();
+ 	$new_page = "sectionCreation.php";
+ 	header("Location: $new_page");
+ 	die();
 ?>
