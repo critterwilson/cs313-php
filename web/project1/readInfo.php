@@ -12,11 +12,20 @@
 		<a href="sectionCreation.php">Sections</a>
 	</div>
 
-	View:<select id="viewType" onchange="viewChange()">
+	Primary viewing criteria:
+	<select id="primaryView" onchange="viewChange()">
 		<option value="1">Teachers</option>
 		<option value="2">Sections</option>
 		<option value="3">Courses</option>
 	</section>
+	Secondary viewing criteria:
+	<select id="secondaryView">
+		<option value="1">Teachers</option>
+		<option value="2">Sections</option>
+		<option value="3">Courses</option>
+	</select>
+
+
 
 	<div id="output">
 	</div>
