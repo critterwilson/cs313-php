@@ -7,7 +7,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project1.css">
-	<script src="project1.js"></script>
 	<title>Religion Teacher Sign-Up</title>
 </head>
 <body>
@@ -26,5 +25,6 @@
 	<span id="viewInfo">
 	</span>
 
+	<script src="project1.js"></script>
 </body>
 </html>
