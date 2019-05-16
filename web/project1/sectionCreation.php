@@ -7,7 +7,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project1.css">
-	<script src="project1.js"></script>
 	<title>Religion Teacher Sign-Up</title>
 </head>
 <body>
@@ -40,5 +39,7 @@
 		onsubmit="return confirm('Reset all section data?');">
 		<button type="submit" >Reset All Sections</button>
 	</form>
+	
+	<script src="project1.js"></script>
 </body>
 </html>
