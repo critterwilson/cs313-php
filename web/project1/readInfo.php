@@ -25,6 +25,6 @@
 	<div id="viewInfo">
 	</div>
 
-	<script src="project1.js"></script>
 </body>
+	<script src="project1.js"></script>
 </html>
