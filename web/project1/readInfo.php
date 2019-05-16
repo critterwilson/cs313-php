@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="project1.css">
 	<title>Religion Teacher Sign-Up</title>
 </head>
@@ -17,7 +18,7 @@
 		<option value="3">Courses</option>
 	</section>
 
-	<div id="viewInfo">
+	<div id="output">
 	</div>
 </body>
 	<script src="project1.js"></script>
