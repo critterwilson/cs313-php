@@ -19,7 +19,7 @@
 		echo $stmt;
 	}
 
-	$new_page = "sectionCreation.php";
-	header("Location: $new_page");
-	die();
+// 	$new_page = "sectionCreation.php";
+// 	header("Location: $new_page");
+// 	die();
 ?>
