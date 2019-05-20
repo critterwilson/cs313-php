@@ -18,13 +18,6 @@
 		<option value="2">Sections</option>
 		<option value="3">Courses</option>
 	</section>
-	Secondary viewing criteria:
-	<select id="secondaryView">
-		<option value="1">Teachers</option>
-		<option value="2">Sections</option>
-		<option value="3">Courses</option>
-	</select>
-
 
 
 	<div id="output">
