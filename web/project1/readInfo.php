@@ -12,7 +12,7 @@
 		<a href="sectionCreation.php">Sections</a>
 	</div>
 
-	Primary viewing criteria:
+	Filter by:<br>
 	<select id="filter" onchange="viewChange()">
 		<option value="1">Teachers</option>
 		<option value="2">Sections</option>
