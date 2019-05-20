@@ -17,12 +17,12 @@
 		<option value="1">Teachers</option>
 		<option value="2">Sections</option>
 		<option value="3">Courses</option>
-	</section>
+	</select>
 
 
 	<div id="output">
 	</div>
 
-</body>
 	<script src="project1.js"></script>
+</body>
 </html>
