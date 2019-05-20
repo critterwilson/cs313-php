@@ -13,7 +13,7 @@
 	</div>
 
 	Primary viewing criteria:
-	<select id="primaryView" onchange="viewChange()">
+	<select id="filter" onchange="viewChange()">
 		<option value="1">Teachers</option>
 		<option value="2">Sections</option>
 		<option value="3">Courses</option>
@@ -22,7 +22,7 @@
 
 	<div id="output">
 	</div>
-	
+
 </body>
 	<script src="project1.js"></script>
 </html>

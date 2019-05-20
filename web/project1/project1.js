@@ -1,5 +1,5 @@
 function viewChange() {
-  var view = document.getElementById("viewType").value;
+  var view = document.getElementById("filter").value;
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
