@@ -17,7 +17,12 @@
 			  	echo $row['prefix'].$row['postfix'].' '.$row['name'].'<br>';
 			}				break;
 		case 3:
-			echo "Case 2";
+			// psql: SELECT * FROM section
+			//       JOIN course ON section.course_id = course.id;
+			foreach ($db->query('SELECT * FROM section JOIN course ON section.course_id = course.id;') as $row)
+			{
+			  	echo $row['prefix'].$row['postfix'].':'.$row['section_number'].' '.$row['name'].'<br>';
+			}	
 			break;
 	}
 
