@@ -11,7 +11,7 @@ function viewChange() {
   xmlhttp.send();
 }
 
-function numCourseSignUp() {
+function courseSignUp() {
   var numSignUp = document.getElementById("numCourses");
 
   var view = document.getElementById("filter").value;
