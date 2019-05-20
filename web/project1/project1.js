@@ -12,7 +12,7 @@ function viewChange() {
 }
 
 function courseSignUp() {
-  var numSignUp = document.getElementById("numCourses");
+  var numSignUp = document.getElementById("numCourses").value;
 
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
