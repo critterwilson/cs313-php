@@ -41,6 +41,9 @@
 			<option value="5">5</option>
 			<option value="6">6</option>
 		</select><br>
+
+		<div id="courseSelect">
+		</div>
 	</form>
 
 
