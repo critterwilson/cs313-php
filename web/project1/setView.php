@@ -4,16 +4,17 @@
 
 	switch($_REQUEST["q"]) {
 		case 1:
-			// SELECT * FROM professor ORDER BY name_last asc, name_first asc;
+			// psql: SELECT * FROM professor ORDER BY name_last ASC, name_first ASC;
 			foreach ($db->query('SELECT * FROM professor ORDER BY name_last ASC, name_first ASC;') as $row)
 			{
 			  	echo $row['name_last'].', '.$row['name_last'].'<br>';
 			}	
 			break;
 		case 2:
-			foreach ($db->query('SELECT name_last, name_first FROM professor ORDER BY name_last ASC, name_first ASC;') as $row)
+			// psql: SELECT * FROM course ORDER BY postfix ASC;
+			foreach ($db->query('SELECT * FROM course ORDER BY postfix ASC;') as $row)
 			{
-			  	echo $row['name_last'].', '.$row['name_last'].'<br>';
+			  	echo $row['prefix'].$row['postfix'].' '.$row['name'].'<br>';
 			}				break;
 		case 3:
 			echo "Case 2";
