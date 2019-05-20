@@ -5,7 +5,7 @@ function viewChange() {
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         console.log(this.responseText);
-        document.getElementById("viewInfo").innerHTML = this.responseText;
+        document.getElementById("output").innerHTML = this.responseText;
       }
     };
     xmlhttp.open("GET", "setView.php?q=" + view, true);

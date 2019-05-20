@@ -22,6 +22,7 @@
 
 	<div id="output">
 	</div>
+	
 </body>
 	<script src="project1.js"></script>
 </html>
