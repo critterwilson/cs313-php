@@ -10,8 +10,8 @@
 			{
 				// <option value='RELC275'>RELC275 Teachings of the Book of Mormon</option>
 			  	echo '<option value="'.$row['prefix'].$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
-			echo '</select>';
 			}
+			echo '</select>';
 		}
 	//}
 ?>

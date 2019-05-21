@@ -25,7 +25,7 @@
 			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
 			{
 				// <option value=name_last>Last, First</option 
-			  	echo '<option value='.$row['name_last'].'>'.$row['name_last'].', '.$row['name_first'].'</option>';
+			  	echo '<option value="'.$row['name_last'].'">'.$row['name_last'].', '.$row['name_first'].'</option>';
 			}
 			// close select tag
 			echo '</select>'
