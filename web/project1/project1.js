@@ -11,7 +11,7 @@ function viewChange() {
   xmlhttp.send();
 }
 
-function courseSignUp() {
+function courseSignUp_Class() {
   var numSignUp = document.getElementById("numCourses").value;
 
   var xmlhttp = new XMLHttpRequest();
@@ -23,4 +23,10 @@ function courseSignUp() {
   };
   xmlhttp.open("GET", "signUp.php?q=" + numSignUp, true);
   xmlhttp.send();
+}
+
+function courseSignUp_Section {
+
+
+
 }
