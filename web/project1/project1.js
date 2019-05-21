@@ -25,7 +25,7 @@ function courseSignUp_Class() {
   xmlhttp.send();
 }
 
-function courseSignUp_Section {
+function courseSignUp_Section() {
 
 
 
