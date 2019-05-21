@@ -2,7 +2,7 @@
 	require('databaseConnection.php');
 	$db = get_db();
 	
-	if (isset($_REQUEST["q"])) {
+	//if (isset($_REQUEST["q"])) {
 		for ($i = 0; $i < $_REQUEST["q"]; $i++) { 
 			echo '<select id="courseSelect_'.$i.'">';
 			// psql: SELECT * FROM class ORDER BY postfix ASC, prefix ASC;
@@ -13,5 +13,5 @@
 			echo '</select>';
 			}
 		}
-	}
+	//}
 ?>
