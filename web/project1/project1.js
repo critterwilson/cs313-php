@@ -44,7 +44,8 @@ function courseSignUpVerify() {
   for (var i = 0; i < c.length; i++) {
     for (var j = i + 1; j < c.length; j++) {
       if(c[i].value == c[j].value) {
-        alert("Hey! Don't do that!");
+        alert("Please make sure you are not selecting a course twice.");
+        return;
       }
     }
   }
