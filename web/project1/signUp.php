@@ -4,8 +4,8 @@
 	
 	if (isset($_REQUEST["q"])) {
 		for ($i = 0; $i < $_REQUEST["q"]; $i++) { 
-			echo '<div id="courseSelect_'.$i.'">';
-			echo '<select onchange="courseSignUp_Section()">';
+			//echo '<div id="courseSelect_'.$i.'">';
+			echo '<select id="courseSelect_'.$i.'">';
 			// psql: SELECT course.prefix, course.postfix, course.name, MIN(section.section_number) 
 			// 		 FROM course JOIN section ON course.id = section.course_id 
 			// 	     WHERE section.taken = false 
@@ -17,7 +17,7 @@
 			  	echo '<option value="'.$row['prefix'].$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
-			echo '</div>';
+			//echo '</div>';
 		}
 	}
 ?>
