@@ -13,7 +13,7 @@
 			  	echo '<option value="'.$row['prefix'].$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
-			echo '</div>'
+			echo '</div>';
 		}
 	}
 ?>
