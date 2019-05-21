@@ -12,7 +12,7 @@
 		// Add the proper number of sections
 		for ($j = 1; $j <= $_POST['amount'][$i]; $j++) { 
 			// INSERT INTO section(course_id, section_number, professor_id) VALUES (course_id, index, NULL) ON CONFLICT DO NOTHING;
-			$stmt = $db->prepare('INSERT INTO section(course_id, section_number, professor_id) VALUES (:course_id,'.$j.', NULL) ON CONFLICT DO NOTHING;');
+			$stmt = $db->prepare('INSERT INTO section(course_id, section_number, professor_id, taken) VALUES (:course_id,'.$j.', NULL, false) ON CONFLICT DO NOTHING;');
 			// Course id might not be necessary because it isn't entered by the user
 			$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
 			$stmt->execute();
