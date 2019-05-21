@@ -38,5 +38,16 @@ function courseSignUp() {
   xmlhttp.send();
 }
 
+function courseSignUpVerify() {
+  var c = document.getElementById("courseSelect").children;
+
+  for (var i = 0; i < c.length; i++) {
+    for (var j = i + 1; j < c.length; j++) {
+      console.log(c[i].value + " = " + c[j].value);
+    }
+  }
+
+}
+
 
 

@@ -45,6 +45,8 @@
 		<!-- Place holder for the incoming course selections -->
 		<div id="courseSelect">
 		</div>
+
+		<button onclick="courseSignUpVerify()">Click</button>
 	</form>
 
 <script src="project1.js"></script>
