@@ -46,7 +46,7 @@
 		<div id="courseSelect">
 		</div>
 
-		<button onclick="courseSignUpVerify()">Click</button>
+		<button type="button" onclick="courseSignUpVerify()">Click</button>
 	</form>
 
 <script src="project1.js"></script>

@@ -43,8 +43,7 @@ function courseSignUpVerify() {
 
   for (var i = 0; i < c.length; i++) {
     for (var j = i + 1; j < c.length; j++) {
-      if(c[i].value.matches(c[j].value))
-      {
+      if(c[i].value.matches(c[j].value)) {
         alert("Hey! Don't do that!");
       }
     }
