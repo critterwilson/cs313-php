@@ -29,7 +29,7 @@ function courseSignUp_Class() {
 
 
 function courseSignUp_Section() {
-  var count - document.getElementById("courseSelect").childElementCount;
+  var count = document.getElementById("courseSelect").childElementCount;
 
   console.log(count);
 
