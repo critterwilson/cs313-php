@@ -9,9 +9,9 @@
 			foreach ($db->query('SELECT * FROM class ORDER BY postfix ASC, prefix ASC;') as $row)
 			{
 				// <option value='RELC275'>RELC275 Teachings of the Book of Mormon</option>
-			  	echo "<option value=\"$row['prefix']$row['postfix']\">$row['prefix']$row['postfix'] $row['name']</option>";
+			  	echo '<option value="'.$row['prefix'].$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			echo '</select>';
+			}
 		}
 	}
-
 ?>
