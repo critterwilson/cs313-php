@@ -1,3 +1,8 @@
+/******************************************************************************
+* Function: viewChange()  [used by: readInfo.php]
+* Description: retrieves the format that the user wants to view their info in
+* and gets the proper data from setView.php
+******************************************************************************/
 function viewChange() {
   // get how the user wants to view their data
   var view = document.getElementById("filter").value;
@@ -12,7 +17,13 @@ function viewChange() {
   xmlhttp.send();
 }
 
-function courseSignUp_Class() {
+/******************************************************************************
+* Function: courseSignUp()  [used by: project1.php]
+* Description: gets the number of courses desired, passes that to a php file
+* and writes up to six <select> items that allow the professor to select from
+* courses that have available sections
+******************************************************************************/
+function courseSignUp() {
   // get the number of courses the professor wants to sign up for
   var numSignUp = document.getElementById("numCourses").value;
 

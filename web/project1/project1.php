@@ -31,7 +31,8 @@
 			echo '</select>'
 		?>
 
-		<select id="numCourses" onchange="courseSignUp_Class()">
+		<!-- How many courses to register the teacher for -->
+		<select id="numCourses" onchange="courseSignUp()">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -41,6 +42,7 @@
 			<option value="6">6</option>
 		</select><br>
 
+		<!-- Place holder for the incoming course selections -->
 		<div id="courseSelect">
 		</div>
 	</form>
