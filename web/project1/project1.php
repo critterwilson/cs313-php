@@ -32,7 +32,7 @@
 		?>
 
 		<!-- How many courses to register the teacher for -->
-		<select name="numCourses" onchange="courseSignUp()">
+		<select name="numCourses" id="numCourses" onchange="courseSignUp()">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
