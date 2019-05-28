@@ -22,6 +22,8 @@
 			  	echo '<option value="'.$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
+			echo '<div id=sectionSelect_'.$i.'">';
+			echo '</div>';
 			echo '</div>';
 		}
 	}
