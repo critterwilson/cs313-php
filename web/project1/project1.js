@@ -43,7 +43,7 @@ function courseSignUp() {
 * Description: 
 ******************************************************************************/
 function sectionSignUp(i) {
-  var postfix = docuent.getElementById("courseSelect_"+i).value;
+  var postfix = document.getElementById("courseSelect_"+i).value;
 
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
