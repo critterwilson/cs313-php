@@ -6,6 +6,7 @@
 	if (isset($_REQUEST["q"])) {
 		// for the number of classes desired
 		for ($i = 0; $i < $_REQUEST["q"]; $i++) { 
+			echo '<div id="signUp_'.$i.'">';
 			echo '<select id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')">';
 			
 			# psql: SELECT course.prefix, course.postfix, course.name, MIN(section.section_number) 
@@ -21,6 +22,7 @@
 			  	echo '<option value="'.$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
+			echo '</div>';
 		}
 	}
 ?>

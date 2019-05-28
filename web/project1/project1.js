@@ -39,20 +39,20 @@ function courseSignUp() {
 }
 
 /******************************************************************************
-* Function: sectionSignUp()  [used by: project1.php]
-* Description: gets the number of courses desired, passes that to a php file
-* and writes up to six <select> items that allow the professor to select from
-* courses that have available sections
+* Function: sectionSignUp()  
+* Description: 
 ******************************************************************************/
-function sectionSignUp() {
+function sectionSignUp(i) {
+  var postfix = docuent.getElementById("courseSelect_"+i).value;
+
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //console.log(this.responseText);
-      document.getElementById("courseSelect").innerHTML = this.responseText;
+      document.getElementById("signUp_"+i).innerHTML = this.responseText;
     }
   };
-  xmlhttp.open("GET", "signUp.php?r=" + numSignUp, true);
+  xmlhttp.open("GET", "signUp.php?r=" + postfix, true);
   xmlhttp.send();
 }
 
