@@ -44,6 +44,16 @@
 
 		<!-- Place holder for the incoming course selections -->
 		<div id="courseSelect">
+			<select id="letter">
+				<option value="a">a</option>
+				<option value="b">b</option>
+				<option value="c">c</option>
+			</select>
+			<select id="num" >
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
 		</div>
 
 		<button type="button" onclick="courseSignUpVerify()">Click</button>

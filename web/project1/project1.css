@@ -44,5 +44,8 @@ body {
 
 .topnam a.death:hover {
 	background-color: red;
+}
 
+#courseSelect > select {
+  float:left;
 }
