@@ -27,10 +27,10 @@
 	}
 
 	if (isset($_REQUEST["r"])) {
-		echo '<select id="sectionSelect_'.$i.'">';
+		echo '<select id="sectionSelect">';
 		foreach ($db->query('SELECT * FROM section JOIN course ON course.postfix = 100 WHERE section.course_id = course.id;') as $row)
 		{
-			echo '<option value="'.$row['section_number'].'">"'.$row['section_number'].'</option>';
+			echo '<option value="'.$row['section_number'].'">'.$row['section_number'].'</option>';
 		}
 		echo '</select>';
 	}
