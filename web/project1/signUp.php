@@ -22,16 +22,24 @@
 			  	echo '<option value="'.$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
+			// need the extra div so innerHTML can be replaced with the section number
 			echo '<div id="sectionSelect_'.$i.'">';
 			echo '</div>';
 			echo '</div>';
 		}
 	}
 
+	// present the availabe sections
 	if (isset($_REQUEST["r"])) {
 		echo '<select id="sectionSelect">';
-		foreach ($db->query('SELECT * FROM section JOIN course ON course.postfix ='.$_REQUEST["r"].' WHERE section.course_id = course.id;') as $row)
+
+		# psql: SELECT * FROM section JOIN course ON course.postfix = [passed in postfix]
+		#        WHERE section.course_id = course.id AND section.taken = false;
+
+		// give a select option for all of the sections available for the given course
+		foreach ($db->query('SELECT * FROM section JOIN course ON course.postfix ='.$_REQUEST["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
 		{
+			# <option value="5">5</option>
 			echo '<option value="'.$row['section_number'].'">'.$row['section_number'].'</option>';
 		}
 		echo '</select>';

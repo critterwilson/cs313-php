@@ -39,8 +39,9 @@ function courseSignUp() {
 }
 
 /******************************************************************************
-* Function: sectionSignUp()  
-* Description: 
+* Function: sectionSignUp()  [used by: project1.php]
+* Description: based on the select class, retrieves the proper number of 
+* available sections and presents them to the user 
 ******************************************************************************/
 function sectionSignUp(i) {
   var postfix = document.getElementById("courseSelect_"+i).value;
@@ -48,8 +49,7 @@ function sectionSignUp(i) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText);
-
+      //console.log(this.responseText);
       document.getElementById("sectionSelect_"+i).innerHTML = this.responseText;
     }
   };

@@ -16,7 +16,7 @@
 		<a href="sectionCreation.php">Sections</a>
 	</div>
 
-	<form id="teacherSignUp">
+	<form id="teacherSignUp" action="submitSignUp.php" metho="POST">
 	<!-- Database Query to fetch all professors -->
 		<?php
 			// start select tag
@@ -46,7 +46,7 @@
 		<div id="courseSelect">
 		</div>
 
-		<button type="button" onclick="courseSignUpVerify()">Click</button>
+		<button type="submit">Click</button>
 	</form>
 
 <script src="project1.js"></script>
