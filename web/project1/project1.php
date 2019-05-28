@@ -45,12 +45,12 @@
 		<!-- Place holder for the incoming course selections -->
 		<div id="courseSelect">
 			<select id="letter">
-				<option value="aasdfasdfasdfasdfasdfasdfasdfasfdasfdasdfasdfsadfa">a</option>
+				<option value="a">aasdfasdfasdfasdfasdfasdfasdfasdfasdfsadfasdfasdfasdf</option>
 				<option value="b">b</option>
 				<option value="c">c</option>
 			</select>
 			<select id="num" >
-				<option value="1asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf">1</option>
+				<option value="1">1asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfdasdf</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
 			</select>
