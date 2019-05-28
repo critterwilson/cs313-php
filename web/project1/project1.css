@@ -49,3 +49,8 @@ body {
 #courseSelect > select {
   float:left;
 }
+
+.signUp {
+  display:flex;
+  flex-direction:horizontal;
+}
