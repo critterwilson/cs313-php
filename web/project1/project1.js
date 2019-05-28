@@ -49,7 +49,7 @@ function sectionSignUp(i) {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       console.log(this.responseText);
-      //document.getElementById("signUp_"+i).innerHTML = this.responseText;
+      document.getElementById("signUp_"+i).insertAdjacentHTML('beforeend', this.responseText);
     }
   };
   xmlhttp.open("GET", "signUp.php?r=" + postfix, true);
