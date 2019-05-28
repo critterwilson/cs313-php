@@ -20,7 +20,7 @@
 	<!-- Database Query to fetch all professors -->
 		<?php
 			// start select tag
-			echo '<select id="professor">';
+			echo '<select name="professor">';
 			// SELECT name_first, name_last FROM professor
 			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
 			{
@@ -32,7 +32,7 @@
 		?>
 
 		<!-- How many courses to register the teacher for -->
-		<select id="numCourses" onchange="courseSignUp()">
+		<select name="numCourses" onchange="courseSignUp()">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
