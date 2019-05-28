@@ -38,6 +38,27 @@ function courseSignUp() {
   xmlhttp.send();
 }
 
+/******************************************************************************
+* Function: sectionSignUp()  [used by: project1.php]
+* Description: gets the number of courses desired, passes that to a php file
+* and writes up to six <select> items that allow the professor to select from
+* courses that have available sections
+******************************************************************************/
+function sectionSignUp() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //console.log(this.responseText);
+      document.getElementById("courseSelect").innerHTML = this.responseText;
+    }
+  };
+  xmlhttp.open("GET", "signUp.php?r=" + numSignUp, true);
+  xmlhttp.send();
+}
+
+
+
+
 function courseSignUpVerify() {
   var c = document.getElementById("courseSelect").children;
 
