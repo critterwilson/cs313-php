@@ -2,5 +2,5 @@
 	require('databaseConnection.php');
 	$db = get_db();
 
-	var_dump($_POST['professor']);
+	var_dump($_POST);
 ?>
