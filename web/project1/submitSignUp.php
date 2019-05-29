@@ -3,5 +3,5 @@
 	$db = get_db();
 
 	echo $_REQUEST["professor"];
-	echo $_POST["numCourses"];
+	echo $_REQUEST["numCourses"];
 ?>
