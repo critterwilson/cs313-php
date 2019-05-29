@@ -53,7 +53,7 @@ function sectionSignUp(i) {
       document.getElementById("sectionSelect_"+i).innerHTML = this.responseText;
     }
   };
-  xmlhttp.open("GET", "signUp.php?r=" + postfix + "s=" + i, true);
+  xmlhttp.open("GET", "signUp.php?r=" + postfix + "&s=" + i, true);
   xmlhttp.send();
 }
 
