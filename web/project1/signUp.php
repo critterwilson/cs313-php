@@ -7,7 +7,7 @@
 		// for the number of classes desired
 		for ($i = 0; $i < $_REQUEST["q"]; $i++) { 
 			echo '<div class="signUp" id="signUp_'.$i.'">';
-			echo '<select id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')">';
+			echo '<select name="courseSelect_'.$i.'" id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')">';
 			echo '<option value="">Select Course</option>';
 			
 			# psql: SELECT course.prefix, course.postfix, course.name, MIN(section.section_number) 
