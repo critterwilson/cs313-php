@@ -72,10 +72,10 @@ function verifySignUp() {
       s1 = document.getElementByName("sectionSelect_" + i).value;
       s2 = document.getElementByName("sectionSelect_" + j).value;
       console.log(s1 + ", " + s2);
-      if(c1 == c2 && s1 == s2) {
-          alert("Please make sure you are not selecting the same section of the same course twice.");
-          return false;
-      }
+      //if(c1 == c2 && s1 == s2) {
+          //alert("Please make sure you are not selecting the same section of the same course twice.");
+          //return false;
+      //}
     }
   }
   return false;
