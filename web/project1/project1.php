@@ -22,10 +22,10 @@
 			// start select tag
 			echo '<select name="professor">';
 			// SELECT name_first, name_last FROM professor
-			foreach ($db->query('SELECT name_first, name_last FROM professor') as $row)
+			foreach ($db->query('SELECT name_first, name_last, id FROM professor') as $row)
 			{
 				// <option value=name_last>Last, First</option 
-			  	echo '<option value="'.$row['name_last'].','.$row['name_first'].'">'.$row['name_last'].', '.$row['name_first'].'</option><br>';
+			  	echo '<option value="'.$row['id'].'">'.$row['name_last'].', '.$row['name_first'].'</option><br>';
 			}
 			// close select tag
 			echo '</select>'
