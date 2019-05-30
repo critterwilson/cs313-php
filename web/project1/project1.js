@@ -45,7 +45,7 @@ function courseSignUp() {
 * available sections and presents them to the user 
 ******************************************************************************/
 function sectionSignUp(i) {
-  var postfix = document.getElementById("courseSelect_"+i).value;
+  var id = document.getElementById("courseSelect_" + i).value;
 
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -56,7 +56,7 @@ function sectionSignUp(i) {
   };
   xmlhttp.open("POST", "signUp.php", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xmlhttp.send("r=" + postfix + "&s=" + i);
+  xmlhttp.send("r=" + id + "&s=" + i);
 }
 
 
