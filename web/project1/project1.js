@@ -69,15 +69,15 @@ function verifySignUp() {
     for (var j = i + 1; j < numCourses; j++) {
       c1 = document.getElementById("courseSelect_" + i).value;
       c2 = document.getElementById("courseSelect_" + j).value;
+      if (c1 == "") {
+        alert("nope.");
+        return false;
+      }
       s1 = document.getElementById("section_" + i).value;
       s2 = document.getElementById("section_" + j).value;
       console.log(s1 + ", " + s2);
       if(c1 == c2 && s1 == s2) {
         alert("Please ensure you are not selecting the same section of the same course twice.");
-        return false;
-      }
-      if (c1 == "" || c1 == "") {
-        alert("nope.");
         return false;
       }
     }
