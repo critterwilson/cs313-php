@@ -16,7 +16,7 @@
 		<a href="sectionCreation.php">Sections</a>
 	</div>
 
-	<form id="teacherSignUp" action="submitSignUp.php" method="POST">
+	<form id="teacherSignUp" action="submitSignUp.php" method="POST" onsubmit="verifySignUp()">
 	<!-- Database Query to fetch all professors -->
 		<?php
 			// start select tag
