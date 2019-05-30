@@ -67,11 +67,11 @@ function verifySignUp() {
   var numCourses = document.getElementById("numCourses").value;
   for (var i = 0; i < numCourses; i++) {
     for (var j = i + 1; j < numCourses; j++) {
-      if((document.getElementById("courseSelect_" + i).value == 
-            document.getElementById("courseSelect_" + j).value) &&
-          (document.getElementById("sectionSelect_" + i).value == 
-            document.getElementById("sectionSelect_" + j).value)) {
-
+      c1 = document.getElementById("courseSelect_" + i).value;
+      c2 = document.getElementById("courseSelect_" + j).value;
+      s1 = document.getElementById("sectionSelect_" + i).value;
+      s2 = document.getElementById("sectionSelect_" + j).value;
+      if(c1 == c2 && s1 == s2) {
         alert("Please make sure you are not selecting the same section of the same course twice.");
         return false;
       }
