@@ -2,7 +2,7 @@
 	require('databaseConnection.php');
 	$db = get_db();
 
-	echo $_REQUEST["professor"];
+	var_dump(explode(',', $_REQUEST["professor"]));
 	echo $_REQUEST["numCourses"];
 	var_dump($_REQUEST);
 	echo '<br><br><br>';
