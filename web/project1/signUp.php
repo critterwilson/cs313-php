@@ -31,8 +31,8 @@
 	}
 
 	// present the availabe sections
-	if (isset($_GET["r"]) && isset($_GET["s"])) {
-		$i = $_GET["s"];
+	if (isset($_POST["r"]) && isset($_POST["s"])) {
+		$i = $_POST["s"];
 		echo '<select name="sectionSelect_'.$i.'" id="sectionSelect">';
 
 		# psql: SELECT * FROM section JOIN course ON course.postfix = [passed in postfix]

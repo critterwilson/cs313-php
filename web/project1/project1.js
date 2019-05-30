@@ -54,8 +54,9 @@ function sectionSignUp(i) {
       document.getElementById("sectionSelect_"+i).innerHTML = this.responseText;
     }
   };
-  xmlhttp.open("GET", "signUp.php?r=" + postfix + "&s=" + i, true);
-  xmlhttp.send();
+  xmlhttp.open("POST", "signUp.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("r=" + postfix + "&s=" + i);
 }
 
 

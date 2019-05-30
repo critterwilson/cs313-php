@@ -2,11 +2,11 @@
 	require('databaseConnection.php');
 	$db = get_db();
 
-	var_dump($_GET);
+	var_dump($_POST);
 	echo '<br><br><br>';
 
 	
-	for ($i=0; $i < $_GET["numCourses"]; $i++) { 
+	for ($i=0; $i < $_POST["numCourses"]; $i++) { 
 		#psql: UPDATE section SET professor_id = 
 		#		 (SELECT id FROM professor WHERE name_last = 'Allred' AND name_first = 'Philip'), 
 		#		 taken = true 
