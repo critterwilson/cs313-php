@@ -76,7 +76,7 @@ function verifySignUp() {
         alert("Please ensure you are not selecting the same section of the same course twice.");
         return false;
       }
-      if (s1 < 0 || s1 < 0) {
+      if (c1 < 0 || c1 < 0) {
         alert("nope.");
         return false;
       }
