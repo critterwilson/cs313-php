@@ -69,7 +69,7 @@ function verifySignUp() {
     for (var j = i + 1; j < numCourses; j++) {
       c1 = document.getElementById("courseSelect_" + i).value;
       c2 = document.getElementById("courseSelect_" + j).value;
-      if (c1 == "") {
+      if (c1 == "" || c2 == "") {
         alert("nope.");
         return false;
       }
