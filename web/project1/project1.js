@@ -35,6 +35,7 @@ function courseSignUp() {
     }
   };
   xmlhttp.open("POST", "signUp.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xmlhttp.send("q=" + numSignUp);
 }
 
