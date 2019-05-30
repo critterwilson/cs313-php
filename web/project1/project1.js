@@ -59,20 +59,26 @@ function sectionSignUp(i) {
   xmlhttp.send("r=" + id + "&s=" + i);
 }
 
+/******************************************************************************
+* Function: signUpVerify()  [used by: project1.php]
+* Description: Verifies that any of the section combinations are not invalid
+******************************************************************************/
+function verifySignUp() {
+  var numCourses = document.getElementById("numCourses").value;
+  for (var i = 0; i < numCourses; i++) {
+    for (var j = i + 1; j < numCourses j++) {
+      if((document.getElementById("courseSelect_" + i) == 
+            document.getElementById("courseSelect_" + j)) &&
+          (document.getElementById("sectionSelect_" + i) == 
+            document.getElementById("sectionSelect_" + j))) {
 
-
-
-function courseSignUpVerify() {
-  var c = document.getElementById("courseSelect").children;
-
-  for (var i = 0; i < c.length; i++) {
-    for (var j = i + 1; j < c.length; j++) {
-      if(c[i].value == c[j].value) {
-        alert("Please make sure you are not selecting a course twice.");
-        return;
+        alert("Please make sure you are not selecting the same section of the same course twice.");
+        return false;
       }
     }
   }
+
+  return false;
 
 }
 
