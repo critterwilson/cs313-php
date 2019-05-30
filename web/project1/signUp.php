@@ -39,7 +39,7 @@
 		#        WHERE section.course_id = course.id AND section.taken = false;
 
 		// give a select option for all of the sections available for the given course
-		foreach ($db->query('SELECT * FROM section JOIN course ON course.postfix ='.$_REQUEST["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
+		foreach ($db->query('SELECT section_number FROM section JOIN course ON course.id ='.$_REQUEST["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
 		{
 			# <option value="5">5</option>
 			echo '<option value="'.$row['section_number'].'">'.$row['section_number'].'</option>';
