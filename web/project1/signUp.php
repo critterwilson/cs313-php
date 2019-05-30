@@ -17,10 +17,10 @@
 			# 		 ORDER BY course.postfix ASC;
 
 			// select only one row per class with available sections, order by postfix
-			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, MIN(section.section_number) FROM course JOIN section ON course.id = section.course_id WHERE section.taken = false GROUP BY course.prefix, course.postfix, course.name ORDER BY course.postfix ASC;') as $row)
+			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, course.id MIN(section.section_number) FROM course JOIN section ON course.id = section.course_id WHERE section.taken = false GROUP BY course.prefix, course.postfix, course.name, course.id ORDER BY course.postfix ASC;') as $row)
 			{
 				# <option value='RELC275'>RELC275 Teachings of the Book of Mormon</option>
-			  	echo '<option value="'.$row['postfix'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
+			  	echo '<option value="'.$row['id'].'">'.$row['prefix'].$row['postfix'].' '.$row['name'].'</option>';
 			}
 			echo '</select>';
 			// need the extra div so innerHTML can be replaced with the section number
