@@ -41,10 +41,12 @@ function courseSignUp() {
 
 /******************************************************************************
 * Function: sectionSignUp()  [used by: project1.php]
+* Parameter(s): the index corresponding to the course 
 * Description: based on the select class, retrieves the proper number of 
 * available sections and presents them to the user 
 ******************************************************************************/
 function sectionSignUp(i) {
+  //
   var id = document.getElementById("courseSelect_" + i).value;
 
   var xmlhttp = new XMLHttpRequest();
@@ -61,18 +63,20 @@ function sectionSignUp(i) {
 
 /******************************************************************************
 * Function: signUpVerify()  [used by: project1.php]
-* Description: Verifies that any of the section combinations are not invalid
+* Description: Verifies that all of the form data is valid
 ******************************************************************************/
 function verifySignUp() {
   var numCourses = document.getElementById("numCourses").value;
   for (var i = 0; i < numCourses; i++) {
     for (var j = i + 1; j < numCourses; j++) {
+      // check to make sure a course is selected first
       c1 = document.getElementById("courseSelect_" + i).value;
       c2 = document.getElementById("courseSelect_" + j).value;
       if (c1 == "" || c2 == "") {
-        alert("nope.");
+        alert("Please ensure all form data is filled out.");
         return false;
       }
+      // check to make sure the sections don't match
       s1 = document.getElementById("section_" + i).value;
       s2 = document.getElementById("section_" + j).value;
       console.log(s1 + ", " + s2);
