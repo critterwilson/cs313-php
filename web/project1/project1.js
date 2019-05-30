@@ -69,8 +69,8 @@ function verifySignUp() {
     for (var j = i + 1; j < numCourses; j++) {
       c1 = document.getElementById("courseSelect_" + i).value;
       c2 = document.getElementById("courseSelect_" + j).value;
-      s1 = document.getElementById("sectionSelect_" + i).value;
-      s2 = document.getElementById("sectionSelect_" + j).value;
+      s1 = document.getElementByName("sectionSelect_" + i).value;
+      s2 = document.getElementByName("sectionSelect_" + j).value;
       console.log(s1 + ", " + s2);
       if(c1 == c2) {
         if (s1 == s2) {
