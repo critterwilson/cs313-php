@@ -71,6 +71,7 @@ function verifySignUp() {
       c2 = document.getElementById("courseSelect_" + j).value;
       s1 = document.getElementById("sectionSelect_" + i).value;
       s2 = document.getElementById("sectionSelect_" + j).value;
+      console.log(s1 + ", " + s2);
       if(c1 == c2) {
         if (s1 == s2) {
           alert("Please make sure you are not selecting the same section of the same course twice.");
