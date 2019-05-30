@@ -34,8 +34,8 @@ function courseSignUp() {
       document.getElementById("courseSelect").innerHTML = this.responseText;
     }
   };
-  xmlhttp.open("GET", "signUp.php?q=" + numSignUp, true);
-  xmlhttp.send();
+  xmlhttp.open("POST", "signUp.php", true);
+  xmlhttp.send("q=" + numSignUp);
 }
 
 /******************************************************************************

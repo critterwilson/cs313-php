@@ -3,9 +3,9 @@
 	$db = get_db();
 	
 	// make sure we have an amount of classes desired to sign up for
-	if (isset($_REQUEST["q"])) {
+	if (isset($_POST["q"])) {
 		// for the number of classes desired
-		for ($i = 0; $i < $_REQUEST["q"]; $i++) { 
+		for ($i = 0; $i < $_POST["q"]; $i++) { 
 			echo '<div class="signUp" id="signUp_'.$i.'">';
 			echo '<select name="courseSelect_'.$i.'" id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')">';
 			echo '<option value="">Select Course</option>';
@@ -31,15 +31,15 @@
 	}
 
 	// present the availabe sections
-	if (isset($_REQUEST["r"]) && isset($_REQUEST["s"])) {
-		$i = $_REQUEST["s"];
+	if (isset($_GET["r"]) && isset($_GET["s"])) {
+		$i = $_GET["s"];
 		echo '<select name="sectionSelect_'.$i.'" id="sectionSelect">';
 
 		# psql: SELECT * FROM section JOIN course ON course.postfix = [passed in postfix]
 		#        WHERE section.course_id = course.id AND section.taken = false;
 
 		// give a select option for all of the sections available for the given course
-		foreach ($db->query('SELECT section_number FROM section JOIN course ON course.id ='.$_REQUEST["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
+		foreach ($db->query('SELECT section_number FROM section JOIN course ON course.id ='.$_GET["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
 		{
 			# <option value="5">5</option>
 			echo '<option value="'.$row['section_number'].'">'.$row['section_number'].'</option>';
