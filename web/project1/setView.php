@@ -22,6 +22,7 @@
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
+			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
 			  	echo '<button type="submit">Remove</button></form></td></tr>';
 			}	
 			break;
@@ -44,6 +45,7 @@
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
+			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
 			  	echo '<button type="submit">Remove</button></form></td></tr>';	
 			}
 			break;
