@@ -7,10 +7,17 @@
 	$section_number = $_POST['sID'];
 
 	echo "$course_id, $professor_id, $section_number";
+	# psql: UPDATE section SET professor_id = null, taken = false 
+	#		  WHERE course_id = $course_id AND section_number = $section_number 
+	#		  AND professor_id = $professor_id;
 
-	$stmt = $db->prepare('UPDATE section SET professor_id = "null", taken = false WHERE course_id ='.$course_id.' AND section_number = '.$section_number.' AND professor_id = '.$professor_id';');
+	// set the professor value to NULL and taken to false, but keep the section
+	$stmt = $db->prepare('UPDATE section SET professor_id = null, taken = false WHERE course_id ='.$course_id.' AND section_number = '.$section_number.' AND professor_id = '.$professor_id';');
 
-	// binding course id might not be necessary because it isn't entered by the user
 	$stmt->execute();
 
+	// redirect to the first page
+	$new_page = "readInfo.php";
+ 	header("Location: $new_page");
+ 	die();
 ?>
