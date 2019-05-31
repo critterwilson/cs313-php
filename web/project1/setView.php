@@ -19,6 +19,9 @@
 			  	echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td></tr>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="cID='.$row['course_id'].'&pID='.$row['professor_id'].'" id="remove">';
+			  	echo '<button type="submit">';
 			}	
 			break;
 		// sort by course
@@ -38,14 +41,6 @@
 			  	echo '<td>'.$row['section_number'].'</td>';
 			  	echo '<td>'.$row['name_last'].', '.$row['name_first'].'</td></tr>'; 	
 			}
-			break;
-		case 3:
-			// psql: SELECT * FROM section
-			//       JOIN course ON section.course_id = course.id;
-			foreach ($db->query('SELECT * FROM section JOIN course ON section.course_id = course.id;') as $row)
-			{
-			  	echo $row['prefix'].$row['postfix'].':'.$row['section_number'].' '.$row['name'].'<br>';
-			}	
 			break;
 	}
 
