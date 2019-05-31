@@ -8,7 +8,8 @@
 			echo '<table class="readInfo">';
 			echo '<tr><th>Professor</th>';
 			echo '<th>Course</th>';
-			echo '<th>Section</th></tr>';
+			echo '<th>Section</th>';
+			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM professor
 			#		JOIN section ON section.professor_id = professor.id
