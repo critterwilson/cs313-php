@@ -8,8 +8,7 @@
 			echo '<table class="readInfo">';
 			echo '<tr><th>Professor</th>';
 			echo '<th>Course</th>';
-			echo '<th>Section</th>';
-			echo '<th></th></tr>';
+			echo '<th>Section</th></tr>';
 
 			# psql: SELECT * FROM professor
 			#		JOIN section ON section.professor_id = professor.id
@@ -19,10 +18,11 @@
 			{
 			  	echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
-			  	echo '<td>'.$row['section_number'].'</td></tr>';
+			  	echo '<td>'.$row['section_number'].'</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
-			  	echo '<input type="hidden" value="cID='.$row['course_id'].'&pID='.$row['professor_id'].'" id="remove">';
-			  	echo '<button type="submit">';
+			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
+			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
+			  	echo '<button type="submit"></td></tr>';
 			}	
 			break;
 		// sort by course
