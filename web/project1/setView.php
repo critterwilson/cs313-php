@@ -77,7 +77,7 @@
 
 			}
 
-			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false ORDER BY course.postfix ASC, section.setion_number ASC;') as $row)
+			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false ORDER BY course.postfix ASC, section.section_number ASC;') as $row)
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
