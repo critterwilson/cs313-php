@@ -22,7 +22,7 @@
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
-			  	echo '<button type="submit"></td></tr>';
+			  	echo '<button type="submit">Remove</button></td></tr>';
 			}	
 			break;
 		// sort by course
@@ -40,7 +40,11 @@
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
-			  	echo '<td>'.$row['name_last'].', '.$row['name_first'].'</td></tr>'; 	
+			  	echo '<td>'.$row['name_last'].', '.$row['name_first'].'</td>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
+			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
+			  	echo '<button type="submit">Remove</button></td></tr>';	
 			}
 			break;
 	}
