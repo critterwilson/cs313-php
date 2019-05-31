@@ -17,6 +17,7 @@
 		<option value="">Select</option>
 		<option value="1">Teachers</option>
 		<option value="2">Courses</option>
+		<option value="3">View All</option>
 	</select>
 
 

@@ -25,6 +25,7 @@
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
 			  	echo '<button type="submit">Remove</button></form></td></tr>';
 			}	
+			echo '</table>';
 			break;
 		// sort by course
 		case 2:
@@ -48,7 +49,41 @@
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
 			  	echo '<button type="submit">Remove</button></form></td></tr>';	
 			}
+			echo '</table>';
 			break;
+		// Show all sections available and taken
+		case 3:
+			echo '<table class="readInfo">';
+			echo '<tr><th>Course</th>';
+			echo '<th>Section</th>';
+			echo '<th>Professor</th></tr>';
+
+			# psql: SELECT * FROM professor
+			#		JOIN section ON section.professor_id = professor.id
+			#		JOIN course ON section.course_id = course.id
+			#		ORDER BY professor.name_last ASC, professor.name_first ASC;
+			foreach ($db->query('SELECT * FROM professor JOIN section ON section.professor_id = professor.id JOIN course ON section.course_id = course.id ORDER BY course.postfix ASC, section.section_number ASC;') as $row)
+			{
+				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
+			  	echo '<td>'.$row['section_number'].'</td>';
+			  	echo '<td>'.$row['name_last'].', '.$row['name_first'].'</td>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
+			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
+			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
+			  	echo '<button type="submit">Remove</button></form></td></tr>';
+
+			}
+
+			foreach ($db->query('SELECT course.prefix, course.postfix, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false;') as $row)
+			{
+				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
+			  	echo '<td>'.$row['section_number'].'</td>';
+			}
+
+			echo '</table>';
+			break;
+
 	}
 
 ?>
