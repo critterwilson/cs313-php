@@ -62,6 +62,8 @@
 			#		JOIN section ON section.professor_id = professor.id
 			#		JOIN course ON section.course_id = course.id
 			#		ORDER BY professor.name_last ASC, professor.name_first ASC;
+
+
 			foreach ($db->query('SELECT * FROM professor JOIN section ON section.professor_id = professor.id JOIN course ON section.course_id = course.id ORDER BY course.postfix ASC, section.section_number ASC;') as $row)
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
@@ -75,7 +77,7 @@
 
 			}
 
-			foreach ($db->query('SELECT course.prefix, course.postfix, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false;') as $row)
+			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false;') as $row)
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
