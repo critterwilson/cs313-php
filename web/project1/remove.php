@@ -12,7 +12,7 @@
 	#		  AND professor_id = $professor_id;
 
 	// set the professor value to NULL and taken to false, but keep the section
-	$stmt = $db->prepare('UPDATE section SET professor_id = null, taken = false WHERE course_id ='.$course_id.' AND section_number = '.$section_number.' AND professor_id = '.$professor_id';');
+	$stmt = $db->prepare('UPDATE section SET professor_id = null, taken = false WHERE course_id ='.$course_id.' AND section_number = '.$section_number.' AND professor_id = '.$professor_id.';');
 
 	$stmt->execute();
 
