@@ -12,7 +12,7 @@
 		<a href="sectionCreation.php">Sections</a>
 	</div>
 
-	Filter by:<br>
+	Order by:<br>
 	<select id="filter" onchange="viewChange()">
 		<option value="">Select</option>
 		<option value="1">Teachers</option>
