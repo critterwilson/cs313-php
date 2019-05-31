@@ -4,18 +4,39 @@
 
 	switch($_REQUEST["q"]) {
 		case 1:
-			// psql: SELECT * FROM professor ORDER BY name_last ASC, name_first ASC;
-			foreach ($db->query('SELECT * FROM professor ORDER BY name_last ASC, name_first ASC;') as $row)
+			echo '<table class="readInfo">';
+			echo '<tr><th>Professor</th>';
+			echo '<th>Course</th>';
+			echo '<th>Section</th></tr>';
+
+			# psql: SELECT * FROM professor
+			#		JOIN section ON section.professor_id = professor.id
+			#		JOIN course ON section.course_id = course.id
+			#		ORDER BY professor.name_last ASC, professor.name_first ASC;
+			foreach ($db->query('SELECT * FROM professor JOIN section ON section.professor_id = professor.id JOIN course ON section.course_id = course.id ORDER BY professor.name_last ASC, professor.name_first ASC;') as $row)
 			{
-			  	echo $row['name_last'].', '.$row['name_first'].'<br>';
+			  	echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
+			  	echo '<td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
+			  	echo '<td>'.$row['section_number'].'</td></tr>';
 			}	
 			break;
 		case 2:
-			// psql: SELECT * FROM course ORDER BY postfix ASC;
-			foreach ($db->query('SELECT * FROM course ORDER BY postfix ASC;') as $row)
+			echo '<table class="readInfo">';
+			echo '<tr><th>Professor</th>';
+			echo '<th>Course</th>';
+			echo '<th>Section</th></tr>';
+			
+			# psql: SELECT * FROM professor
+			#		JOIN section ON section.professor_id = professor.id
+			#		JOIN course ON section.course_id = course.id
+			#		ORDER BY professor.name_last ASC, professor.name_first ASC;
+			foreach ($db->query('SELECT * FROM professor JOIN section ON section.professor_id = professor.id JOIN course ON section.course_id = course.id ORDER BY professor.name_last ASC, professor.name_first ASC;') as $row)
 			{
-			  	echo $row['prefix'].$row['postfix'].' '.$row['name'].'<br>';
-			}				break;
+			  	echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
+			  	echo '<td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
+			  	echo '<td>'.$row['section_number'].'</td></tr>';
+			}
+			break;
 		case 3:
 			// psql: SELECT * FROM section
 			//       JOIN course ON section.course_id = course.id;

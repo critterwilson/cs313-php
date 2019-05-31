@@ -14,6 +14,7 @@
 
 	Filter by:<br>
 	<select id="filter" onchange="viewChange()">
+		<option value="">Select</option>
 		<option value="1">Teachers</option>
 		<option value="2">Courses</option>
 		<option value="3">Sections</option>
