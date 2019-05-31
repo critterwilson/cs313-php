@@ -35,10 +35,11 @@
 		echo '<select name="sectionSelect_'.$i.'" id="section_'.$i.'"">';
 
 		# psql: SELECT * FROM section JOIN course ON course.postfix = [passed in postfix]
-		#        WHERE section.course_id = course.id AND section.taken = false;
+		#        WHERE section.course_id = course.id AND section.taken = false ORDER BY
+		#		 section_number ASC;
 
 		// give a select option for all of the sections available for the given course
-		foreach ($db->query('SELECT section_number FROM section JOIN course ON course.id ='.$_POST["r"].' WHERE section.course_id = course.id AND section.taken = false;') as $row)
+		foreach ($db->query('SELECT section_number FROM section JOIN course ON course.id ='.$_POST["r"].' WHERE section.course_id = course.id AND section.taken = false ORDER BY section_number ASC;') as $row)
 		{
 			# <option value="5">5</option>
 			echo '<option value="'.$row['section_number'].'">'.$row['section_number'].'</option>';
