@@ -9,7 +9,7 @@ CREATE TABLE professor (
 id SERIAL NOT NULL PRIMARY KEY,
 name_first VARCHAR(20),
 name_last VARCHAR(20),
-adjunct bool
+adjunct BOOL NOT NULL
 );
 
 CREATE TABLE section (
@@ -17,7 +17,31 @@ id SERIAL NOT NULL PRIMARY KEY,
 course_id SERIAL REFERENCES course(id) NOT NULL,
 section_number SMALLINT NOT NULL,
 professor_id SERIAL REFERENCES professor(id),
+taken BOOL NOT NULL,
 UNIQUE (course_id, section_number)
+);
+
+CREATE TABLE room (
+id SERIAL NOT NULL PRIMARY KEY,
+building VARCHAR(5) NOT NULL,
+room_number SMALLINT NOT NULL,
+piano BOOLEAN NOT NULL,
+keyboard BOOLEAN NOT NULL,
+mac BOOLEAN NOT NULL,
+seating SMALLINT NOT NULL, --0 = unknown, side = 1, center = 2, desks = 3, table chairs = 4
+capacity SMALLINT NOT NULL,
+primary_owner VARCHAR(5),
+secondary_owner VARCHAR(5)
+);
+
+CREATE TABLE professor_prefs (
+id SERIAL NOT NULL PRIMARY KEY,
+professor_id SERIAL REFERENCES professor(id) NOT NULL,
+building VARCHAR(5),
+piano BOOLEAN,
+keyboard BOOLEAN,
+mac BOOLEAN,
+seating SMALLINT
 );
 
 INSERT INTO course (prefix, postfix, name) VALUES ('REL','100', 'Introduction to the Church of Jesus Christ of Latter-day Saints');
@@ -123,7 +147,34 @@ INSERT INTO professor (name_first, name_last, adjunct) VALUES ('Reed','Stoddard'
 INSERT INTO professor (name_first, name_last, adjunct) VALUES ('Sean','Tippetts','1');
 INSERT INTO professor (name_first, name_last, adjunct) VALUES ('Kyle','Walker','1');
 
-
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 100, 'true', 'false', 'false', 1, 48, 'REL', 'LANG');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 105, 'true', 'false', 'false', 2, 46, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 106, 'true', 'false', 'false', 2, 46, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 111, 'false', 'false', 'false', 2, 46, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 120, 'true', 'false', 'false', 1, 198, 'BIO', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 130, 'true', 'false', 'false', 3, 60, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 140, 'true', 'false', 'false', 2, 48, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 144, 'false', 'true', 'false', 2, 48, 'REL', 'LANG');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 146, 'true', 'false', 'false', 2, 48, 'REL', 'BUS');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 147, 'false', 'false', 'true', 3, 40, 'HUM', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 211, 'false', 'false', 'false', 4, 30, 'REL', 'HUM');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 237, 'false', 'false', 'false', 4, 30, 'HUM', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 247, 'true', 'false', 'false', 1, 48, 'REL', 'LANG');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 248, 'false', 'false', 'false', 1, 60, 'HUM', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 249, 'false', 'true', 'false', 2, 48, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 275, 'true', 'false', 'false', 2, 48, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 276, 'false', 'false', 'false', 1, 60, 'HUM', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('TAY', 278, 'true', 'false', 'false', 1, 46, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('BEN', 107, 'false', 'false', 'false', 0, 0, 'NULL', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('BEN', 124, 'false', 'false', 'false', 0, 0, 'BIO', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('BEN', 249, 'false', 'false', 'false', 0, 0, 'NULL', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('BEN', 224, 'false', 'false', 'false', 0, 0, 'BIO', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('BEN', 270, 'false', 'false', 'false', 0, 0, 'ANIM', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('HIN', 203, 'false', 'false', 'false', 0, 0, 'NULL', 'REL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('HIN', 221, 'true', 'false', 'false', 0, 0, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('HIN', 245, 'true', 'false', 'false', 0, 0, 'REL', 'HUM');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('HIN', 257, 'false', 'false', 'false', 0, 0, 'REL', 'NULL');
+INSERT INTO room (building, room_number, piano, keyboard, mac, seating, capacity, primary_owner, secondary_owner) VALUES ('HIN', 371, 'false', 'false', 'false', 0, 0, 'PSYC', 'REL');
 
 
 
