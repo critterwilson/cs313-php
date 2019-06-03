@@ -28,7 +28,7 @@ room_number SMALLINT NOT NULL,
 piano BOOLEAN NOT NULL,
 keyboard BOOLEAN NOT NULL,
 mac BOOLEAN NOT NULL,
-seating SMALLINT NOT NULL, --0 = unknown, side = 1, center = 2, desks = 3, table chairs = 4
+seating SMALLINT NOT NULL, -- 0 = unknown, side = 1, center = 2, desks = 3, table chairs = 4
 capacity SMALLINT NOT NULL,
 primary_owner VARCHAR(5),
 secondary_owner VARCHAR(5)
