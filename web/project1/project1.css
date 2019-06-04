@@ -62,7 +62,7 @@
   background-color: white;
   color: red;
   border: 2px solid red;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .reset:hover {
@@ -75,7 +75,7 @@
   background-color: white;
   color: green;
   border: 2px solid green;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -129,6 +129,9 @@ select {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #readInfo td, #readInfo th {
@@ -136,9 +139,13 @@ select {
   padding: 8px;
 }
 
-#readInfo tr:nth-child(even){background-color: #f2f2f2;}
+#readInfo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#readInfo tr:hover {background-color: #ddd;}
+#readInfo tr:hover {
+  background-color: #ddd;
+}
 
 #readInfo th {
   padding-top: 12px;
