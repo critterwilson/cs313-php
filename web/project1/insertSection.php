@@ -7,7 +7,7 @@
 		// course[i]
 		$course_id = $_POST['course_id'][$i];
 		// amount of course[i]
-		$amount = $_POST['amount'][$i]; // We may want to use HTML decoding for security purposes???
+		$amount = htmlspecialchars($_POST['amount'][$i]); // We may want to use HTML decoding for security purposes???
 
 		// Add the proper number of sections
 		for ($j = 1; $j <= $_POST['amount'][$i]; $j++) { 

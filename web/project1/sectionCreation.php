@@ -28,7 +28,7 @@
 				// text input to store amount of sections
 			  	echo '<input class="numSectionInput" type="text" name="amount[]"';
 			  	// edits the size of the text input
-			  	echo ' size="5" maxlength="3"><br>';
+			  	echo 'pattern="\d{1,2}" size="5" maxlength="3"><br>';
 			}
 			echo '</select>'
 		?>

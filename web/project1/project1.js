@@ -63,7 +63,7 @@ function sectionSignUp(i) {
 
 /******************************************************************************
 * Function: signUpVerify()  [used by: project1.php]
-* Description: Verifies that all of the form data is valid
+* Description: Verifies that all of the form data is valid in sign up
 ******************************************************************************/
 function verifySignUp() {
   var numCourses = document.getElementById("numCourses").value;
