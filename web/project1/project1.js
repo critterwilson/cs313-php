@@ -89,7 +89,4 @@ function verifySignUp() {
   return true;
 }
 
-  
-
-
 

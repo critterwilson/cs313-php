@@ -38,7 +38,7 @@
 	<!-- Reset all of the sections to zero -->
 	<form id="resetSections" action="resetSections.php" method="POST" 
 		onsubmit="return confirm('Reset all section data?');">
-		<button type="submit" >Reset All Sections</button>
+		<button type="submit" class="reset">Reset All Sections</button>
 	</form>
 	
 	<script src="project1.js"></script>
