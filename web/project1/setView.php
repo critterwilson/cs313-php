@@ -47,7 +47,7 @@
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
-			  	echo '<button type="submit">Remove</button></form></td></tr>';	
+			  	echo '<button type="submit" class="reset">Remove</button></form></td></tr>';	
 			}
 			echo '</table>';
 			break;
@@ -71,7 +71,7 @@
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
-			  	echo '<button type="submit">Remove</button></form></td></tr>';
+			  	echo '<button type="submit" class="reset">Remove</button></form></td></tr>';
 
 			}
 

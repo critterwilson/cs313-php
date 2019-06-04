@@ -21,6 +21,7 @@
 		<?php
 			// start select tag
 			echo '<select name="professor" required>';
+			echo '<option value=""> Select Professor </option>';
 			// SELECT name_first, name_last FROM professor
 			foreach ($db->query('SELECT name_first, name_last, id FROM professor') as $row)
 			{
@@ -33,7 +34,7 @@
 
 		<!-- How many courses to register the teacher for -->
 		<select name="numCourses" id="numCourses" onchange="courseSignUp()">
-			<option value="0">0</option>
+			<option value="">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
