@@ -19,7 +19,7 @@
 	<p class="instructions"><b>Instructions:</b><br> 
 		1. Select the professors name<br>
 		2. Select the amount of courses the professor will teach<br>
-		3. Select the desired course and section numbers for each empty slot
+		3. Select the desired course and section numbers for each empty slot<br>
 		4. Press "submit"</p>
 
 	<form id="teacherSignUp" action="submitSignUp.php" method="POST" onsubmit="return verifySignUp()">
