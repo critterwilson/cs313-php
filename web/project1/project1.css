@@ -114,8 +114,8 @@ select {
   margin-right: 10px;
 }​
 
-.numSectionInput {
-  margin-bottom: 10px;
+#numSections {
+  margin: 10px;
 }
 
 #resetSections > button {
