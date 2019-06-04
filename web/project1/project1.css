@@ -3,6 +3,10 @@
   font-size: 100%;
 }
 
+p {
+  width: 40%;
+}
+
 /* navigation bar */
 .topnav {
   background-color: #2F76B6;
