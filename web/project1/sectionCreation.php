@@ -32,7 +32,7 @@
 			}
 			echo '</select>'
 		?>
-		<button type="submit">Submit</button>
+		<button type="submit" class="button">Submit</button>
 	</form>
 
 	<!-- Reset all of the sections to zero -->

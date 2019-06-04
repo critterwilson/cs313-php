@@ -46,7 +46,7 @@
 		<div id="courseSelect">
 		</div>
 
-		<button type="submit">Click</button>
+		<button type="submit" class="button">Click</button>
 	</form>
 
 <script src="project1.js"></script>
