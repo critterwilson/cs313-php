@@ -1,5 +1,6 @@
 body {
   font-family: Verdana;
+  font-size: 14px;
 }
 /* navigation bar */
 .topnav {
@@ -94,4 +95,9 @@ select {
 .courseSelect {
   margin: 5px;
 }
+
+#courseSelect {
+  margin-left: 10px;
+}
+
 
