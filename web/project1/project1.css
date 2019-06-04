@@ -1,7 +1,8 @@
-body {
+* {
   font-family: Verdana;
-  font-size: 14px;
+  font-size: 100%;
 }
+
 /* navigation bar */
 .topnav {
   background-color: #2F76B6;
@@ -98,6 +99,12 @@ select {
 
 #courseSelect {
   margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#teacherSignUp {
+  margin-top: 10px;
 }
 
 
