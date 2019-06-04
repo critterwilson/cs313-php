@@ -1,7 +1,7 @@
 body {
   font-family: Verdana;
 }
-
+/*navigation bar*/
 .topnav {
   background-color: #2F76B6;
   overflow: hidden;
@@ -53,4 +53,17 @@ body {
 .signUp {
   display:flex;
   flex-direction:horizontal;
+}
+
+/*sectionCreation.php reset button*/
+.reset {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.reset:hover {
+  background-color: red;
+  color: white;
+
 }
