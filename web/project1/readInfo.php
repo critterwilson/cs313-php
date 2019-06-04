@@ -13,7 +13,7 @@
 		
 	</div>
 
-	<br>Order by:<br>
+	<p class="instructions">Order by:</p>
 	
 	<select id="filter" onchange="viewChange()">
 		<option value="">Select</option>
