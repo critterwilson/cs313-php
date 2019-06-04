@@ -140,6 +140,7 @@ select {
 #readInfo td, #readInfo th {
   border: 1px solid #ddd;
   padding: 8px;
+  max-width: 40%;
 }
 
 #readInfo tr:nth-child(even) {
