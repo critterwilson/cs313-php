@@ -129,7 +129,7 @@ select {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   margin-top: 20px;
-  margin-left: 20px;
+  width: auto;
 }
 
 #readInfo td, #readInfo th {
