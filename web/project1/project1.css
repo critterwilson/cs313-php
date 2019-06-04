@@ -111,6 +111,11 @@ select {
   display: inline-block;
   width: 100px;
   text-align: right;
+  marign-right: 10px;
 }​
+
+.sectionInput {
+  margin-top: 2px;
+}
 
 
