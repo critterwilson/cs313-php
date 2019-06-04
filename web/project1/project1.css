@@ -109,7 +109,7 @@ select {
 
 .sectionLabel {
   display: inline-block;
-  width: 10%;
+  width: 100px;
   text-align: right;
 }​
 
