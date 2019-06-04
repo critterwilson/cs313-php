@@ -5,7 +5,7 @@
 	switch($_REQUEST["q"]) {
 		// sort by professor
 		case 1:
-			echo '<table class="readInfo">';
+			echo '<table id="readInfo">';
 			echo '<tr><th>Professor</th>';
 			echo '<th>Course</th>';
 			echo '<th>Section</th></tr>';
@@ -29,7 +29,7 @@
 			break;
 		// sort by course
 		case 2:
-			echo '<table class="readInfo">';
+			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
 			echo '<th>Section</th>';
 			echo '<th>Professor</th></tr>';
@@ -53,7 +53,7 @@
 			break;
 		// Show all sections available and taken
 		case 3:
-			echo '<table class="readInfo">';
+			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
 			echo '<th>Section</th>';
 			echo '<th>Professor</th></tr>';

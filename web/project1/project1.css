@@ -62,6 +62,7 @@
   background-color: white;
   color: red;
   border: 2px solid red;
+  border-radius: 25px;
 }
 
 .reset:hover {
@@ -74,6 +75,7 @@
   background-color: white;
   color: green;
   border: 2px solid green;
+  border-radius: 25px;
 }
 
 .button:hover {
@@ -122,4 +124,27 @@ select {
   margin-top: 5px;
 }
 
+/* Table formatting */
+#readInfo {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#readInfo td, #readInfo th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#readInfo tr:nth-child(even){background-color: #f2f2f2;}
+
+#readInfo tr:hover {background-color: #ddd;}
+
+#readInfo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 

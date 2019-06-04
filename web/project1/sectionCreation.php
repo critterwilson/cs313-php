@@ -12,7 +12,7 @@
 <body>
 	<div class="topnav">
 		<a href="sectionCreation.php" class="active">Sections</a>
-		<a href="project1.php">Write Info</a>
+		<a href="project1.php">Sign Up</a>
 		<a href="readInfo.php">Read Info</a>
 		
 	</div>
