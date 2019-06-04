@@ -33,7 +33,8 @@
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
 			echo '<th>Section</th>';
-			echo '<th>Professor</th></tr>';
+			echo '<th>Professor</th>';
+			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM professor
 			#		JOIN section ON section.professor_id = professor.id
@@ -57,7 +58,8 @@
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
 			echo '<th>Section</th>';
-			echo '<th>Professor</th></tr>';
+			echo '<th>Professor</th>';
+			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM professor
 			#		JOIN section ON section.professor_id = professor.id
