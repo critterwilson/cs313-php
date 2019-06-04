@@ -11,16 +11,16 @@
 </head>
 <body>
 	<div class="topnav">
+		<a href="sectionCreation.php">Sections</a>
 		<a class="active" href="project1.php">Write Info</a>
 		<a href="readInfo.php">Read Info</a>
-		<a href="sectionCreation.php">Sections</a>
 	</div>
 
 	<form id="teacherSignUp" action="submitSignUp.php" method="POST" onsubmit="return verifySignUp()">
 	<!-- Database Query to fetch all professors -->
 		<?php
 			// start select tag
-			echo '<select name="professor">';
+			echo '<select name="professor" required>';
 			// SELECT name_first, name_last FROM professor
 			foreach ($db->query('SELECT name_first, name_last, id FROM professor') as $row)
 			{
@@ -46,7 +46,7 @@
 		<div id="courseSelect">
 		</div>
 
-		<button type="submit" class="button">Click</button>
+		<button type="submit" class="button">Submit</button>
 	</form>
 
 <script src="project1.js"></script>

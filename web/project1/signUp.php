@@ -7,7 +7,7 @@
 		// for the number of classes desired
 		for ($i = 0; $i < $_POST["q"]; $i++) { 
 			echo '<div class="signUp" id="signUp_'.$i.'">';
-			echo '<select name="courseSelect_'.$i.'" id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')">';
+			echo '<select name="courseSelect_'.$i.'" id="courseSelect_'.$i.'" onchange="sectionSignUp('.$i.')" required>';
 			echo '<option value=""> Select Course </option>';
 			# psql: SELECT course.prefix, course.postfix, course.name, MIN(section.section_number) 
 			# 		 FROM course JOIN section ON course.id = section.course_id 
@@ -32,7 +32,7 @@
 	// present the availabe sections
 	if (isset($_POST["r"]) && isset($_POST["s"])) {
 		$i = $_POST["s"];
-		echo '<select name="sectionSelect_'.$i.'" id="section_'.$i.'"">';
+		echo '<select name="sectionSelect_'.$i.'" id="section_'.$i.'" required>';
 
 		# psql: SELECT * FROM section JOIN course ON course.postfix = [passed in postfix]
 		#        WHERE section.course_id = course.id AND section.taken = false ORDER BY

@@ -1,7 +1,7 @@
 body {
   font-family: Verdana;
 }
-/*navigation bar*/
+/* navigation bar */
 .topnav {
   background-color: #2F76B6;
   overflow: hidden;
@@ -55,7 +55,7 @@ body {
   flex-direction:horizontal;
 }
 
-/*sectionCreation.php reset button*/
+/* sectionCreation.php reset button */
 .reset {
   background-color: white;
   color: red;
@@ -77,4 +77,12 @@ body {
 .button:hover {
   background-color: green;
   color: white;
+}
+
+/* <select> styles */
+select {
+  border-radius: 25px;
+  background: white;
+  border: 2px solid #2F76B6;
+  color: #2F76B6;
 }
