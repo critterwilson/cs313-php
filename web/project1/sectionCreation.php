@@ -23,7 +23,6 @@
 			foreach ($db->query('SELECT prefix, postfix, id FROM course') as $row)
 			{
 				// Label for user
-				echo '<div class="sectionInput">';
 				echo '<label class="sectionLabel">'.$row['prefix'].' '.$row['postfix'].': </label>';
 				// hidden text input to store course_id
 				echo '<input type="hidden" name="course_id[]" value='.$row['id'].'>';
@@ -31,7 +30,6 @@
 			  	echo '<input class="numSectionInput" type="text" name="amount[]"';
 			  	// edits the size of the text input
 			  	echo 'pattern="\d{1,2}" size="5" maxlength="3"><br>';
-			  	echo '</div>';
 			}
 		?>
 		<button type="submit" class="button">Submit</button>
