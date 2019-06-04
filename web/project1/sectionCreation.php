@@ -17,6 +17,8 @@
 		
 	</div>
 
+	<p class="instructions"><b>Instructions:</b> Please enter the number of sections desired for each course. All form items do not need to be filled out. If you put in the wrong number for a section, simply enter the number you would like and re-submit the form (there is no need to do any addition or subtraction: just enter the right number).</p>
+
 	<form id="numSections" action="insertSection.php" method="POST">
 	<!-- Database Query to fetch all courses and display them -->
 		<?php
