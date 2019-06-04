@@ -24,7 +24,7 @@
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
-			  	echo '<button type="submit" class="reset" onclick="confirm(Remove this professor fromt this course?)">Remove</button></form></td></tr>';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor fromt this course?\')">Remove</button></form></td></tr>';
 			}	
 			echo '</table>';
 			break;
