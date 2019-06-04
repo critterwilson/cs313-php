@@ -79,6 +79,7 @@
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
+			  	echo '<td></td><td></td>';
 			}
 
 			echo '</table>';
