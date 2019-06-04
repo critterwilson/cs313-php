@@ -23,7 +23,7 @@
 			foreach ($db->query('SELECT prefix, postfix, id FROM course') as $row)
 			{
 				// Label for user
-				echo '<div class="sectionInput"';
+				echo '<div class="sectionInput">';
 				echo '<label class="sectionLabel">'.$row['prefix'].' '.$row['postfix'].': </label>';
 				// hidden text input to store course_id
 				echo '<input type="hidden" name="course_id[]" value='.$row['id'].'>';
