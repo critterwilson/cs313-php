@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="topnav">
-		<a href="sectionCreation.php">Section Creation</a>
+		<a href="sectionCreation.php">Sections</a>
 		<a href="project1.php">Sign Up</a>
 		<a class="active" href="readInfo.php">Read Info</a>
 		
