@@ -1,11 +1,7 @@
-<?php
-	require('databaseConnection.php');
-	$db = get_db();
-?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Sign Up</title>
 </head>
 <body>
 	<h1>Sign UP</h1>
@@ -14,6 +10,5 @@
 		<input type="text" name="password"><br>
 		<button type="submit">Sign Up</button>
 	</form>
-
 </body>
 </html>
