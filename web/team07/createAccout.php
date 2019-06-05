@@ -19,7 +19,7 @@
 	$statement = $db->prepare($query);
 
 	$statement->bindValue(':username', $username);
-	$statement->bindValue(':pasword', $hashPassword);
+	$statement->bindValue(':password', $hashPassword);
 
 	$statement->execute();
 
