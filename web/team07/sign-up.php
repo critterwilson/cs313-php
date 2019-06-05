@@ -12,7 +12,7 @@
 	<form id="signUp" action="createAccount.php" method="POST">
 		<input type="text" name="username"><br>
 		<input type="text" name="password"><br>
-		<button type="submit">Sign U[</button>
+		<button type="submit">Sign Up</button>
 	</form>
 
 </body>
