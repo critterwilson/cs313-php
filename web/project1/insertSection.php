@@ -15,7 +15,7 @@
 			
 			// insert the number of sections desired
 			// don't add on top of current sections, just match the desired amount
-			$stmt = $db->prepare('INSERT INTO section(course_id, section_number, professor_id, taken) VALUES (:course_id,'.$j.', NULL, false) ON CONFLICT DO NOTHING;');
+			$stmt = $db->prepare('INSERT INTO section(course_id, section_number, professor_id, taken, room_id) VALUES (:course_id,'.$j.', NULL, false, NULL) ON CONFLICT DO NOTHING;');
 
 			// binding course id might not be necessary because it isn't entered by the user
 			$stmt->bindValue(':course_id', $course_id, PDO::PARAM_INT);
