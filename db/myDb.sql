@@ -21,6 +21,9 @@ taken BOOL NOT NULL,
 UNIQUE (course_id, section_number)
 );
 
+ALTER TABLE section ALTER COLUMN professor_id DROP NOT NULL;
+
+
 CREATE TABLE room (
 id SERIAL NOT NULL PRIMARY KEY,
 building VARCHAR(5) NOT NULL,
@@ -43,6 +46,142 @@ keyboard BOOLEAN,
 mac BOOLEAN,
 seating SMALLINT
 );
+
+CREATE TABLE schedule_mon (
+id SERIAL NOT NULL PRIMARY KEY,
+room_id SERIAL REFERENCES room(id),
+time0745 SERIAL references section(id),
+time0900 SERIAL references section(id),
+time1015 SERIAL references section(id),
+time1130 SERIAL references section(id),
+time1245 SERIAL references section(id),
+time1400 SERIAL references section(id),
+time1515 SERIAL references section(id),
+time1630 SERIAL references section(id),
+time1745 SERIAL references section(id),
+time1900 SERIAL references section(id)
+);
+
+ALTER TABLE schedule_mon ALTER COLUMN room_id DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time0745 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time0900 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1015 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1130 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1245 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1400 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1515 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1630 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1745 DROP NOT NULL;
+ALTER TABLE schedule_mon ALTER COLUMN time1900 DROP NOT NULL;
+
+CREATE TABLE schedule_tue (
+id SERIAL NOT NULL PRIMARY KEY,
+room_id SERIAL REFERENCES room(id),
+time0745 SERIAL references section(id),
+time0900 SERIAL references section(id),
+time1015 SERIAL references section(id),
+time1130 SERIAL references section(id),
+time1245 SERIAL references section(id),
+time1400 SERIAL references section(id),
+time1515 SERIAL references section(id),
+time1630 SERIAL references section(id),
+time1745 SERIAL references section(id),
+time1900 SERIAL references section(id)
+);
+
+ALTER TABLE schedule_tue ALTER COLUMN room_id DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time0745 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time0900 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1015 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1130 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1245 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1400 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1515 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1630 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1745 DROP NOT NULL;
+ALTER TABLE schedule_tue ALTER COLUMN time1900 DROP NOT NULL;
+
+CREATE TABLE schedule_wed (
+id SERIAL NOT NULL PRIMARY KEY,
+room_id SERIAL REFERENCES room(id),
+time0745 SERIAL references section(id),
+time0900 SERIAL references section(id),
+time1015 SERIAL references section(id),
+time1130 SERIAL references section(id),
+time1245 SERIAL references section(id),
+time1400 SERIAL references section(id),
+time1515 SERIAL references section(id),
+time1630 SERIAL references section(id),
+time1745 SERIAL references section(id),
+time1900 SERIAL references section(id)
+);
+
+ALTER TABLE schedule_wed ALTER COLUMN room_id DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time0745 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time0900 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1015 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1130 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1245 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1400 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1515 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1630 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1745 DROP NOT NULL;
+ALTER TABLE schedule_wed ALTER COLUMN time1900 DROP NOT NULL;
+
+CREATE TABLE schedule_thu (
+id SERIAL NOT NULL PRIMARY KEY,
+room_id SERIAL REFERENCES room(id),
+time0745 SERIAL references section(id),
+time0900 SERIAL references section(id),
+time1015 SERIAL references section(id),
+time1130 SERIAL references section(id),
+time1245 SERIAL references section(id),
+time1400 SERIAL references section(id),
+time1515 SERIAL references section(id),
+time1630 SERIAL references section(id),
+time1745 SERIAL references section(id),
+time1900 SERIAL references section(id)
+);
+
+ALTER TABLE schedule_thu ALTER COLUMN room_id DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time0745 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time0900 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1015 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1130 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1245 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1400 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1515 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1630 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1745 DROP NOT NULL;
+ALTER TABLE schedule_thu ALTER COLUMN time1900 DROP NOT NULL;
+
+CREATE TABLE schedule_fri (
+id SERIAL NOT NULL PRIMARY KEY,
+room_id SERIAL REFERENCES room(id),
+time0745 SERIAL references section(id),
+time0900 SERIAL references section(id),
+time1015 SERIAL references section(id),
+time1130 SERIAL references section(id),
+time1245 SERIAL references section(id),
+time1400 SERIAL references section(id),
+time1515 SERIAL references section(id),
+time1630 SERIAL references section(id),
+time1745 SERIAL references section(id),
+time1900 SERIAL references section(id)
+);
+
+ALTER TABLE schedule_fri ALTER COLUMN room_id DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time0745 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time0900 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1015 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1130 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1245 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1400 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1515 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1630 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1745 DROP NOT NULL;
+ALTER TABLE schedule_fri ALTER COLUMN time1900 DROP NOT NULL;
+
 
 INSERT INTO course (prefix, postfix, name) VALUES ('REL','100', 'Introduction to the Church of Jesus Christ of Latter-day Saints');
 INSERT INTO course (prefix, postfix, name) VALUES ('REL','121', 'Book of Mormon pt.1');
