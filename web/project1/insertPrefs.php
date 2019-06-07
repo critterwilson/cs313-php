@@ -10,8 +10,8 @@
 	$seating = $_POST['seating'];
 	$mac = $_POST['mac'];
 
-	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (6, 'TAY', null, true, 2);
-	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating);";
+	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (6, 'TAY', null, true, 2 ) ON CONFLICT UPDATE professor_prefs SET office = 'BID', instrument = null, mac = true, seating = 2) WHERE professor_id = $professor_id;
+	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating ON CONFLICT UPDATE professor_prefs SET office = $office, instrument = $instrument, mac = $mac, seating = $seating) WHERE professor_id = $professor_id;";
 	$stmt = $db->prepare($insert);
 	$stmt->execute();
 
