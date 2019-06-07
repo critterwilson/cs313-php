@@ -28,8 +28,8 @@
 		What building is your office in?<br>
 		<select name="office" requried>
 			<option value="">Select</option>
-			<option value="1">Taylor</option>
-			<option value="2">Biddulph</option>
+			<option value="TAY">Taylor</option>
+			<option value="BID">Biddulph</option>
 		</select><br>
 
 		Do you have any requests on an instrument for your classroom?<br>
@@ -56,14 +56,14 @@
 		</select><br>
 
 		What times are you willing to teach?<br>
-		<input type="checkbox" name="time0745" value="true">7:45am<br>
-		<input type="checkbox" name="time0900" value="true">9:00am<br>
-		<input type="checkbox" name="time1015" value="true">10:15am<br>
-		<input type="checkbox" name="time1130" value="true">11:30am<br>
-		<input type="checkbox" name="time1245" value="true">12:45pm<br>
-		<input type="checkbox" name="time1400" value="true">2:00pm<br>
-		<input type="checkbox" name="time1515" value="true">3:15pm<br>
-		<input type="checkbox" name="time1630" value="true">4:30ph<br>
+		<input type="checkbox" name="time[]" value="time0745">7:45am<br>
+		<input type="checkbox" name="time[]" value="time0900">9:00am<br>
+		<input type="checkbox" name="time[]" value="time1015">10:15am<br>
+		<input type="checkbox" name="time[]" value="time1130">11:30am<br>
+		<input type="checkbox" name="time[]" value="time1245">12:45pm<br>
+		<input type="checkbox" name="time[]" value="time1400">2:00pm<br>
+		<input type="checkbox" name="time[]" value="time1515">3:15pm<br>
+		<input type="checkbox" name="time[]" value="time1630">4:30ph<br>
 
 		<button type="submit">Submit</button>
 	</form>
