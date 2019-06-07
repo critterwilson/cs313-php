@@ -25,26 +25,33 @@
 			echo '</select>'
 		?>
 
-		What building is your office in?
-		<input type="radio" name="office" value="tay">Taylor<br>
-		<input type="radio" name="office" value="bid">Biddulph<br>
+		What building is your office in?<br>
+		<select name="office" requried>
+			<option value="1">Taylor</option>
+			<option value="2">Biddulph</option>
+		</select>
 
-		Do you have any requests on an instrument for your classroom?
-		<input type="radio" name="instrument" value="piano">Piano<br>
-		<input type="radio" name="insturment" value="key">Keyboard<br>
-		<input type="radio" name="instrument" value="">Don't Care<br>
+		Do you have any requests on an instrument for your classroom?<br>
+		<select name="instrument">
+			<option value="1">Keyboard</option>
+			<option value="2">Piano</option>
+		</select>
 
-		Which type of seating do you prefer?
-		<input type="radio" name="seating" value="center">Center Aisle<br>
-		<input type="radio" name="seating" value="side">Side Aisle<br>
-		<input type="radio" name="seating" value="desks">Desks<br>
-		<input type="radio" name="seating" value="tables">Tables and Chairs<br>
+		Which type of seating do you prefer?<br>
+		<select name="seating">
+			<option value="1">Side Aisle</option>
+			<option value="2">Center Aisle</option>
+			<option value="3">Desks</option>
+			<option value="4">Tables and Chairs</option>
+		</select>
 
-		Mac or PC?
-		<input type="radio" name="mac" value="mac">Mac<br>
-		<input type="radio" name="mac" value="pc">PC<br>
+		Mac or PC?<br>
+		<select name="mac" requried>
+			<option value="1">Mac</option>
+			<option value="0">PC</option>
+		</select>
 
-		What times are you willing to teach?
+		What times are you willing to teach?<br>
 		<input type="checkbox" name="time0745" value="true">7:45am<br>
 		<input type="checkbox" name="time0900" value="true">9:00am<br>
 		<input type="checkbox" name="time1015" value="true">10:15am<br>
