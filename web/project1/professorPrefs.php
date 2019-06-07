@@ -23,19 +23,19 @@
 			}
 			// close select tag
 			echo '</select>'
-		?>
+		?><br>
 
 		What building is your office in?<br>
 		<select name="office" requried>
 			<option value="1">Taylor</option>
 			<option value="2">Biddulph</option>
-		</select>
+		</select><br>
 
 		Do you have any requests on an instrument for your classroom?<br>
 		<select name="instrument">
 			<option value="1">Keyboard</option>
 			<option value="2">Piano</option>
-		</select>
+		</select><br>
 
 		Which type of seating do you prefer?<br>
 		<select name="seating">
@@ -43,13 +43,13 @@
 			<option value="2">Center Aisle</option>
 			<option value="3">Desks</option>
 			<option value="4">Tables and Chairs</option>
-		</select>
+		</select><br>
 
 		Mac or PC?<br>
 		<select name="mac" requried>
 			<option value="1">Mac</option>
 			<option value="0">PC</option>
-		</select>
+		</select><br>
 
 		What times are you willing to teach?<br>
 		<input type="checkbox" name="time0745" value="true">7:45am<br>
