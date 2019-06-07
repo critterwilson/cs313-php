@@ -11,7 +11,7 @@
 	$mac = $_POST['mac'];
 
 	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (6, 'TAY', null, true, 2);
-	$insert = 'INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ('.$professor_id.', \''. $office.'\', '.$instrument.', '.$mac.', '.$seating;.';'
+	$insert = 'INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ('.$professor_id.', \''. $office.'\', '.$instrument.', '.$mac.', '.$seating;.';';
 	echo $insert;
 
  	# UPDATE professor_prefs SET time0900 = true;
