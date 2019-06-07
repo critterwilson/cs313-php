@@ -14,7 +14,7 @@
 	$stmt->execute();
 
 	foreach ($_POST['time'] as $time) {
-		$stmt = $db->prepare("UPDATE professor_prefs SET $time = 'true' WHERE professor_id = $professor_id;");
+		$stmt = $db->prepare('UPDATE professor_prefs SET '.$time.' = true WHERE professor_id = '.$professor_id.';');
 		$stmt->execute();
 	}
 ?>
