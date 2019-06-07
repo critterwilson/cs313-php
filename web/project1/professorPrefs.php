@@ -51,8 +51,8 @@
 		Mac or PC?<br>
 		<select name="mac" requried>
 			<option value="null">Don't Care</option>
-			<option value="1">Mac</option>
-			<option value="0">PC</option>
+			<option value="true">Mac</option>
+			<option value="false">PC</option>
 		</select><br>
 
 		What times are you willing to teach?<br>
