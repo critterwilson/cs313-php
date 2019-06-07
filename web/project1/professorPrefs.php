@@ -34,14 +34,14 @@
 
 		Do you have any requests on an instrument for your classroom?<br>
 		<select name="instrument">
-			<option value="">Select</option>
+			<option value="null">Don't Care</option>
 			<option value="1">Keyboard</option>
 			<option value="2">Piano</option>
 		</select><br>
 
 		Which type of seating do you prefer?<br>
 		<select name="seating">
-			<option value="">Select</option>
+			<option value="null">Don't Care</option>
 			<option value="1">Side Aisle</option>
 			<option value="2">Center Aisle</option>
 			<option value="3">Desks</option>
@@ -50,7 +50,7 @@
 
 		Mac or PC?<br>
 		<select name="mac" requried>
-			<option value="">Select</option>
+			<option value="null">Don't Care</option>
 			<option value="1">Mac</option>
 			<option value="0">PC</option>
 		</select><br>
