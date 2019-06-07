@@ -10,11 +10,11 @@
 	$seating = $_POST['seating'];
 	$mac = $_POST['mac'];
 
-	$stmt = $db->prepare("INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, $office, $instrument, $mac, $seating;");
+	$stmt = $db->prepare('INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ('.$professor_id.', '. $office.', '.$instrument.', '.$mac.', '.$seating;.';');
 	$stmt->execute();
 
 	foreach ($_POST['time'] as $time) {
-		$stmt = $db->prepare("UPDATE professor_prefs SET $time = 'true' WHERE professor_id = $professor_id;")
+		$stmt = $db->prepare("UPDATE professor_prefs SET $time = 'true' WHERE professor_id = $professor_id;");
 		$stmt->execute();
 	}
 ?>
