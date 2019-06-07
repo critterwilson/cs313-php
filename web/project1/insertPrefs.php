@@ -12,13 +12,13 @@
 
 	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (6, 'TAY', null, true, 2);
 	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating);";
-	$stmt = db->prepare($insert);
+	$stmt = $db->prepare($insert);
 	$stmt->execute();
 
  	# UPDATE professor_prefs SET time0900 = true;
 	foreach ($_POST['time'] as $time) {
 		$update = "UPDATE professor_prefs SET $time = true WHERE professor_id = $professor_id;";
-		$stmt = db->prepare($update);
+		$stmt = $db->prepare($update);
 		$stmt->execute();
 	}
 ?>
