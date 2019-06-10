@@ -17,11 +17,11 @@
 
  	# UPDATE professor_prefs SET time0900 = true;
 	// Set the selected times to true
-	foreach ($_POST['time'] as $time) {
-		$update = "UPDATE professor_prefs SET $time = true WHERE professor_id = $professor_id;";
-		$stmt = $db->prepare($update);
-		$stmt->execute();
-	}
+	// foreach ($_POST['time'] as $time) {
+	// 	$update = "UPDATE professor_prefs SET $time = true WHERE professor_id = $professor_id;";
+	// 	$stmt = $db->prepare($update);
+	// 	$stmt->execute();
+	// }
 
 // 	$new_page = "professorPrefs.php";
 //  	header("Location: $new_page");
