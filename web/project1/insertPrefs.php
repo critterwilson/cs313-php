@@ -6,7 +6,6 @@
 	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (6, 'TAY', 2, false, 2) ON CONFLICT (professor_id) DO UPDATE SET office = 'TAY', instrument = 2, mac = false, seating = 2;
 	// Insert the data into the table, update if professor_id is already recorded
 	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating) ON CONFLICT (professor_id) DO UPDATE SET office = '$office', instrument = $instrument, mac = $mac, seating = $seating;";
-	echo $insert;
 	$stmt = $db->prepare($insert);
 	$stmt->execute();
 
