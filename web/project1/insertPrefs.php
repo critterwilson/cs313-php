@@ -23,7 +23,7 @@
 		$stmt->execute();
 	}
 
-	$new_page = "professorPrefs.php";
- 	header("Location: $new_page");
- 	die();
+// 	$new_page = "professorPrefs.php";
+//  	header("Location: $new_page");
+//  	die();
 ?>
