@@ -11,7 +11,7 @@
 	$mac = $_POST['mac'];
 
 	# INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES (7, 'TAY', null, true, 2 ) ON CONFLICT (professor_id) DO UPDATE SET office = 'BID', instrument = null, mac = true, seating = 2;;
-	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating) ON CONFLICT (professor_id) DO UPDATE SET office = $office, instrument = $instrument, mac = $mac, seating = $seating) WHERE professor_id = $professor_id;";
+	$insert = "INSERT INTO professor_prefs (professor_id, office, instrument, mac, seating) VALUES ($professor_id, '$office', $instrument, $mac, $seating) ON CONFLICT (professor_id) DO UPDATE SET office = '$office', instrument = $instrument, mac = $mac, seating = $seating;";
 	echo $insert;
 	$stmt = $db->prepare($insert);
 	$stmt->execute();
