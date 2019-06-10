@@ -17,7 +17,7 @@
 	$stmt = $db->prepare($insert);
 	$stmt->execute();
 
-	$reset = "UPDATE professor_prefs SET time0745 = false, time0900 = false, time1015 = false, time1130 = false, time1245 = false, time1400 = false, time1515 = false, time1630 = false WHERE professor_id = $professor_id;"
+	$reset = "UPDATE professor_prefs SET time0745 = false, time0900 = false, time1015 = false, time1130 = false, time1245 = false, time1400 = false, time1515 = false, time1630 = false WHERE professor_id = $professor_id;";
 	$stmt = $db->prepare($reset);
 	$stmt->execute();
 
