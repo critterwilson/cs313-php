@@ -13,8 +13,8 @@
 	<div class="topnav">
 		<a href="sectionCreation.php" class="active">Sections</a>
 		<a href="project1.php">Sign Up</a>
-		<a href="readInfo.php">Read Info</a>
 		<a href="professorPrefs.php">Professor Prefs</a>
+		<a href="readInfo.php">Read Info</a>
 	</div>
 
 	<p class="instructions"><b>Instructions:</b> Please enter the number of sections desired for each course. All form items do not need to be filled out. If you put in the wrong number for a section, simply enter the number you would like and re-submit the form (there is no need to do any addition or subtraction: just enter the right number).</p>
@@ -36,6 +36,7 @@
 		?>
 		<button type="submit" class="button">Submit</button>
 	</form>
+	<br>
 
 	<!-- Reset all of the sections to zero -->
 	<form id="resetSections" action="resetSections.php" method="POST" 
