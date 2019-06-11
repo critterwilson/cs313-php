@@ -20,6 +20,7 @@
 		<option value="1">Teachers</option>
 		<option value="2">Courses</option>
 		<option value="3">View All</option>
+		<option value="4">Preferences</option>
 	</select>
 
 

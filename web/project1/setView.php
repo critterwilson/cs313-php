@@ -87,7 +87,38 @@
 
 			echo '</table>';
 			break;
+		case 4:
+			echo '<table id="readInfo">';
+			echo '<tr><th>Professor</th>';
+			echo '<th>Office Building</th>';
+			echo '<th>Instrument</th>';
+			echo '<th>Mac/PC</th>';
+			echo '<th>Seating</th>';
+			echo '<th>7:45am</th>';
+			echo '<th>9:00am</th>';
+			echo '<th>10:15am</th>';
+			echo '<th>11:30am</th>';
+			echo '<th>12:45am</th>';
+			echo '<th>2:00pm</th>';
+			echo '<th>3:15pm</th>';
+			echo '<th>4:30pm</th></tr>';
 
+			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;');
+			{
+				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
+			  	echo '<td>'.$row['office'].'</td>';
+			  	echo '<td>'.$row['instrument'].'</td>';
+			  	echo '<td>'.$row['mac'].'</td>';
+			  	echo '<td>'.$row['seating'].'</td>';
+			  	echo '<td>'.$row['time0745'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time0900'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1015'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1130'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1245'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1400'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1515'] === "true" ? "Yes" : "No".'</td>';
+			  	echo '<td>'.$row['time1630'] === "true" ? "Yes" : "No".'</td></tr>';
+			}			
 	}
 
 ?>
