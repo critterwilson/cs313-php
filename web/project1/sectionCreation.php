@@ -34,7 +34,7 @@
 			  	echo 'pattern="\d{1,2}" size="5" maxlength="3"><br>';
 			}
 		?>
-		<button type="submit" class="button">Submit</button>
+		<button id="sectionSubmit" type="submit" class="button">Submit</button>
 	</form>
 
 	<!-- Reset all of the sections to zero -->
