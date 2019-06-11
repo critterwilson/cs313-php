@@ -123,7 +123,7 @@
 
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
-			  	echo '<td>'.$row['instrument'].'</td>';
+			  	echo '<td>'.$instrument.'</td>';
 			  	echo '<td>'.$mac.'</td>';
 			  	echo '<td>'.$row['seating'].'</td>';
 			  	echo $row['time0745'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
