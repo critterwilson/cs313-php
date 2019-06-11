@@ -110,14 +110,14 @@
 			  	echo '<td>'.$row['instrument'].'</td>';
 			  	echo '<td>'.$row['mac'].'</td>';
 			  	echo '<td>'.$row['seating'].'</td>';
-			  	echo '<td>'.$row['time0745'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time0900'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1015'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1130'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1245'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1400'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1515'] === "true" ? "Yes" : "No".'</td>';
-			  	echo '<td>'.$row['time1630'] === "true" ? "Yes" : "No".'</td></tr>';
+			  	echo '<td>'.$row['time0745'].'</td>';
+			  	echo '<td>'.$row['time0900'].'</td>';
+			  	echo '<td>'.$row['time1015'].'</td>';
+			  	echo '<td>'.$row['time1130'].'</td>';
+			  	echo '<td>'.$row['time1245'].'</td>';
+			  	echo '<td>'.$row['time1400'].'</td>';
+			  	echo '<td>'.$row['time1515'].'</td>';
+			  	echo '<td>'.$row['time1630'].'</td></tr>';
 			}			
 	}
 
