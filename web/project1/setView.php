@@ -103,7 +103,7 @@
 			echo '<th>3:15pm</th>';
 			echo '<th>4:30pm</th></tr>';
 
-			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;');
+			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
 			{
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
