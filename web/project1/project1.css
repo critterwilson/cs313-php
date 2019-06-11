@@ -134,7 +134,7 @@ select {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   margin-top: 20px;
-  width: auto;
+  max-width: 100%;
 }
 
 #readInfo td, #readInfo th {
