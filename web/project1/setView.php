@@ -113,6 +113,14 @@
 					$mac = 'Don\'t Care';
 				}
 
+				if ($row['instrument'] == '1') {
+					$mac = 'Keyboard';
+				} else if ($row['mac'] == '0') {
+					$mac = 'Piano';
+				} else {
+					$mac = 'Don\'t Care';
+				}
+
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
 			  	echo '<td>'.$row['instrument'].'</td>';

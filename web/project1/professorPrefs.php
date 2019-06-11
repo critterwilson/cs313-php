@@ -35,8 +35,8 @@
 		Do you have any requests on an instrument for your classroom?<br>
 		<select name="instrument">
 			<option value="null">Don't Care</option>
-			<option value="1">Keyboard</option>
-			<option value="2">Piano</option>
+			<option value="true">Keyboard</option>
+			<option value="false">Piano</option>
 		</select><br>
 
 		Which type of seating do you prefer?<br>
