@@ -114,11 +114,11 @@
 				}
 
 				if ($row['instrument'] == '1') {
-					$mac = 'Keyboard';
+					$instrument = 'Keyboard';
 				} else if ($row['mac'] == '0') {
-					$mac = 'Piano';
+					$instrument = 'Piano';
 				} else {
-					$mac = 'Don\'t Care';
+					$instrument = 'Don\'t Care';
 				}
 
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
