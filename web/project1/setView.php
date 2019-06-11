@@ -117,7 +117,7 @@
 			  	echo '<td>'.$row['time1245'].'</td>';
 			  	echo '<td>'.$row['time1400'].'</td>';
 			  	echo '<td>'.$row['time1515'].'</td>';
-			  	echo '<td>'.$row['time1630'].'</td></tr>';
+			  	echo '<td>'.$row['time1630'] === "1" ? "Yes" : "No".'</td></tr>';
 			}			
 	}
 
