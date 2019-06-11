@@ -53,7 +53,6 @@
 		<!-- Place holder for the incoming course selections -->
 		<div id="courseSelect">
 		</div>
-
 		<button type="submit" class="button">Submit</button>
 	</form>
 

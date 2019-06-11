@@ -74,7 +74,7 @@
 		<input type="checkbox" name="time[]" value="time1400">2:00pm<br>
 		<input type="checkbox" name="time[]" value="time1515">3:15pm<br>
 		<input type="checkbox" name="time[]" value="time1630">4:30pm<br>
-
+		<br>
 		<button type="submit" class="button">Submit</button>
 	</form>
 </body>
