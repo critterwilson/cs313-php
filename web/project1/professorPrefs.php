@@ -37,14 +37,14 @@
 			echo '</select>'
 		?><br>
 
-		<h4>What building is your office in?</h4>
+		<h4>Which building is your office in?</h4>
 		<select name="office" requried>
 			<option value="">Select</option>
 			<option value="TAY">Taylor</option>
 			<option value="BID">Biddulph</option>
 		</select><br>
 
-		<h4>Do you have any requests on an instrument for your classroom?</h4>
+		<h4>Which instrument do you prefer?</h4>
 		<select name="instrument">
 			<option value="null">Don't Care</option>
 			<option value="true">Keyboard</option>
@@ -67,7 +67,7 @@
 			<option value="false">PC</option>
 		</select><br>
 
-		<h4>What times are you willing to teach?</h4>
+		<h4>Which times are you willing to teach?</h4>
 		<input type="checkbox" name="time[]" value="time0745">7:45am<br>
 		<input type="checkbox" name="time[]" value="time0900">9:00am<br>
 		<input type="checkbox" name="time[]" value="time1015">10:15am<br>
