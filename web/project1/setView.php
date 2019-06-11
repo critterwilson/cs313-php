@@ -121,11 +121,23 @@
 					$instrument = 'Don\'t Care';
 				}
 
+				if ($row['seating'] == '1') {
+					$seating = 'Side Aisle';
+				} else if ($row['seating'] == '2') {
+					$seating = 'Center Aisle';
+				} else if ($row['seating'] == '3') {
+					$seating = 'Desks';
+				} else if ($row['seating'] == '4') {
+					$seating = 'Tables/Chairs';
+				} else {
+					$seating = 'Don\'t Care';
+				}
+
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
 			  	echo '<td>'.$instrument.'</td>';
 			  	echo '<td>'.$mac.'</td>';
-			  	echo '<td>'.$row['seating'].'</td>';
+			  	echo '<td>'.$seating.'</td>';
 			  	echo $row['time0745'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time0900'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1015'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
