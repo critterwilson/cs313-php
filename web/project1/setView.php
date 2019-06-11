@@ -107,11 +107,12 @@
 			{
 				if ($row['mac'] == '1') {
 					$mac = 'Mac';
-				} else if $row['mac'] == '0') {
+				} else if ($row['mac'] == '0') {
 					$mac = 'PC';
 				} else {
 					$mac = 'Don\'t Care';
 				}
+
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
 			  	echo '<td>'.$row['instrument'].'</td>';
