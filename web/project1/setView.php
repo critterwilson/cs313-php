@@ -105,6 +105,7 @@
 
 			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
 			{
+
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
 			  	echo '<td>'.$row['instrument'].'</td>';
@@ -117,7 +118,7 @@
 			  	echo '<td>'.$row['time1245'].'</td>';
 			  	echo '<td>'.$row['time1400'].'</td>';
 			  	echo '<td>'.$row['time1515'].'</td>';
-			  	echo '<td>'.$row['time1630'] === "1" ? echo "Yes" : echo "No".'</td></tr>';
+			  	echo $row['time1630'] === '1' ? '<td>Yes</td>' : '<td>No</td>';
 			}			
 	}
 
