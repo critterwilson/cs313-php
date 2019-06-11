@@ -10,7 +10,7 @@
 		<a href="sectionCreation.php">Sections</a>
 		<a href="project1.php">Sign Up</a>
 		<a class="active" href="readInfo.php">Read Info</a>
-		<a href="professorPrefs">Professor Prefs</a>
+		<a href="professorPrefs.php">Professor Prefs</a>
 	</div>
 
 	<p class="instructions">Order by:</p>

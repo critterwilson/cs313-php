@@ -13,10 +13,10 @@
 </head>
 <body>
 	<div class="topnav">
-		<a href="sectionCreation.php" class="active">Sections</a>
+		<a href="sectionCreation.php">Sections</a>
 		<a href="project1.php">Sign Up</a>
 		<a href="readInfo.php">Read Info</a>
-		<a class="active" href="professorPrefs">Professor Prefs</a>
+		<a class="active" href="professorPrefs.php">Professor Prefs</a>
 	</div>
 
 	<form id="teacherSignUp" action="insertPrefs.php" method="POST">
