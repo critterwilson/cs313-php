@@ -105,11 +105,17 @@
 
 			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
 			{
-
+				if ($row['mac'] == '1') {
+					$mac = 'Mac';
+				} else if $row['mac'] == '0') {
+					$mac = 'PC';
+				} else {
+					$mac = 'Don\'t Care';
+				}
 				echo '<tr><td>'.$row['name_last'].', '.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['office'].'</td>';
 			  	echo '<td>'.$row['instrument'].'</td>';
-			  	echo '<td>'.$row['mac'].'</td>';
+			  	echo '<td>'.$mac.'</td>';
 			  	echo '<td>'.$row['seating'].'</td>';
 			  	echo $row['time0745'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time0900'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
