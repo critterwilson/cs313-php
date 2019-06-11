@@ -36,7 +36,6 @@
 		?>
 		<button type="submit" class="button">Submit</button>
 	</form>
-	<br>
 
 	<!-- Reset all of the sections to zero -->
 	<form id="resetSections" action="resetSections.php" method="POST" 

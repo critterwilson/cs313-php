@@ -74,6 +74,10 @@ p {
   color: white;
 }
 
+#resetSections {
+  padding-top: 20px;
+}
+
 /*all buttons*/
 .button {
   background-color: white;
