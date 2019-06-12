@@ -64,7 +64,7 @@
 
 		<h4>Which department is the primary owner?</h4>
 		<select name="primary_owner">
-			<option value="null">Unknown</option>
+			<option value="NULL">Unknown</option>
 			<option value="REL">Religion</option>
 			<option value="HUM">Humanities</option>
 			<option value="BIO">Biology</option>
