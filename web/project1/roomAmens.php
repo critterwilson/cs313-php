@@ -27,22 +27,25 @@
 		</select><br>
 
 		<h4>What is the room number?</h4>
-		<input name="room_number" type="text" pattern="\d{3}" size="5" maxlength="3"><br>
+		<input name="room_number" type="text" pattern="\d{3}" size="5" maxlength="3" required><br>
 
 		<h4>Is there a piano?</h4>
 		<select name="piano">
+			<option value="false">Unknown</option>
 			<option value="true">Yes</option>
 			<option value="false">No</option>
 		</select><br>
 
 		<h4>Is there a Keyboard?</h4>
 		<select name="keyboard">
+			<option value="false">Unknown</option>
 			<option value="true">Yes</option>
 			<option value="false">No</option>
 		</select><br>
 
 		<h4>Is there a Mac or a PC?</h4>
 		<select name="keyboard">
+			<option value="false">Unknown</option>
 			<option value="true">Mac</option>
 			<option value="false">PC</option>
 		</select><br>
@@ -57,10 +60,11 @@
 		</select>
 
 		<h4>What is the max capacity?</h4>
-		<input name="capacity" type="text" pattern="\d{1,3}" size="5" maxlength="3"><br>
+		<input name="capacity" type="text" pattern="\d{1,3}" size="5" maxlength="3" required><br>
 
 		<h4>Which department is the primary owner?</h4>
 		<select name="primary_owner">
+			<option value="null">Unknown</option>
 			<option value="REL">Religion</option>
 			<option value="HUM">Humanities</option>
 			<option value="BIO">Biology</option>
@@ -71,6 +75,7 @@
 
 		<h4>Which department is the secondary owner?</h4>
 		<select name="secondary_owner">
+			<option value="null">Unknown</option>
 			<option value="REL">Religion</option>
 			<option value="HUM">Humanities</option>
 			<option value="BIO">Biology</option>
