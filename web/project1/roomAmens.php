@@ -17,7 +17,7 @@
 
 	<p class="instructions"><b>Instructions:</b> Please fill out all fields. If a mistake is made, simply resubmit and the ammenities will be overwritten.</p>
 
-	<form id="setRoomAmens" action="insertAmmens.php" method="POST">
+	<form id="setRoomAmens" action="insertAmens.php" method="POST">
 		<h4>Which building is the classroom in?</h4>
 		<select name="office" requried>
 			<option value="">Select</option>
@@ -49,7 +49,7 @@
 
 		<h4>Which type of seating does it have?</h4>
 		<select name="seating">
-			<option value="null">Don't Care</option>
+			<option value="null">Unkown</option>
 			<option value="1">Side Aisle</option>
 			<option value="2">Center Aisle</option>
 			<option value="3">Desks</option>
