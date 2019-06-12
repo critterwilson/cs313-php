@@ -19,7 +19,7 @@
 
 	<form id="setRoomAmens" action="insertAmens.php" method="POST">
 		<h4>Which building is the classroom in?</h4>
-		<select name="office" requried>
+		<select name="building" requried>
 			<option value="">Select</option>
 			<option value="TAY">Taylor</option>
 			<option value="BID">Biddulph</option>
