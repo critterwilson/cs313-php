@@ -87,7 +87,7 @@
 
 			echo '</table>';
 			break;
-
+		// Show all professor preferences
 		case 4:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Professor</th>';
@@ -104,8 +104,11 @@
 			echo '<th>3:15pm</th>';
 			echo '<th>4:30pm</th></tr>';
 
+			# psql: SELECT * FROM professor_prefs
+			#		JOIN professor ON professor_id = professor.id
 			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
 			{
+				// Multiple values for "mac"
 				if ($row['mac'] == '1') {
 					$mac = 'Mac';
 				} else if ($row['mac'] == '0') {
@@ -114,6 +117,7 @@
 					$mac = 'Don\'t Care';
 				}
 
+				// multiple values for instrument
 				if ($row['instrument'] == '1') {
 					$instrument = 'Keyboard';
 				} else if ($row['mac'] == '0') {
@@ -122,6 +126,7 @@
 					$instrument = 'Don\'t Care';
 				}
 
+				// multiple values for seating
 				if ($row['seating'] == '1') {
 					$seating = 'Side Aisle';
 				} else if ($row['seating'] == '2') {
@@ -150,7 +155,7 @@
 			}
 			echo '</table>';
 			break;
-
+		// Show room ammenitities
 		case 5:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Building</th>';
@@ -166,6 +171,7 @@
 			# psql: SELECT * FROM room ORDER BY building ASC, room_number ASC;
 			foreach ($db->query('SELECT * FROM room ORDER BY building ASC, room_number ASC;') as $row)
 			{
+				// multiple values for seating
 				if ($row['seating'] == '1') {
 					$seating = 'Side Aisle';
 				} else if ($row['seating'] == '2') {
