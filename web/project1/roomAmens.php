@@ -44,7 +44,7 @@
 		</select><br>
 
 		<h4>Is there a Mac or a PC?</h4>
-		<select name="keyboard">
+		<select name="mac">
 			<option value="false">Unknown</option>
 			<option value="true">Mac</option>
 			<option value="false">PC</option>
