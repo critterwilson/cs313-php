@@ -185,8 +185,8 @@
 				echo $row['mac'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 				echo '<td>'.$seating.'</td>';
 				echo $row['capacity'] == '0' ? '<td>Unknown</td>' : '<td>'.$row['capacity'].'</td>';
-				echo '<td>'.$row['primary_owner'].'</td>';
-				echo '<td>'.$row['secondary_owner'].'</td></tr>';
+				echo $row['primary_owner'] == 'NULL' ? '<td>Unknown</td>' : '<td>'.$row['primary_owner'].'</td>';
+				echo $row['secondary_owner'] == 'NULL' ? '<td>Unknown</td>' : '<td>'.$row['secondary_owner'].'</td>';
 			}
 			echo '</table>';
 			break;
