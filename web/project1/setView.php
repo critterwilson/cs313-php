@@ -184,7 +184,7 @@
 				echo $row['keyboard'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 				echo $row['mac'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 				echo '<td>'.$seating.'</td>';
-				echo '<td>'.$row['capacity'].'</td>';
+				echo $row['capacity'] == '0' ? '<td>Unknown</td>' : '<td>'.$row['capacity'].'</td>';
 				echo '<td>'.$row['primary_owner'].'</td>';
 				echo '<td>'.$row['secondary_owner'].'</td></tr>';
 			}
