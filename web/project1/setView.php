@@ -87,6 +87,7 @@
 
 			echo '</table>';
 			break;
+
 		case 4:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Professor</th>';
@@ -146,7 +147,49 @@
 			  	echo $row['time1400'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1515'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1630'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
-			}			
+			}
+			echo '</table>';
+			break;
+
+		case 5:
+			echo '<table id="readInfo">';
+			echo '<tr><th>Building</th>';
+			echo '<th>Room</th>';
+			echo '<th>Piano</th>';
+			echo '<th>Keyboard</th>';
+			echo '<th>Mac</th>';
+			echo '<th>Seating</th>';
+			echo '<th>Capacity</th>';
+			echo '<th>Primary</th>';
+			echo '<th>Secondary</th></tr>';
+
+			# psql: SELECT * FROM room;
+			foreach ($db->query('SELECT * FROM room ORDER BY building ASC, room_number ASC;') as $row)
+			{
+				if ($row['seating'] == '1') {
+					$seating = 'Side Aisle';
+				} else if ($row['seating'] == '2') {
+					$seating = 'Center Aisle';
+				} else if ($row['seating'] == '3') {
+					$seating = 'Desks';
+				} else if ($row['seating'] == '4') {
+					$seating = 'Tables/Chairs';
+				} else {
+					$seating = 'Don\'t Care';
+				}
+
+				echo '<tr><td>'.$row['building'].'</td>';
+				echo '<td>'.$row['room'].'</td>'
+				echo $row['piano'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
+				echo $row['keyboard'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
+				echo $row['mac'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
+				echo '<td>'.$seating.'</td>';
+				echo '<td>'.$row['capacity'].'</td>';
+				echo '<td>'.$row['primary_owner'].'</td>';
+				echo '<td>'.$row['secondary_owner'].'</td>';
+			}
+			echo '</table>';
+			break;
 	}
 
 ?>
