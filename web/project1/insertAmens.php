@@ -18,4 +18,8 @@
 	$stmt = $db->prepare($insert);
 	$stmt->execute();
 
+	$new_page = "roomAmens.php";
+ 	header("Location: $new_page");
+ 	die();
+
 ?>
