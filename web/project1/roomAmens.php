@@ -26,6 +26,9 @@
 			<option value="HIN">Hnikley</option>
 		</select><br>
 
+		<h4>What is the room number?</h4>
+		<input name="room_number" type="text" pattern="\d{3}" size="5" maxlength="3"><br>
+
 		<h4>Is there a piano?</h4>
 		<select name="piano">
 			<option value="true">Yes</option>
