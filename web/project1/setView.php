@@ -163,7 +163,7 @@
 			echo '<th>Primary</th>';
 			echo '<th>Secondary</th></tr>';
 
-			# psql: SELECT * FROM room;
+			# psql: SELECT * FROM room ORDER BY building ASC, room_number ASC;
 			foreach ($db->query('SELECT * FROM room ORDER BY building ASC, room_number ASC;') as $row)
 			{
 				if ($row['seating'] == '1') {
@@ -175,11 +175,11 @@
 				} else if ($row['seating'] == '4') {
 					$seating = 'Tables/Chairs';
 				} else {
-					$seating = 'Don\'t Care';
+					$seating = 'Unknown';
 				}
 
 				echo '<tr><td>'.$row['building'].'</td>';
-				echo '<td>'.$row['room'].'</td>';
+				echo '<td>'.$row['room_number'].'</td>';
 				echo $row['piano'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 				echo $row['keyboard'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 				echo $row['mac'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
