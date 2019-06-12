@@ -52,7 +52,7 @@
 
 		<h4>Which type of seating does it have?</h4>
 		<select name="seating">
-			<option value="null">Unkown</option>
+			<option value="0">Unkown</option>
 			<option value="1">Side Aisle</option>
 			<option value="2">Center Aisle</option>
 			<option value="3">Desks</option>
@@ -75,7 +75,7 @@
 
 		<h4>Which department is the secondary owner?</h4>
 		<select name="secondary_owner">
-			<option value="null">Unknown</option>
+			<option value="NULL">Unknown</option>
 			<option value="REL">Religion</option>
 			<option value="HUM">Humanities</option>
 			<option value="BIO">Biology</option>
