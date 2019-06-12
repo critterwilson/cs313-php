@@ -22,7 +22,7 @@
 		<select name="building" requried>
 			<option value="">Select</option>
 			<option value="TAY">Taylor</option>
-			<option value="BID">Biddulph</option>
+			<option value="BEN">Benson</option>
 			<option value="HIN">Hnikley</option>
 		</select><br>
 
