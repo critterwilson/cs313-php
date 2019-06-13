@@ -29,7 +29,7 @@
 	}
 
 	if (isset($_POST['prefID'])) {
-		echo $_POST['prefID'];
-
+		$stmt = $db->prepare('DELETE FROM professor_prefs WHERE id = '.$_POST['prefID'].';');
+		$stmt->execute();
 	}
 ?>
