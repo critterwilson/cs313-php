@@ -18,10 +18,10 @@
 
 	<form id="teacherSetUp" action="insertProfessor.php" method="POST">
 		<h4>Which building is your office in?</h4>
-		<input type="text" name="name_first" size="20" pattern="/^[a-zA-Z]+(([',.-][a-zA-Z ])?[a-zA-Z]*)*$/" required></form>
+		<input type="text" name="name_first" size="20" pattern="/^[a-zA-Z]+(([',.-][a-zA-Z ])?[a-zA-Z]*)*$/" required>
 
 		<h4>Which instrument do you prefer?</h4>
-		<input type="text" name="name_last" size="20" pattern="/^[a-zA-Z]+(([',.-][a-zA-Z ])?[a-zA-Z]*)*$/" required></form>
+		<input type="text" name="name_last" size="20" pattern="/^[a-zA-Z]+(([',.-][a-zA-Z ])?[a-zA-Z]*)*$/" required>
 
 		<h4>Are you and adjunct professor?</h4>
 		<select name="adjunct" requried>
