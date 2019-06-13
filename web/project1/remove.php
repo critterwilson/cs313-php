@@ -15,11 +15,6 @@
 		$stmt = $db->prepare('UPDATE section SET professor_id = null, taken = false WHERE course_id ='.$course_id.' AND section_number = '.$section_number.' AND professor_id = '.$professor_id.';');
 
 		$stmt->execute();
-	
-		// redirect to the first page
-		$new_page = "readInfo.php";
-	 	header("Location: $new_page");
-	 	die();
 	}
 
 	if (isset($_POST['amenID'])) {
@@ -32,4 +27,9 @@
 		$stmt = $db->prepare('DELETE FROM professor_prefs WHERE id = '.$_POST['prefID'].';');
 		$stmt->execute();
 	}
+
+	// redirect to the first page
+	$new_page = "readInfo.php";
+ 	header("Location: $new_page");
+ 	die();
 ?>
