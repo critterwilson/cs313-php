@@ -23,7 +23,9 @@
 	}
 
 	if (isset($_POST['amenID'])) {
-		echo $_POST['amenID'];
+		$stmt = $db->prepare('DELETE FROM room WHERE id = '.$_POST['amenID'].';');
+		$stmt->execute();
+
 	}
 
 ?>
