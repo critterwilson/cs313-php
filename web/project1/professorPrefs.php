@@ -8,7 +8,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="project1.css">
-	<title>Religion Teacher Sign-Up</title>
 	<title>Professor Preferences</title>
 </head>
 <body>

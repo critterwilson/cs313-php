@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="project1.css">
+	<title>Professor Creation</title>
+</head>
+<body>
+	<div class="topnav">
+		<a href="sectionCreation.php">Sections</a>
+		<a href="project1.php">Sign Up</a>
+		<a class="active" href="professorPrefs.php">Professor Prefs</a>
+		<a href="roomAmens.php">Room Ammenities</a>
+		<a href="readInfo.php">Read Info</a>
+	</div>
+
+	<p class="instructions"><b>Instructions:</b> </p>
+
+	<form id="teacherSetUP" action="insertProfessor.php" method="POST">
+		<h4>Which building is your office in?</h4>
+		<input type="text" name="name_first" size="20" pattern="/^[a-z ,.'-]+$/i" required></form>
+
+		<h4>Which instrument do you prefer?</h4>
+		<input type="text" name="name_last" size="20" pattern="/^[a-z ,.'-]+$/i" required></form>
+
+		<h4>Are you and adjunct professor?</h4>
+		<select name="adjunct" requried>
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</select><br>
+
+		<button type="submit" class="button">Submit</button>
+	</form>
+</body>
+</html>
