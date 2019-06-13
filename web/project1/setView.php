@@ -166,7 +166,8 @@
 			echo '<th>Seating</th>';
 			echo '<th>Capacity</th>';
 			echo '<th>Primary</th>';
-			echo '<th>Secondary</th></tr>';
+			echo '<th>Secondary</th>';
+			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM room ORDER BY building ASC, room_number ASC;
 			foreach ($db->query('SELECT * FROM room ORDER BY building ASC, room_number ASC;') as $row)
@@ -193,6 +194,9 @@
 				echo $row['capacity'] == '0' ? '<td>Unknown</td>' : '<td>'.$row['capacity'].'</td>';
 				echo $row['primary_owner'] == 'NULL' ? '<td>Unknown</td>' : '<td>'.$row['primary_owner'].'</td>';
 				echo $row['secondary_owner'] == 'NULL' ? '<td>Unknown</td>' : '<td>'.$row['secondary_owner'].'</td>';
+				echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="amenID">';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this room information?\')">Remove</button></form></td></tr>';
 			}
 			echo '</table>';
 			break;
