@@ -105,9 +105,8 @@
 			echo '<th>4:30pm</th>';
 			echo '<th></th></tr>';
 
-			# psql: SELECT * FROM professor_prefs
-			#		JOIN professor ON professor_id = professor.id
-			foreach ($db->query('SELECT * FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
+			# psql: SELECT professor_prefs.*, professor.name_last, professor.name_first FROM professor_prefs JOIN professor ON professor_id = professor.id;
+			foreach ($db->query('SELECT professor_prefs.*, professor.name_last, professor.name_first FROM professor_prefs JOIN professor ON professor_id = professor.id;') as $row)
 			{
 				// Multiple values for "mac"
 				if ($row['mac'] == '1') {
@@ -154,7 +153,7 @@
 			  	echo $row['time1515'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1630'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
-			  	echo '<input type="hidden" value="'.$row['professor_prefs.id'].'" name="prefID">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="prefID">';
 			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this room information?\')">Remove</button></form></td></tr>';
 			}
 			echo '</table>';
