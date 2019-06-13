@@ -102,7 +102,8 @@
 			echo '<th>12:45am</th>';
 			echo '<th>2:00pm</th>';
 			echo '<th>3:15pm</th>';
-			echo '<th>4:30pm</th></tr>';
+			echo '<th>4:30pm</th>';
+			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM professor_prefs
 			#		JOIN professor ON professor_id = professor.id
@@ -153,7 +154,7 @@
 			  	echo $row['time1515'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1630'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
-			  	echo '<input type="hidden" value="'.$row['id'].'" name="prefID">';
+			  	echo '<input type="hidden" value="'.$row['professor_prefs.id'].'" name="prefID">';
 			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this room information?\')">Remove</button></form></td></tr>';
 			}
 			echo '</table>';
