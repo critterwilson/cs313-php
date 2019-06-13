@@ -152,6 +152,9 @@
 			  	echo $row['time1400'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1515'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo $row['time1630'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="prefID">';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this room information?\')">Remove</button></form></td></tr>';
 			}
 			echo '</table>';
 			break;

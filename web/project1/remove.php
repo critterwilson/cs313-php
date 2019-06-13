@@ -28,4 +28,8 @@
 
 	}
 
+	if (isset($_POST['prefID'])) {
+		echo $_POST['prefID'];
+
+	}
 ?>
