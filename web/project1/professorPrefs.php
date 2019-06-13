@@ -16,7 +16,7 @@
 		<a href="sectionCreation.php">Sections</a>
 		<a href="project1.php">Sign Up</a>
 		<a class="active" href="professorPrefs.php">Professor Prefs</a>
-		<a href="roomAmmenities.php">Room Ammenities</a>
+		<a href="roomAmens.php">Room Ammenities</a>
 		<a href="readInfo.php">Read Info</a>
 	</div>
 
