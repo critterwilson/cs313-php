@@ -8,7 +8,7 @@
 	$name = htmlspecialchars($_POST['name']);
 
 	#psql: INSERT INTO course (prefix, postfix, name) VALUES ('RELC', '275', 'Book of Mormon') ON CONFLICT (prefix, postfix) DO UPDATE set name = 'Teachings and Doctrine of the Book of Mormon';
-	$query = "INSERT INTO course (prefix, postfix, name) VALUES ('$prefix', '$postfix', $name) ON CONFLICT (prefix, postfix) DO UPDATE set name = $name;";
+	$query = "INSERT INTO course (prefix, postfix, name) VALUES ('$prefix', $postfix, '$name') ON CONFLICT (prefix, postfix) DO UPDATE set name = '$name';";
 	$stmt = $db->prepare($query);
 
 	$stmt->execute();
