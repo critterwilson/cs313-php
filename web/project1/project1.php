@@ -11,6 +11,7 @@
 </head>
 <body>
 	<div class="topnav">
+		<a href="professorCreation.php">Professors</a>
 		<a href="sectionCreation.php">Sections</a>
 		<a class="active" href="project1.php">Sign Up</a>
 		<a href="professorPrefs.php">Professor Prefs</a>

@@ -12,6 +12,7 @@
 </head>
 <body>
 	<div class="topnav">
+		<a href="professorCreation.php">Professors</a>
 		<a href="sectionCreation.php">Sections</a>
 		<a href="project1.php">Sign Up</a>
 		<a class="active" href="professorPrefs.php">Professor Prefs</a>

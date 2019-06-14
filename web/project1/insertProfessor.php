@@ -11,4 +11,8 @@
 	$stmt = $db->prepare($query);
 
 	$stmt->execute();
+
+	$new_page = "professorCreation.php";
+ 	header("Location: $new_page");
+ 	die();
 ?>
