@@ -8,12 +8,12 @@
 </head>
 <body>
 	<div class="topnav">
-		<a href="creation/courseCreation.php">Courses</a>
-		<a href="creation/sectionCreation.php">Sections</a>
-		<a href="creation/professorCreation.php">Professors</a>
-		<a href="creation/sectionAssignments.php">Section Assign</a>
-		<a href="creation/professorPrefs.php">Preferences</a>
-		<a class="active" href="creation/roomAmens.php">Rooms</a>
+		<a href="courseCreation.php">Courses</a>
+		<a href="sectionCreation.php">Sections</a>
+		<a href="professorCreation.php">Professors</a>
+		<a href="project1.php">Section Assign</a>
+		<a href="professorPrefs.php">Preferences</a>
+		<a class="active" href="roomAmens.php">Rooms</a>
 		<a href="readInfo.php">Read Info</a>
 	</div>
 
