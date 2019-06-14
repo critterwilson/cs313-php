@@ -13,6 +13,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   width: 25%;
+  max-width: 180px;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -22,12 +23,21 @@ ul.nav li a {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
+  float: none;
 }
 
 div.content {
   margin-left: 25%;
   padding: 1px 16px;
-  height: 1000px;
+  height: auto;
+}
+
+@media screen and (max-width: 900px){
+
+}
+
+@media screen and (max-width: 900px){
+
 }
 /* sldkf;slakdjflsdkfj*/
 .nav {
