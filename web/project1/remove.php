@@ -8,12 +8,6 @@
 		echo $professor_id;
 	}
 
-	// remove a section
-	if (isset($_POST['rID'])) {
-		$section_id = $_POST['rID'];
-		echo $section_id;
-	}
-
 	// remove a course
 	if (isset($_POST['qID'])) {
 		$course_id = $_POST['qID'];
