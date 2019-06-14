@@ -85,7 +85,7 @@
 			<option value="LANG">Language</option>
 			<option value="BUS">Business</option>
 			<option value="PSYC">Psychology</option>
-		</select>
+		</select><br><br>
 		
 		<button type="submit" class="button">Submit</button>
 	</form>
