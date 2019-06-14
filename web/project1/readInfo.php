@@ -17,9 +17,8 @@
 		<li><a href="roomAmens.php">Rooms</a></li>
 		<li><a class="active" href="readInfo.php">Read Info</a></li>
 	</div>
-
+	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
 	<p class="instructions">Order by:</p>
-	
 	<!-- Some of the values are out of order because of the 
 		order of development: the user won't know -->
 	<select id="filter" onchange="viewChange()">
@@ -34,6 +33,7 @@
 
 	<!-- To store our returned data -->
 	<div id="output">
+	</div>
 	</div>
 
 	<script src="project1.js"></script>
