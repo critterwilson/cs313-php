@@ -8,17 +8,14 @@
 </head>
 <body>
 	<div class="topnav">
-	<ul>
-		<li><a href="courseCreation.php">Courses</a></li>
-		<li><a href="sectionCreation.php">Sections</a></li>
-		<li><a href="professorCreation.php">Professors</a></li>
-		<li><a href="sectionAssignments.php">Section Assign</a></li>
-		<li><a href="professorPrefs.php">Preferences</a></li>
-		<li><a href="roomAmens.php">Rooms</a></li>
-		<li><a class="active" href="readInfo.php">Read Info</a></li>
+		<a href="courseCreation.php">Courses</a>
+		<a href="sectionCreation.php">Sections</a>
+		<a href="professorCreation.php">Professors</a>
+		<a href="sectionAssignments.php">Section Assign</a>
+		<a href="professorPrefs.php">Preferences</a>
+		<a href="roomAmens.php">Rooms</a>
+		<a class="active" href="readInfo.php">Read Info</a>
 	</div>
-	
-	<div class="navSpacer"></div>
 
 	<p class="instructions">Order by:</p>
 	<!-- Some of the values are out of order because of the 
@@ -35,7 +32,6 @@
 
 	<!-- To store our returned data -->
 	<div id="output">
-	</div>
 	</div>
 
 	<script src="project1.js"></script>

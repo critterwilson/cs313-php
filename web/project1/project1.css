@@ -12,38 +12,6 @@ p {
   background-color: #2F76B6;
   overflow: hidden;
 }
-.navSpacer{
-  width: 25%;
-  max-width: 180px;
-}
-.topnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  max-width: 180px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-.topnav li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.topnav li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
 
 .topnav a {
   float: left;
