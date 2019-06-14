@@ -14,7 +14,7 @@ ul.nav {
   padding: 0;
   width: 100%;
   position: relative;
-  height: auto%;
+  height: auto;
   overflow: auto;
 }
 
@@ -32,32 +32,54 @@ div.content {
 }
 
 @media screen and (max-width: 900px){
-ul.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 180px;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    float: none;
+  }
+
+  div.content {
+    margin-left: 180px;
+    padding: 1px 16px;
+    height: auto;
+  }
 }
 
-ul.nav li a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  float: none;
-}
+@media screen and (max-width: 400px){
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: auto;
+  }
 
-div.content {
-  margin-left: 25%;
-  padding: 1px 16px;
-  height: auto;
-}
-}
+  ul.nav li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    float: none;
+    text-align: center;
+  }
 
-@media screen and (max-width: 900px){
-
+  div.content {
+    margin-left: 0;
+    padding: 1px 16px;
+    height: auto;
+  }
 }
 /* sldkf;slakdjflsdkfj*/
 .nav {
