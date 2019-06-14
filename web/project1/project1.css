@@ -12,7 +12,10 @@ p {
   background-color: #2F76B6;
   overflow: hidden;
 }
-
+.navSpacer{
+  width: 25%;
+  max-width: 180px;
+}
 .topnav ul {
   list-style-type: none;
   margin: 0;
