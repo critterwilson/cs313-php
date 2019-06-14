@@ -8,6 +8,7 @@
 			echo '<table id="readInfo">';
 			echo '<tr><th>First Name</th>';
 			echo '<th>Last Name</th>';
+			echo '<th>Adjunct</th>';
 			echo '<th></th></tr>';
 
 			# psql: SELECT * FROM professor
@@ -18,6 +19,7 @@
 			{
 			  	echo '<tr><td>'.$row['name_first'].'</td>';
 			  	echo '<td>'.$row['name_last'].'</td>';
+			  	echo $row['adjunct'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['id'].'" name="tID">';
 			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor fromt this course?\')">Remove</button></form></td></tr>';
