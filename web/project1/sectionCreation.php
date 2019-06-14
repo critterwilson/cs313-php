@@ -13,16 +13,17 @@
 </head>
 <body>
 	<!-- Our top navigation bar -->
-	<div class="topnav">
-		<a href="courseCreation.php">Courses</a>
-		<a class="active" href="sectionCreation.php">Sections</a>
-		<a href="professorCreation.php">Professors</a>
-		<a href="sectionAssignments.php">Section Assign</a>
-		<a href="professorPrefs.php">Preferences</a>
-		<a href="roomAmens.php">Rooms</a>
-		<a href="readInfo.php">Read Info</a>
-	</div>
+	<ul class="nav">
+		<li><a href="courseCreation.php">Courses</a></li>
+		<li><a href="sectionCreation.php">Sections</a></li>
+		<li><a href="professorCreation.php">Professors</a></li>
+		<li><a href="sectionAssignments.php">Section Assign</a></li>
+		<li><a href="professorPrefs.php">Preferences</a></li>
+		<li><a href="roomAmens.php">Rooms</a></li>
+		<li><a class="active" href="readInfo.php">Read Info</a></li>
+	</ul>
 
+	<div class="content">
 	<p class="instructions"><b>Instructions:</b> Please enter the number of sections desired for each course. All form items do not need to be filled out. If you put in the wrong number for a section, simply enter the number you would like and re-submit the form (there is no need to do any addition or subtraction: just enter the right number).</p>
 
 	<form id="numSections" action="insertSection.php" method="POST">
@@ -48,6 +49,7 @@
 		onsubmit="return confirm('Reset all section data?');">
 		<button type="submit" class="reset">Reset All Sections</button>
 	</form>
+	</div>
 	
 	<script src="project1.js"></script>
 </body>

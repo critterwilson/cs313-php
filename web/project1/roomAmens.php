@@ -9,16 +9,17 @@
 </head>
 <body>
 	<!-- Our top navigation bar -->
-	<div class="topnav">
-		<a href="courseCreation.php">Courses</a>
-		<a href="sectionCreation.php">Sections</a>
-		<a href="professorCreation.php">Professors</a>
-		<a href="sectionAssignments.php">Section Assign</a>
-		<a href="professorPrefs.php">Preferences</a>
-		<a class="active" href="roomAmens.php">Rooms</a>
-		<a href="readInfo.php">Read Info</a>
-	</div>
+	<ul class="nav">
+		<li><a href="courseCreation.php">Courses</a></li>
+		<li><a href="sectionCreation.php">Sections</a></li>
+		<li><a href="professorCreation.php">Professors</a></li>
+		<li><a href="sectionAssignments.php">Section Assign</a></li>
+		<li><a href="professorPrefs.php">Preferences</a></li>
+		<li><a href="roomAmens.php">Rooms</a></li>
+		<li><a class="active" href="readInfo.php">Read Info</a></li>
+	</ul>
 
+	<div class="content">
 	<p class="instructions"><b>Instructions:</b> Please fill out all fields. If a mistake is made, simply resubmit and the ammenities will be overwritten.</p>
 
 	<form id="setRoomAmens" action="insertAmens.php" method="POST">
@@ -90,5 +91,6 @@
 		
 		<button type="submit" class="button">Submit</button>
 	</form>
+	</div>
 </body>
 </html>
