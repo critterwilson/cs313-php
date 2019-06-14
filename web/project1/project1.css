@@ -13,7 +13,7 @@ ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 180px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -38,7 +38,7 @@ ul.nav li a:hover:not(.active) {
 }
 
 div.content {
-  margin-left: 25%;
+  margin-left: 180px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -58,7 +58,7 @@ div.content {
   div.content {margin-left: 0;}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   ul.nav li a {
     text-align: center;
     float: none;
