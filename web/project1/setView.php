@@ -194,7 +194,7 @@
 
 			foreach ($db->query('SELECT * from course ORDER BY postfix ASC;') as $row)
 			{
-				echo '<tr><td>'.$row['prefix'].$row['postfix'].$row['name'].'</td>';
+				echo '<tr><td>'.$row['prefix'].' '.$row['postfix'].'</td>';
 				echo '<td>'.$row['name'].'</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['id'].'" name="qID">';
