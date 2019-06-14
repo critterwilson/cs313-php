@@ -6,7 +6,8 @@
 		// remove a professor
 		if (isset($_POST['tID'])) {
 			$professor_id = $_POST['tID'];
-			echo $professor_id;
+			$stmt = $db->prepare('DELETE FROM professor WHERE id = '.$professor_id.';');
+			$stmt->execute();
 		}
 
 		// remove a course
@@ -14,7 +15,7 @@
 			$course_id = $_POST['qID'];
 			$stmt = $db->prepare('DELETE FROM section WHERE course_id = '.$course_id.';');
 			$stmt->execute();
-			
+
 			$stmt = $db->prepare('DELETE FROM course WHERE id = '.$course_id.';');
 			$stmt->execute();
 		}
