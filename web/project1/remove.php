@@ -6,7 +6,7 @@
 		// remove a professor
 		if (isset($_POST['tID'])) {
 			$professor_id = $_POST['tID'];
-			$stmt = $db->prepare("UPDATE section SET professor_id = null WHERE professor_id = professor_id;");
+			$stmt = $db->prepare("UPDATE section SET professor_id = null WHERE professor_id = $professor_id;");
 			$stmt->exectute();
 
 			$stmt = $db->prepare('DELETE FROM professor WHERE id = '.$professor_id.';');
