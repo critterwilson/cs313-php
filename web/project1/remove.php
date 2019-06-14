@@ -49,8 +49,9 @@
 		echo "Error with DB. Details: $ex";
 		die();
 	}
-	// // redirect to the first page
-	// $new_page = "readInfo.php";
- // 	header("Location: $new_page");
- // 	die();
+
+	// redirect to the first page
+	$new_page = "readInfo.php";
+  	header("Location: $new_page");
+  	die();
 ?>
