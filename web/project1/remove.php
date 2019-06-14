@@ -12,6 +12,9 @@
 		// remove a course
 		if (isset($_POST['qID'])) {
 			$course_id = $_POST['qID'];
+			$stmt = $db->prepare('DELETE FROM section WHERE course_id = '.$course_id.';');
+			$stmt->execute();
+			
 			$stmt = $db->prepare('DELETE FROM course WHERE id = '.$course_id.';');
 			$stmt->execute();
 		}
