@@ -13,18 +13,19 @@ ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 180px;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
   overflow: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 ul.nav li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
   text-decoration: none;
+  float: left;
+  padding: 15px;
 }
  
 ul.nav li a.active {
@@ -38,9 +39,24 @@ ul.nav li a:hover:not(.active) {
 }
 
 div.content {
-  margin-left: 180px;
+  margin-left: 0;
   padding: 1px 16px;
   height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.nav {
+    height: 100%;
+    position: fixed;
+    width: 180px;
+  }
+  
+  ul.nav li a {
+    padding: 8px 16px;
+    float: none;
+  }
+  
+  div.content {margin-left: 180px;}
 }
 
 @media screen and (max-width: 600px) {
@@ -48,20 +64,6 @@ div.content {
     text-align: center;
     float: none;
   }
-
-@media screen and (min-width: 1050px) {
-  ul.nav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.nav li a {
-    float: none;
-    padding: 15px;
-  }
-  
-  div.content {margin-left: 0;}
 }
 /* sldkf;slakdjflsdkfj*/
 .nav {
