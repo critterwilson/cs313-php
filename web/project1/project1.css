@@ -43,7 +43,13 @@ div.content {
   height: 1000px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 600px) {
+  ul.nav li a {
+    text-align: center;
+    float: none;
+  }
+
+@media screen and (min-width: 1050px) {
   ul.nav {
     width: 100%;
     height: auto;
@@ -51,18 +57,11 @@ div.content {
   }
   
   ul.nav li a {
-    float: left;
+    float: none;
     padding: 15px;
   }
   
   div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 600px) {
-  ul.nav li a {
-    text-align: center;
-    float: none;
-  }
 }
 /* sldkf;slakdjflsdkfj*/
 .nav {
