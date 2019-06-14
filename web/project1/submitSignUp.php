@@ -23,7 +23,7 @@
 	}
 
 	// redirect to the first page
-	$new_page = "project1.php";
+	$new_page = "sectionAssignments.php";
  	header("Location: $new_page");
  	die();
 ?>
