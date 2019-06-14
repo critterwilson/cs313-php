@@ -4,7 +4,8 @@
 }
 
 p {
-  width: 500px;
+  width: 100%;
+  max-width: 505px;
 }
 
 /* navigation bar screen > 900px*/
@@ -31,7 +32,7 @@ div.content {
   padding: 1px 16px;
   height: auto;
 }
-/* navigation bar 400px < screen < 900px*/
+/* navigation bar 505px < screen < 1000px*/
 /*sidebar*/
 @media screen and (max-width: 900px){
   ul.nav {
@@ -49,9 +50,9 @@ div.content {
     margin-left: 180px;
   }
 }
-/* navigation bar screen < 400px*/
+/* navigation bar screen < 505px*/
 /*centered topbar*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 505px){
   ul.nav {
     list-style-type: none;
     margin: 0;
