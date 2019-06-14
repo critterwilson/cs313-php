@@ -46,13 +46,14 @@ function courseSignUp() {
 * available sections and presents them to the user 
 ******************************************************************************/
 function sectionSignUp(i) {
-  //
+  // get whichever class has been selected
   var id = document.getElementById("courseSelect_" + i).value;
 
+  // AJAX
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      //console.log(this.responseText);
+      // Show how many sections are being displayed
       document.getElementById("sectionSelect_"+i).innerHTML = this.responseText;
     }
   };

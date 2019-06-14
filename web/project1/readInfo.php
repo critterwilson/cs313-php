@@ -18,6 +18,8 @@
 
 	<p class="instructions">Order by:</p>
 	
+	<!-- Some of the values are out of order because of the 
+		order of development: the user won't know -->
 	<select id="filter" onchange="viewChange()">
 		<option value="">Select</option>
 		<option value="1">Professors</option>
@@ -28,7 +30,7 @@
 		<option value="5">Rooms</option>
 	</select>
 
-
+	<!-- To store our returned data -->
 	<div id="output">
 	</div>
 

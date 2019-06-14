@@ -1,4 +1,5 @@
 <?php
+	// make sure we connect to the database
 	require('databaseConnection.php');
 	$db = get_db();
 ?>
@@ -11,6 +12,7 @@
 	<title>Professor Preferences</title>
 </head>
 <body>
+	<!-- Our top navigation bar -->
 	<div class="topnav">
 		<a href="courseCreation.php">Courses</a>
 		<a href="sectionCreation.php">Sections</a>

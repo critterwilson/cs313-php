@@ -1,4 +1,5 @@
 <?php
+	// make sure we have our database
 	require('databaseConnection.php');
 	$db = get_db();
 ?>
@@ -7,9 +8,10 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project1.css">
-	<title>Religion Teacher Sign-Up</title>
+	<title>Section Assignments</title>
 </head>
 <body>
+	<!-- our top navigatioin bar -->
 	<div class="topnav">
 		<a href="courseCreation.php">Courses</a>
 		<a href="sectionCreation.php">Sections</a>

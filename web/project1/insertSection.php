@@ -1,4 +1,5 @@
 <?php
+	// make sure we connect to the database
 	require('databaseConnection.php');
 	$db = get_db();
 
@@ -6,12 +7,13 @@
 	for ($i = 0; $i < count($_POST['course_id']); $i++) {
 		// course[i]
 		$course_id = $_POST['course_id'][$i];
-		// amount of course[i]
-		$amount = htmlspecialchars($_POST['amount'][$i]); // We may want to use HTML decoding for security purposes???
+		// amount of sections for course[i]
+		$amount = htmlspecialchars($_POST['amount'][$i]);
 
 		// Add the proper number of sections
 		for ($j = 1; $j <= $_POST['amount'][$i]; $j++) { 
-			# INSERT INTO section(course_id, section_number, professor_id) VALUES (course_id, index, NULL) ON CONFLICT DO NOTHING;
+			# psql: INSERT INTO section(course_id, section_number, professor_id) VALUES 
+			#		(course_id, index, NULL) ON CONFLICT DO NOTHING;
 			
 			// insert the number of sections desired
 			// don't add on top of current sections, just match the desired amount
@@ -36,6 +38,7 @@
 		}
 	}
 
+	// head back to where we were
  	$new_page = "sectionCreation.php";
  	header("Location: $new_page");
  	die();

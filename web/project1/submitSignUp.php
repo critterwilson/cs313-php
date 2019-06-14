@@ -22,7 +22,7 @@
 		$stmt->execute();
 	}
 
-	// redirect to the first page
+	// head back to where we were
 	$new_page = "sectionAssignments.php";
  	header("Location: $new_page");
  	die();

@@ -6,6 +6,7 @@
 	<title>Professor Creation</title>
 </head>
 <body>
+	<!-- Our top navigation bar -->
 	<div class="topnav">
 		<a href="courseCreation.php">Courses</a>
 		<a href="sectionCreation.php">Sections</a>
@@ -16,7 +17,7 @@
 		<a href="readInfo.php">Read Info</a>
 	</div>
 
-	<p class="instructions"><b>Instructions:</b> </p>
+	<p class="instructions"><b>Instructions: Please fill out all of the information for each of the professors teaching this semester.</b> </p>
 
 	<form id="teacherSetUp" action="insertProfessor.php" method="POST">
 		<h4>First name:</h4>

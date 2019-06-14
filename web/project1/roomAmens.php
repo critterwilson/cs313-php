@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="project1.css">
 	<title>Religion Teacher Sign-Up</title>
-	<title>Professor Preferences</title>
+	<title>Room Creation</title>
 </head>
 <body>
+	<!-- Our top navigation bar -->
 	<div class="topnav">
 		<a href="courseCreation.php">Courses</a>
 		<a href="sectionCreation.php">Sections</a>
