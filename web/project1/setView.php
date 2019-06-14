@@ -3,7 +3,7 @@
 	$db = get_db();
 
 	switch($_REQUEST["q"]) {
-		// sort by professor
+		// Show all professors.
 		case 1:
 			echo '<table id="readInfo">';
 			echo '<tr><th>First Name</th>';
@@ -26,7 +26,7 @@
 			}	
 			echo '</table>';
 			break;
-		// sort by course
+		// show all occupied sections
 		case 2:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
@@ -51,7 +51,7 @@
 			}
 			echo '</table>';
 			break;
-		// Show all taken sections
+		// Show all unoccupied sections
 		case 3:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
@@ -62,11 +62,8 @@
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
-			  	echo '<td><form action="remove.php" method="POST">';
-			  	echo '<input type="hidden" value="'.$row['id'].'" name="rID">';
-			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this section?\')">Remove</button></form></td></tr>';
+			  	echo '<td><button class="reset" onclick="alert(\'To remove sections, go to the sections tab and enter the number of sections desired.\')">Remove</button></form></td></tr>';
 			}
-
 			echo '</table>';
 			break;
 		// Show all professor preferences
@@ -185,7 +182,7 @@
 			}
 			echo '</table>';
 			break;
-					// Show all taken sections
+		// Show all courses
 		case 6:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course Code</th>';
