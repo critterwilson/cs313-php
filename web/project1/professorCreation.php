@@ -25,8 +25,8 @@
 
 		<h4>Are you and adjunct professor?</h4>
 		<select name="adjunct" requried>
-			<option value="true">Yes</option>
 			<option value="false">No</option>
+			<option value="true">Yes</option>
 		</select><br>
 
 		<button type="submit" class="button">Submit</button>
