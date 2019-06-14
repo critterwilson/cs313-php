@@ -23,13 +23,13 @@
 		<select name="prefix" requried>
 			<option value="REL">No</option>
 			<option value="RELC">Yes</option>
-		</select><br><br>
+		</select><br>
 	
 		<h4>Course number:</h4>
 		<input type="text" name="postfix" size="20" pattern="[0-9]{3}" required>
 
 		<h4>Name of the course:</h4>
-		<input type="text" name="name" size="20" pattern="^[a-zA-Z]+(([', .-][a-zA-Z ])?[a-zA-Z]*)*$" required>
+		<input type="text" name="name" size="20" pattern="^[a-zA-Z]+(([', .-][a-zA-Z ])?[a-zA-Z]*)*$" required><br><br>
 
 		<button type="submit" class="button">Submit</button>
 	</form>
