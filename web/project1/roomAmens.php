@@ -15,8 +15,8 @@
 		<li><a href="professorCreation.php">Professors</a></li>
 		<li><a href="sectionAssignments.php">Section Assign</a></li>
 		<li><a href="professorPrefs.php">Preferences</a></li>
-		<li><a href="roomAmens.php">Rooms</a></li>
-		<li><a class="active" href="readInfo.php">Read Info</a></li>
+		<li><a class="active" href="roomAmens.php">Rooms</a></li>
+		<li><a href="readInfo.php">Read Info</a></li>
 	</ul>
 
 	<div class="content">
