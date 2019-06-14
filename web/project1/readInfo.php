@@ -7,8 +7,7 @@
 	<title>Religion Teacher Sign-Up</title>
 </head>
 <body>
-	<div class="topnav">
-	<ul>
+	<ul class="nav">
 		<li><a href="courseCreation.php">Courses</a></li>
 		<li><a href="sectionCreation.php">Sections</a></li>
 		<li><a href="professorCreation.php">Professors</a></li>
@@ -17,7 +16,6 @@
 		<li><a href="roomAmens.php">Rooms</a></li>
 		<li><a class="active" href="readInfo.php">Read Info</a></li>
 	</ul>
-	</div>
 
 	<p class="instructions">Order by:</p>
 	<!-- Some of the values are out of order because of the 
