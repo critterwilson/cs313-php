@@ -3,7 +3,7 @@
 	$db = get_db();
 
 	switch($_REQUEST["q"]) {
-		// Show all professors.
+		// Show all professors
 		case 1:
 			echo '<table id="readInfo">';
 			echo '<tr><th>First Name</th>';
@@ -195,7 +195,7 @@
 				echo '<td>'.$row['name'].'</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['id'].'" name="qID">';
-			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this section?\')">Remove</button></form></td></tr>';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this course?\')">Remove</button></form></td></tr>';
 			}
 
 			echo '</table>';
