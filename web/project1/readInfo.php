@@ -20,8 +20,9 @@
 	<select id="filter" onchange="viewChange()">
 		<option value="">Select</option>
 		<option value="1">Teachers</option>
+		<option value="6">Courses</option>
 		<option value="2">Occupied Courses</option>
-		<option value="3">All Courses</option>
+		<option value="3">Unoccupied Courses</option>
 		<option value="4">Prof. Preferences</option>
 		<option value="5">Rooms</option>
 	</select>

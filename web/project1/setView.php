@@ -22,7 +22,7 @@
 			  	echo $row['adjunct'] == '1' ? '<td>Yes</td>' : '<td>No</td>';
 			  	echo '<td><form action="remove.php" method="POST">';
 			  	echo '<input type="hidden" value="'.$row['id'].'" name="tID">';
-			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor fromt this course?\')">Remove</button></form></td></tr>';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor?\')">Remove</button></form></td></tr>';
 			}	
 			echo '</table>';
 			break;
@@ -47,40 +47,24 @@
 			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
 			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
 			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
-			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor fromt this course?\')">Remove</button></form></td></tr>';	
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor from this course?\')">Remove</button></form></td></tr>';	
 			}
 			echo '</table>';
 			break;
-		// Show all sections available and taken
+		// Show all taken sections
 		case 3:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course</th>';
 			echo '<th>Section</th>';
-			echo '<th>Professor</th>';
 			echo '<th></th></tr>';
-
-			# psql: SELECT * FROM professor
-			#		JOIN section ON section.professor_id = professor.id
-			#		JOIN course ON section.course_id = course.id
-			#		ORDER BY professor.name_last ASC, professor.name_first ASC;
-			foreach ($db->query('SELECT * FROM professor JOIN section ON section.professor_id = professor.id JOIN course ON section.course_id = course.id ORDER BY course.postfix ASC, section.section_number ASC;') as $row)
-			{
-				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
-			  	echo '<td>'.$row['section_number'].'</td>';
-			  	echo '<td>'.$row['name_last'].', '.$row['name_first'].'</td>';
-			  	echo '<td><form action="remove.php" method="POST">';
-			  	echo '<input type="hidden" value="'.$row['course_id'].'" name="cID">';
-			  	echo '<input type="hidden" value="'.$row['professor_id'].'" name="pID">';
-			  	echo '<input type="hidden" value="'.$row['section_number'].'" name="sID">';
-			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this professor fromt this course?\')">Remove</button></form></td></tr>';
-
-			}
 
 			foreach ($db->query('SELECT course.prefix, course.postfix, course.name, section.section_number FROM section JOIN course ON section.course_id = course.id WHERE section.taken = false ORDER BY course.postfix ASC, section.section_number ASC;') as $row)
 			{
 				echo '<tr><td>'.$row['prefix'].$row['postfix'].' '.$row['name'].'</td>';
 			  	echo '<td>'.$row['section_number'].'</td>';
-			  	echo '<td></td><td></td>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="rID">';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this section?\')">Remove</button></form></td></tr>';
 			}
 
 			echo '</table>';
@@ -199,6 +183,24 @@
 			  	echo '<input type="hidden" value="'.$row['id'].'" name="amenID">';
 			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this room information?\')">Remove</button></form></td></tr>';
 			}
+			echo '</table>';
+			break;
+					// Show all taken sections
+		case 6:
+			echo '<table id="readInfo">';
+			echo '<tr><th>Course Code</th>';
+			echo '<th>Name</th>';
+			echo '<th></th></tr>';
+
+			foreach ($db->query('SELECT * from course ORDER BY postfix ASC;') as $row)
+			{
+				echo '<tr><td>'.$row['prefix'].$row['postfix'].$row['name'].'</td>';
+				echo '<td>'.$row['name'].'</td>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="qID">';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this section?\')">Remove</button></form></td></tr>';
+			}
+
 			echo '</table>';
 			break;
 	}

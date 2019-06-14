@@ -1,6 +1,23 @@
 <?php
 	require('databaseConnection.php');
 	$db = get_db();
+
+	if (isset($_POST['tID'])) {
+		$professor_id = $_POST['tID'];
+		echo $professor_id;
+	}
+
+	if (isset($_POST['rID'])) {
+		$section_id = $_POST['rID'];
+		echo $section_id;
+	}
+
+
+	if (isset($_POST['qID'])) {
+		$course_id = $_POST['qID'];
+		echo $course_id;
+	}
+
 	if (isset($_POST['cID']) && isset($_POST['pID']) && isset($_POST['sID'])) {
 		$course_id = $_POST['cID'];
 		$professor_id = $_POST['pID'];
@@ -28,8 +45,8 @@
 		$stmt->execute();
 	}
 
-	// redirect to the first page
-	$new_page = "readInfo.php";
- 	header("Location: $new_page");
- 	die();
+	// // redirect to the first page
+	// $new_page = "readInfo.php";
+ // 	header("Location: $new_page");
+ // 	die();
 ?>
