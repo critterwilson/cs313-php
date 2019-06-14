@@ -8,12 +8,12 @@ p {
 }
 
 /* navigation bar */
-.topnav {
+.nav {
   background-color: #2F76B6;
   overflow: hidden;
 }
 
-.topnav a {
+.nav a {
   float: left;
   color: white;
   text-align: center;
@@ -23,21 +23,21 @@ p {
 }
 
 
-.topnav a:hover {
+.nav a:hover {
   background-color: #548EC3;
   color: white;
 }
 
-.topnav a.active {
+.nav a.active {
   background-color: #276195;
   color: white;
 }
-.topnav a.active:hover {
+.nav a.active:hover {
   background-color: #548EC3;
   color: white;
 }
 
-.topnam a.death:hover {
+.nav a.death:hover {
 	background-color: red;
 }
 
