@@ -12,7 +12,8 @@
 		// remove a course
 		if (isset($_POST['qID'])) {
 			$course_id = $_POST['qID'];
-			echo $course_id;
+			$stmt = $db->prepare('DELETE FROM room WHERE id = '.$course_id.';');
+			$stmt->execute();
 		}
 
 		// remove a professor assignment from a section
