@@ -185,7 +185,7 @@
 			}
 			echo '</table>';
 			break;
-		// Show all taken sections
+					// Show all taken sections
 		case 6:
 			echo '<table id="readInfo">';
 			echo '<tr><th>Course Code</th>';
@@ -196,7 +196,9 @@
 			{
 				echo '<tr><td>'.$row['prefix'].' '.$row['postfix'].'</td>';
 				echo '<td>'.$row['name'].'</td>';
-			  	echo '<td><button class="reset" onclick="alert(\'Remove sections by using the section tab to assign the proper number of sections to a given course.\')">Remove</button></td></tr>';
+			  	echo '<td><form action="remove.php" method="POST">';
+			  	echo '<input type="hidden" value="'.$row['id'].'" name="qID">';
+			  	echo '<button type="submit" class="reset" onclick="return confirm(\'Remove this section?\')">Remove</button></form></td></tr>';
 			}
 
 			echo '</table>';
