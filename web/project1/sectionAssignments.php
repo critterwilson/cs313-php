@@ -8,6 +8,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project1.css">
+	<link rel='icon' href='favicon.png' type='image/png'>
 	<title>Section Assignments</title>
 </head>
 <body>

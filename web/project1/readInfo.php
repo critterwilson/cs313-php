@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="project1.css">
+	<link rel='icon' href='favicon.png' type='image/png'>
 	<title>Religion Teacher Sign-Up</title>
 </head>
 <body>
