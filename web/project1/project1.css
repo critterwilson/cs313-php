@@ -52,8 +52,8 @@ div.content {
 
 @media screen and (min-width: 900px) {
   ul.nav {
-    height: 100%;
-    position: fixed;
+    height: auto;
+    position: relative;
     width: 180px;
   }
   
