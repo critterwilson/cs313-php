@@ -17,6 +17,7 @@
 		<li><a class="active" href="readInfo.php">Read Info</a></li>
 	</ul>
 
+	<div class="content">
 	<p class="instructions">Order by:</p>
 	<!-- Some of the values are out of order because of the 
 		order of development: the user won't know -->
@@ -32,6 +33,7 @@
 
 	<!-- To store our returned data -->
 	<div id="output">
+	</div>
 	</div>
 
 	<script src="project1.js"></script>
