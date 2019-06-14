@@ -8,7 +8,7 @@ p {
 }
 
 /* navigation bar */
-ul.sidenav {
+ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ ul.sidenav {
   overflow: auto;
 }
 
-ul.sidenav li a {
+ul.nav li a {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
