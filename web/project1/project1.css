@@ -172,5 +172,9 @@ input[type=text] {
   background: white;
   border: 2px solid #2F76B6;
   color: #2F76B6;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
 
 }
