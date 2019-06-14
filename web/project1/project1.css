@@ -50,7 +50,7 @@ div.content {
     float: none;
 }
 
-/*@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   ul.nav {
     height: 100%;
     position: fixed;
@@ -63,7 +63,7 @@ div.content {
   }
   
   div.content {margin-left: 180px;}
-}*/
+}
 
 /* sldkf;slakdjflsdkfj*/
 .nav {
