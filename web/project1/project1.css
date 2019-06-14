@@ -33,26 +33,17 @@ div.content {
 
 @media screen and (max-width: 900px){
   ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     width: 180px;
     position: fixed;
-    height: 100%;
-    overflow: auto;
   }
 
   ul.nav li a {
-    display: block;
     padding: 8px 16px;
-    text-decoration: none;
     float: none;
   }
 
   div.content {
     margin-left: 180px;
-    padding: 1px 16px;
-    height: auto;
   }
 }
 
