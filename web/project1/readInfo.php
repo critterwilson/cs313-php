@@ -23,7 +23,7 @@
 		<option value="2">Occupied Courses</option>
 		<option value="3">All Courses</option>
 		<option value="4">Prof. Preferences</option>
-		<option value="5">Room Ammenities</option>
+		<option value="5">Rooms</option>
 	</select>
 
 
