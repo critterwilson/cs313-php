@@ -7,7 +7,8 @@ p {
   width: 500px;
 }
 
-/* navigation bar */
+/* navigation bar screen > 900px*/
+/*long topnav bar*/
 ul.nav {
   list-style-type: none;
   margin: 0;
@@ -30,11 +31,13 @@ div.content {
   padding: 1px 16px;
   height: auto;
 }
-
+/* navigation bar 400px < screen < 900px*/
+/*sidebar*/
 @media screen and (max-width: 900px){
   ul.nav {
     width: 180px;
     position: fixed;
+    height: 100%;
   }
 
   ul.nav li a {
@@ -46,7 +49,8 @@ div.content {
     margin-left: 180px;
   }
 }
-
+/* navigation bar screen < 400px*/
+/*centered topbar*/
 @media screen and (max-width: 400px){
   ul.nav {
     list-style-type: none;
