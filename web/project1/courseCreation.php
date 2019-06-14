@@ -7,11 +7,12 @@
 </head>
 <body>
 	<div class="topnav">
-		<a class="active" href="professorCreation.php">Professors</a>
+		<a class="active" href="courseCreation.php">Courses</a>
 		<a href="sectionCreation.php">Sections</a>
-		<a href="project1.php">Sign Up</a>
-		<a href="professorPrefs.php">Professor Prefs</a>
-		<a href="roomAmens.php">Room Ammenities</a>
+		<a href="professorCreation.php">Professors</a>
+		<a href="project1.php">Section Assign</a>
+		<a href="professorPrefs.php">Preferences</a>
+		<a href="roomAmens.php">Rooms</a>
 		<a href="readInfo.php">Read Info</a>
 	</div>
 
