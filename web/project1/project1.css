@@ -112,7 +112,8 @@ div.content {
 
 .run {
   background-color: red;
-  color: white;  
+  color: white;
+  float: right;  
 }
 /***********************************************/
 #courseSelect > select {
