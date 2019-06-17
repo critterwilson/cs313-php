@@ -7,7 +7,7 @@ p {
   width: 100%;
   max-width: 505px;
 }
-
+/***********************************************/
 /* navigation bar screen > 900px*/
 /*long topnav bar*/
 ul.nav {
@@ -77,7 +77,7 @@ div.content {
     height: auto;
   }
 }
-/* sldkf;slakdjflsdkfj*/
+
 .nav {
   background-color: #2F76B6;
   overflow: hidden;
@@ -110,6 +110,11 @@ div.content {
 	background-color: red;
 }
 
+.run {
+  background-color: red;
+  color: white;  
+}
+/***********************************************/
 #courseSelect > select {
   float:left;
 }
