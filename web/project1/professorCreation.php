@@ -19,7 +19,7 @@
 	</ul>
 
 	<div class="content">
-	<p class="instructions"><b>Instructions: Please fill out all of the information for each of the professors teaching this semester.</b> </p>
+	<p class="instructions"><b>Instructions:</b> Please fill out all of the information for each of the professors teaching this semester.</b> </p>
 
 	<form id="teacherSetUp" action="insertProfessor.php" method="POST">
 		<h4>First name:</h4>

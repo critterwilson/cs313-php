@@ -19,7 +19,7 @@
 	</ul>
 
 	<div class="content">
-	<p class="instructions"><b>Instructions: Please fill out all form fields below for each course being offered this semeseter, then press submit.</b> </p>
+	<p class="instructions"><b>Instructions:</b> Please fill out all form fields below for each course being offered this semeseter, then press submit.</b> </p>
 
 	<form id="teacherSetUp" action="insertCourse.php" method="POST">
 		<!-- Prefix selection: -->
