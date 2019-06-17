@@ -15,7 +15,7 @@
 		<li><a href="professorPrefs.php">Preferences</a></li>
 		<li><a href="roomAmens.php">Rooms</a></li>
 		<li><a class="active" href="readInfo.php">Read Info</a></li>
-		<li><a class="run" href="roomAssignment.php">Run</a></li>
+		<li a class="run"><a href="roomAssignment.php">Run</a></li>
 	</ul>
 
 	<div class="content">
