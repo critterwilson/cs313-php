@@ -32,6 +32,12 @@ div.content {
   padding: 1px 16px;
   height: auto;
 }
+
+.run {
+  background-color: red;
+  color: white;
+  float: right;  
+}
 /* navigation bar 505px < screen < 1000px*/
 /*sidebar*/
 @media screen and (max-width: 900px){
@@ -108,12 +114,6 @@ div.content {
 
 .nav a.death:hover {
 	background-color: red;
-}
-
-.run {
-  background-color: red;
-  color: white;
-  float: right;  
 }
 /***********************************************/
 #courseSelect > select {
