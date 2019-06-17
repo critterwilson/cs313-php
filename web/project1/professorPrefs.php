@@ -48,6 +48,7 @@
 			<option value="">Select</option>
 			<option value="TAY">Taylor</option>
 			<option value="BID">Biddulph</option>
+			<option value="OTH">Other</option>
 		</select><br>
 
 		<h4>Which instrument do you prefer?</h4>
