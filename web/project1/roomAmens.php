@@ -25,10 +25,9 @@
 	<form id="setRoomAmens" action="insertAmens.php" method="POST">
 		<h4>Which building is the classroom in?</h4>
 		<select name="building" requried>
-			<option value="">Select</option>
 			<option value="TAY">Taylor</option>
 			<option value="BEN">Benson</option>
-			<option value="HIN">Hnikley</option>
+			<option value="HIN">Hinkley</option>
 		</select><br>
 
 		<h4>What is the room number?</h4>
