@@ -53,8 +53,8 @@
 
 
 	// head back to where we were
-	// $new_page = "roomAmens.php";
- // 	header("Location: $new_page");
- // 	die();
+	$new_page = "roomAmens.php";
+  	header("Location: $new_page");
+  	die();
 
 ?>

@@ -45,6 +45,22 @@
 
 		// remove room 
 		if (isset($_POST['amenID'])) {
+			// delete info from schedule_mon, etc.
+			$stmt = $db->prepare('DELETE FROM schedule_mon where room_id = '.$_POST['amenID'].';');
+			$stmt->execute();
+
+			$stmt = $db->prepare('DELETE FROM schedule_tue where room_id = '.$_POST['amenID'].';');
+			$stmt->execute();
+
+			$stmt = $db->prepare('DELETE FROM schedule_wed where room_id = '.$_POST['amenID'].';');
+			$stmt->execute();
+
+			$stmt = $db->prepare('DELETE FROM schedule_thu where room_id = '.$_POST['amenID'].';');
+			$stmt->execute();
+
+			$stmt = $db->prepare('DELETE FROM schedule_fri where room_id = '.$_POST['amenID'].';');
+			$stmt->execute();
+
 			// delete the room from the room table
 			$stmt = $db->prepare('DELETE FROM room WHERE id = '.$_POST['amenID'].';');
 			$stmt->execute();
