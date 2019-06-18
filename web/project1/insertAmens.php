@@ -27,9 +27,10 @@
 	foreach($db->query("SELECT id FROM room WHERE building = '$building' AND room_number = $room_number") as $room)
 	{
 		$room_id = htmlspecialchars($room['id']);
-		$insert = "INSERT INTO schedule_mon (room_id) VALUES ($room_id);";
-		$stmt = $db->prepare($insert);
-		$stmt->execute();
+		echo $room_id;
+		// $insert = "INSERT INTO schedule_mon (room_id) VALUES ($room_id);";
+		// $stmt = $db->prepare($insert);
+		// $stmt->execute();
 
 		// $insert = "INSERT INTO schedule_tue (room_id) VALUES ($room_id);";
 		// $stmt = $db->prepare($insert);
@@ -52,8 +53,8 @@
 
 
 	// head back to where we were
-	$new_page = "roomAmens.php";
- 	header("Location: $new_page");
- 	die();
+	// $new_page = "roomAmens.php";
+ // 	header("Location: $new_page");
+ // 	die();
 
 ?>
