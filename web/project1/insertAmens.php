@@ -28,8 +28,8 @@
 	{
 		$room_id = htmlspecialchars($room_id);
 		$insert = "INSERT INTO schedule_mon (room_id) VALUES ($room_id);";
-		$stmt = $db->prepare($insert);
-		$stmt->execute();
+		$stmtA = $db->prepare($insert);
+		$stmtA->execute();
 		
 		// $insert = "INSERT INTO schedule_tue (room_id) VALUES ($room_id);";
 		// $stmt = $db->prepare($insert);
