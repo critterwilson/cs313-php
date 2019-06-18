@@ -28,9 +28,9 @@
 	{
 		$room_id = htmlspecialchars($room['id']);
 		echo $room_id;
-		// $insert = "INSERT INTO schedule_mon (room_id) VALUES ($room_id);";
-		// $stmt = $db->prepare($insert);
-		// $stmt->execute();
+		$insert = "INSERT INTO schedule_mon (room_id, time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630, time1745, time1900) VALUES ($room_id, null, null, null, null, null, null, null, null, null, null) ON CONFLICT (room_id) DO NOTHING;;";
+		$stmt = $db->prepare($insert);
+		$stmt->execute();
 
 		// $insert = "INSERT INTO schedule_tue (room_id) VALUES ($room_id);";
 		// $stmt = $db->prepare($insert);
