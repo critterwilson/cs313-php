@@ -7,6 +7,7 @@
 		{
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
+				echo $room_time['time0745'];
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "null")
 					echo "7:45 true ";
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "null")
