@@ -4,10 +4,10 @@
 
 	function scheduleMatch($prof_id, $room_id) {
 		echo $prof_id;
-//		foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_time)
-		{
-			var_dump($prof_time);
-		}
+		// foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_time)
+		// {
+		// 	var_dump($prof_time);
+		// }
 
 		return;
 	}
