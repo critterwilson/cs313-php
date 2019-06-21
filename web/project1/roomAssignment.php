@@ -12,6 +12,11 @@
 	
 	foreach($db->query("SELECT professor_id FROM section WHERE professor_id IS NOT NULL;") as $prof)
 	{
-		echo $prof['professor_id'];
+		echo $prof['professor_id'].'<br>';
+
+		foreach($db->query("SELECT id FROM room;") as $room)
+		{
+			echo $room['id'];
+		}
 	}
 ?>
