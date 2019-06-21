@@ -10,7 +10,7 @@
 
 	// }
 	
-	foreach($db->query("SELECT professor_id from section WHERE professor_id != null;") as $prof)
+	foreach($db->query("SELECT professor_id from section WHERE professor_id IS NOT NULL;") as $prof)
 	{
 		echo $prof['id'];
 	}
