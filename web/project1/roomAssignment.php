@@ -2,12 +2,11 @@
 	require('databaseConnection.php');
 	$db = get_db();
 
-	function scheduleMatch($prof_id, $room_id) {
-		echo $prof_id.', '.$room_id.'<br>';
-		// foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_time)
-		// {
-		// 	var_dump($prof_time);
-		// }
+	function scheduleMatch($db, $prof_id, $room_id) {
+		foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_time)
+		{
+			echo $prof_time['time0745'];
+		}
 
 		return;
 	}
@@ -20,7 +19,7 @@
 	{
 		foreach($db->query("SELECT id FROM room;") as $room)
 		{
-			scheduleMatch($prof['professor_id'], $room['id']);
+			scheduleMatch($db, $prof['professor_id'], $room['id']);
 		}
 	}
 	echo 'done';
