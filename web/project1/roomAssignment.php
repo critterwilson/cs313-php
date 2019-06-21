@@ -7,6 +7,8 @@
 		{
 			var_dump($prof);
 		}
+
+		return true;
 	}
 
 	// function getPrefMatch(prof_id, room_id) {
