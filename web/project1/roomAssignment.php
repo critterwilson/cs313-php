@@ -7,22 +7,21 @@
 		{
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
-				echo 'room: '.$room_time['time0745'];
-				if ($prof_time['time0745'] == true && $room_time['time0745'] == "null")
+				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
 					echo "7:45 true ";
-				if ($prof_time['time0900'] == true && $room_time['time0900'] == "null")
+				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					echo "9:00 true ";
-				if ($prof_time['time1015'] == true && $room_time['time1015'] == "null")
+				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
 					echo "10:15 true ";
-				if ($prof_time['time1130'] == true && $room_time['time1130'] == "null")
+				if ($prof_time['time1130'] == true && $room_time['time1130'] == "")
 					echo "11:30 true ";
-				if ($prof_time['time1245'] == true && $room_time['time1245'] == "null")
+				if ($prof_time['time1245'] == true && $room_time['time1245'] == "")
 					echo "12:45 true ";
-				if ($prof_time['time1400'] == true && $room_time['time1400'] == "null")
+				if ($prof_time['time1400'] == true && $room_time['time1400'] == "")
 					echo "2:00 true ";
-				if ($prof_time['time1515'] == true && $room_time['time1515'] == "null")
+				if ($prof_time['time1515'] == true && $room_time['time1515'] == "")
 					echo "3:15 true ";
-				if ($prof_time['time1630'] == true && $room_time['time1630'] == "null")
+				if ($prof_time['time1630'] == true && $room_time['time1630'] == "")
 					echo "4:30 true<br>";
 			}
 		}
