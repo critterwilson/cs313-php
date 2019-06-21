@@ -18,5 +18,6 @@
 		{
 			echo $room['id'];
 		}
+		echo '<br>';
 	}
 ?>
