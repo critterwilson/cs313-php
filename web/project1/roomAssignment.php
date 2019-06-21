@@ -5,10 +5,10 @@
 	function scheduleMatch($prof_id, $room_id) {
 		foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof)
 		{
-			//var_dump($prof);
+			var_dump($prof);
 		}
 
-		return true;
+		return;
 	}
 
 	// function getPrefMatch(prof_id, room_id) {
@@ -19,8 +19,7 @@
 	{
 		foreach($db->query("SELECT id FROM room;") as $room)
 		{
-			if(scheduleMatch($prof['professor_id'], $room['id']))
-				echo 'It works<br>';
+			scheduleMatch($prof['professor_id'], $room['id']);
 		}
 	}
 ?>
