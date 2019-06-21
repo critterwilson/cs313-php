@@ -22,7 +22,8 @@
 				if ($prof_time['time1515'] == true && $room_time['time1515'] == "")
 					echo "3:15 true ";
 				if ($prof_time['time1630'] == true && $room_time['time1630'] == "")
-					echo "4:30 true<br>";
+					echo "4:30 true";
+				echo '<br>';
 			}
 		}
 
