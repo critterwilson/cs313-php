@@ -34,22 +34,31 @@ mac BOOLEAN NOT NULL,
 seating SMALLINT NOT NULL, -- 0 = unknown, side = 1, center = 2, desks = 3, table chairs = 4
 capacity SMALLINT NOT NULL,
 primary_owner VARCHAR(5),
-secondary_owner VARCHAR(5)
+secondary_owner VARCHAR(5),
+UNIQUE (building, room_number)
 );
 
+-- null = don't care, 1 = side, 2 = center, 3 = desks, 4 = table chairs
 CREATE TABLE professor_prefs (
 id SERIAL NOT NULL PRIMARY KEY,
-professor_id SERIAL REFERENCES professor(id) NOT NULL,
-building VARCHAR(5),
-piano BOOLEAN,
-keyboard BOOLEAN,
+professor_id SERIAL REFERENCES professor(id) NOT NULL UNIQUE,
+office VARCHAR(5),
+instrument BOOLEAN, 
 mac BOOLEAN,
-seating SMALLINT
+seating SMALLINT, 
+time0745 BOOLEAN DEFAULT 'false',
+time0900 BOOLEAN DEFAULT 'false',
+time1015 BOOLEAN DEFAULT 'false',
+time1130 BOOLEAN DEFAULT 'false',
+time1245 BOOLEAN DEFAULT 'false',
+time1400 BOOLEAN DEFAULT 'false',
+time1515 BOOLEAN DEFAULT 'false',
+time1630 BOOLEAN DEFAULT 'false'
 );
 
 CREATE TABLE schedule_mon (
 id SERIAL NOT NULL PRIMARY KEY,
-room_id SERIAL REFERENCES room(id),
+room_id SERIAL REFERENCES room(id)UNIQUE,
 time0745 SERIAL references section(id),
 time0900 SERIAL references section(id),
 time1015 SERIAL references section(id),
@@ -76,7 +85,7 @@ ALTER TABLE schedule_mon ALTER COLUMN time1900 DROP NOT NULL;
 
 CREATE TABLE schedule_tue (
 id SERIAL NOT NULL PRIMARY KEY,
-room_id SERIAL REFERENCES room(id),
+room_id SERIAL REFERENCES room(id) UNIQUE,
 time0745 SERIAL references section(id),
 time0900 SERIAL references section(id),
 time1015 SERIAL references section(id),
@@ -103,7 +112,7 @@ ALTER TABLE schedule_tue ALTER COLUMN time1900 DROP NOT NULL;
 
 CREATE TABLE schedule_wed (
 id SERIAL NOT NULL PRIMARY KEY,
-room_id SERIAL REFERENCES room(id),
+room_id SERIAL REFERENCES room(id) UNIQUE,
 time0745 SERIAL references section(id),
 time0900 SERIAL references section(id),
 time1015 SERIAL references section(id),
@@ -130,7 +139,7 @@ ALTER TABLE schedule_wed ALTER COLUMN time1900 DROP NOT NULL;
 
 CREATE TABLE schedule_thu (
 id SERIAL NOT NULL PRIMARY KEY,
-room_id SERIAL REFERENCES room(id),
+room_id SERIAL REFERENCES room(id) UNIQUE,
 time0745 SERIAL references section(id),
 time0900 SERIAL references section(id),
 time1015 SERIAL references section(id),
@@ -157,7 +166,7 @@ ALTER TABLE schedule_thu ALTER COLUMN time1900 DROP NOT NULL;
 
 CREATE TABLE schedule_fri (
 id SERIAL NOT NULL PRIMARY KEY,
-room_id SERIAL REFERENCES room(id),
+room_id SERIAL REFERENCES room(id) UNIQUE,
 time0745 SERIAL references section(id),
 time0900 SERIAL references section(id),
 time1015 SERIAL references section(id),

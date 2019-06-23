@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postage Calculator</title>
+</head>
+<body>
+	<form id="postageInfo" action="/getRate">
+		<h3>Select the type of mail</h3>
+		<select name="type">
+			<option value="stamped">Letter (Stamped)</option>
+			<option value="metered">Letter (Metered)</option>
+			<option value="flats">Large Envelopes (Flats)</option>
+			<option value="package">First-Class Package Service-Retail</option>
+		</select>
+
+		<h3>Select the weight of the mail</h3>
+		<select name="weight">
+			<option value="0"><1oz.</option>
+			<option value="1"><2oz.</option>
+			<option value="2"><3oz.</option>
+			<option value="3"><4oz.</option>
+			<option value="4"><5oz.</option>
+			<option value="5"><6oz.</option>
+			<option value="6"><7oz.</option>
+			<option value="7"><8oz.</option>
+			<option value="8"><9oz.</option>
+			<option value="9"><10oz.</option>
+			<option value="10"><11oz.</option>
+			<option value="11"><12oz.</option>
+			<option value="12"><13oz.</option>
+			<option value="13"><14oz.</option>
+		</select>
+
+		<button type="submit">Calculate!</button>
+	</form>
+</body>
+</html>
