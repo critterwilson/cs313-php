@@ -45,28 +45,28 @@
 			{
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "7:45->$x ";
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "9:00->$x ";
 				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "10:15->$x ";
 				if ($prof_time['time1130'] == true && $room_time['time1130'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "11:30->$x ";
 				if ($prof_time['time1245'] == true && $room_time['time1245'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "12:45->$x ";
 				if ($prof_time['time1400'] == true && $room_time['time1400'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "2:00->$x ";
 				if ($prof_time['time1515'] == true && $room_time['time1515'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "3:15->$x ";
 				if ($prof_time['time1630'] == true && $room_time['time1630'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo $x;
+					echo "4:30->$x ";
 				echo '<br>';
 			}
 		}
