@@ -44,21 +44,21 @@
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1130'] == true && $room_time['time1130'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1245'] == true && $room_time['time1245'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1400'] == true && $room_time['time1400'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1515'] == true && $room_time['time1515'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1630'] == true && $room_time['time1630'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					//echo getPrefMatch($prof_id, $room_id);
 				echo '<br>';
 			}
 		}
