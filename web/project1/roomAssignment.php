@@ -7,33 +7,33 @@
 		{
 			foreach($db->query("SELECT building, piano, keyboard, mac, seating FROM room WHERE id = $room_id;") as $room)
 			{
-				$match = 0;
-				if ($prof_pref['office'] == 'BID' && $room['building'] != 'TAY')
-					return false;
-				else
-					$match += 1;
+				// $match = 0;
+				// if ($prof_pref['office'] == 'BID' && $room['building'] != 'TAY')
+				// 	return false;
+				// else
+				// 	$match += 1;
 				
-				if ($prof_pref['instrument'] == '1' && $room['piano'] == '1')
-					$match += 1;
-				else if ($prof_pref['instrument'] == '0' && $room['keyboard'] == '1')
-					$match += 1;
-				else if ($prof_pref['instrument'] == "")
-					$match += 1;
+				// if ($prof_pref['instrument'] == '1' && $room['piano'] == '1')
+				// 	$match += 1;
+				// else if ($prof_pref['instrument'] == '0' && $room['keyboard'] == '1')
+				// 	$match += 1;
+				// else if ($prof_pref['instrument'] == "")
+				// 	$match += 1;
 
-				if ($prof_pref['mac'] == $room['mac'])
-					$match += 1;
-				else if ($prof_pref['mac'] == "")
-					$match += 1;
+				// if ($prof_pref['mac'] == $room['mac'])
+				// 	$match += 1;
+				// else if ($prof_pref['mac'] == "")
+				// 	$match += 1;
 
-				if ($prof_pref['seating'] == $room['seating'])
-					$match += 1;
-				else if ($prof_pref['seating'] == "")
-					$match += 1;
+				// if ($prof_pref['seating'] == $room['seating'])
+				// 	$match += 1;
+				// else if ($prof_pref['seating'] == "")
+				// 	$match += 1;
 
-				if (($match / 4) >= .70)
-					return true;
-				else
-					return false;
+				// if (($match / 4) >= .70)
+				// 	return true;
+				// else
+				// 	return false;
 			}
 		}
 	}
