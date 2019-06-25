@@ -45,7 +45,7 @@
 			{
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo x;
+					echo $x;
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
