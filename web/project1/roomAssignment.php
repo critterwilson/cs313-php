@@ -44,7 +44,8 @@
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
-					//echo getPrefMatch($prof_id, $room_id);
+					$ x = getPrefMatch($prof_id, $room_id);
+					echo x;
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					//echo getPrefMatch($prof_id, $room_id);
 				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
