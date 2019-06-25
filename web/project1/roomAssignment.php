@@ -47,19 +47,26 @@
 					$x = getPrefMatch($db, $prof_id, $room_id);
 					echo $x;
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1015'] == true && $room_time['time1015'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1130'] == true && $room_time['time1130'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1245'] == true && $room_time['time1245'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1400'] == true && $room_time['time1400'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1515'] == true && $room_time['time1515'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				if ($prof_time['time1630'] == true && $room_time['time1630'] == "")
-					echo getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
+					echo $x;
 				echo '<br>';
 			}
 		}
