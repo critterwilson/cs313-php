@@ -2,38 +2,38 @@
 	require('databaseConnection.php');
 	$db = get_db();
 
-	function getPrefMatch($prof_id, $room_id) {
+	function getPrefMatch($db, $prof_id, $room_id) {
 		foreach($db->query("SELECT office, instrument, mac, seating FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_pref)
 		{
 			foreach($db->query("SELECT building, piano, keyboard, mac, seating FROM room WHERE id = $room_id;") as $room)
 			{
-				// $match = 0;
-				// if ($prof_pref['office'] == 'BID' && $room['building'] != 'TAY')
-				// 	return false;
-				// else
-				// 	$match += 1;
+				$match = 0;
+				if ($prof_pref['office'] == 'BID' && $room['building'] != 'TAY')
+					return false;
+				else
+					$match += 1;
 				
-				// if ($prof_pref['instrument'] == '1' && $room['piano'] == '1')
-				// 	$match += 1;
-				// else if ($prof_pref['instrument'] == '0' && $room['keyboard'] == '1')
-				// 	$match += 1;
-				// else if ($prof_pref['instrument'] == "")
-				// 	$match += 1;
+				if ($prof_pref['instrument'] == '1' && $room['piano'] == '1')
+					$match += 1;
+				else if ($prof_pref['instrument'] == '0' && $room['keyboard'] == '1')
+					$match += 1;
+				else if ($prof_pref['instrument'] == "")
+					$match += 1;
 
-				// if ($prof_pref['mac'] == $room['mac'])
-				// 	$match += 1;
-				// else if ($prof_pref['mac'] == "")
-				// 	$match += 1;
+				if ($prof_pref['mac'] == $room['mac'])
+					$match += 1;
+				else if ($prof_pref['mac'] == "")
+					$match += 1;
 
-				// if ($prof_pref['seating'] == $room['seating'])
-				// 	$match += 1;
-				// else if ($prof_pref['seating'] == "")
-				// 	$match += 1;
+				if ($prof_pref['seating'] == $room['seating'])
+					$match += 1;
+				else if ($prof_pref['seating'] == "")
+					$match += 1;
 
-				// if (($match / 4) >= .70)
-				// 	return true;
-				// else
-				// 	return false;
+				if (($match / 4) >= .70)
+					return true;
+				else
+					return false;
 			}
 		}
 	}
@@ -44,7 +44,7 @@
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
-					$ x = getPrefMatch($prof_id, $room_id);
+					$x = getPrefMatch($db, $prof_id, $room_id);
 					echo x;
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					//echo getPrefMatch($prof_id, $room_id);
