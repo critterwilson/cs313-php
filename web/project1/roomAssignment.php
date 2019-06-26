@@ -48,8 +48,11 @@
 				{
 					if (getPrefMatch($db, $prof_id, $room_id))
 						{
-							$stmt = "UPDATE schedule_$day SET time0745 = $sect_id WHERE room_id = $room_id;";
-							echo $stmt;
+							$stmt = $db->prepare("UPDATE schedule_$day SET time0745 = $sect_id WHERE room_id = $room_id;");
+							$stmt->execute();
+							$stmt = $db->prepare("UPDATE professor_prefs SET time0745 = null WHERE professor_id = $prof_id;");
+							$stmt->execute();
+
 						}
 				}
 					
