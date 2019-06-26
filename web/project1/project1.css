@@ -55,6 +55,12 @@ div.content {
   div.content {
     margin-left: 180px;
   }
+
+  .run {
+    background-color: red;
+    color: white;
+    float: none;  
+  }
 }
 /* navigation bar screen < 505px*/
 /*centered topbar*/
@@ -81,6 +87,12 @@ div.content {
     margin-left: 0;
     padding: 1px 16px;
     height: auto;
+  }
+
+  .run {
+    background-color: red;
+    color: white;
+    float: none;  
   }
 }
 
