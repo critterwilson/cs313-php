@@ -38,15 +38,21 @@
 		}
 	}
 
-	function scheduleMatch($db, $prof_id, $room_id, $day) {
+	function scheduleMatch($db, $sect_id, $prof_id, $room_id, $day) {
 		foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM professor_prefs WHERE professor_id = $prof_id;") as $prof_time)
 		{
 			foreach($db->query("SELECT time0745, time0900, time1015, time1130, time1245, time1400, time1515, time1630 FROM schedule_$day WHERE room_id = $room_id;") as $room_time)
 			{
 				echo $prof_id.' & '.$room_id.'<br>';
 				if ($prof_time['time0745'] == true && $room_time['time0745'] == "")
-					$x = getPrefMatch($db, $prof_id, $room_id);
-					echo "7:45->$x ";
+				{
+					if (getPrefMatch($db, $prof_id, $room_id))
+						{
+							$stmt = "UPDATE schedule_$day SET time0745 = $sect_id WHERE room_id = $room_id;");
+							echo $stmt;
+						}
+				}
+					
 				if ($prof_time['time0900'] == true && $room_time['time0900'] == "")
 					$x = getPrefMatch($db, $prof_id, $room_id);
 					echo "9:00->$x ";
@@ -75,11 +81,11 @@
 		return;
 	}
 	
-	foreach($db->query("SELECT professor_id FROM section WHERE professor_id IS NOT NULL;") as $prof)
+	foreach($db->query("SELECT id, professor_id FROM section WHERE professor_id IS NOT NULL;") as $prof)
 	{
 		foreach($db->query("SELECT id FROM room;") as $room)
 		{
-			scheduleMatch($db, $prof['professor_id'], $room['id'], 'mon');
+			scheduleMatch($db, $prof['id'], $prof['professor_id'], $room['id'], 'mon');
 		}
 	}
 	echo 'done';
