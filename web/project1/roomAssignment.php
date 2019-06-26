@@ -48,7 +48,7 @@
 				{
 					if (getPrefMatch($db, $prof_id, $room_id))
 						{
-							$stmt = "UPDATE schedule_$day SET time0745 = $sect_id WHERE room_id = $room_id;");
+							$stmt = "UPDATE schedule_$day SET time0745 = $sect_id WHERE room_id = $room_id;";
 							echo $stmt;
 						}
 				}
