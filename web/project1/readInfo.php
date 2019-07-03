@@ -30,6 +30,7 @@
 		<option value="3">Unoccupied Sections</option>
 		<option value="4">Prof. Preferences</option>
 		<option value="5">Rooms</option>
+		<option value="6">Room Schedules</option>
 	</select>
 
 	<!-- To store our returned data -->
