@@ -7,7 +7,9 @@
 </head>
 <body>
 <!-- TOP NAVIGATION -->
-<img src="icons/byui.png" alt="BYUI Logo" id="logo">
+<a href="https://www.byui.edu">
+	<img src="icons/byui.png" alt="BYUI Logo" id="logo">
+</a>
 <div class="title">
 	<h1>Department of Religious Education</h1>
 </div>
@@ -18,25 +20,27 @@
 	<div class="dropdown">
 	  <button class="dropbtn" onclick="window.location.href='advising.html'">Advising</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Course Catalog</a>
+	    <a href="#">Degree Requirements</a>
+	    <a href="#">Transfer Students</a>
+	    <a href="#">Taking a 2nd REL Class</a>
+	    <a href="#">BYU Jerusalem Center</a>
 	  </div>
 	</div>
 	<div class="dropdown">
 	  <button class="dropbtn" onclick="window.location.href='sni.html'">Seminary & Institute</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Transfer Credit for Institute</a>
+	    <a href="#">Institute Offerings</a>
+	    <a href="#">Becoming a Seminary Teaching</a>
 	  </div>
 	</div>
 	<div class="dropdown">
 	  <button class="dropbtn" id="active" onclick="window.location.href='contact.html'">Contact & FAQ</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Religious Education Contact</a>
+	    <a href="#">Seminary & Institute Contact</a>
+	    <a href="#">FAQ</a>
 	  </div>
 	</div>
 </div>
@@ -46,38 +50,31 @@
 	  <li><a href="home.html">Home</a></li> /
 	  <li>Contact & FAQ</li>
 	</ul>
-	<h2>Contact</h2>
-	<ul class="side-info">
-		<li>525 S Center St</li>
-		<li>TAY 202</li>
-		<li>Rexburg, ID 83440</li>
-		<li>208-496-3920</li>
-	</ul>
-	<h2>Announcments</h2>
-	<ul class="side-info">
-		<li><b>11/28</b> - Happy Thanksgiving! Please travel safely to and from school. We look forward to the return of all of you to finish out the semester strong. Please take a moment to remember the things you are grateful for.</li><br>
-		<li><b>11/18</b> - Religious Education has a new website! We are so thrilled to have a new and improved way to communicate with all of the students! Please take a look around: we are sure you'll love our new look.</li><br>
-		<li><b>10/31</b> - Happy Halloween! Please don't get too crazy celebrating this pagan holiday. Halloween is of the devil!</li>
-	</ul>
+	<div class="side-btn-group">
+		<button onclick="show(1)" class="side-dropdown"><h2>Religious Education Contact Info</h2></button>
+		<ul id="contact-rel-list">
+			<li><a href="#"></a></li>
+		</ul>
+		<button onclick="show(2)" class="side-dropdown"><h2>Seminary & Institute Contact Info</h2></button>
+		<ul id="contact-sni-list">
+			<li><a href="#"></a></li>
+		</ul>
+		<button onclick="show(3)" class="side-dropdown"><h2>FAQ</h2></button>
+		<ul id="contact-faq-list">
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
 </div>
 <div id="body" class="main">
-	<div class="top-banner">
-		<img src="icons/pyper.jpg" alt="Brother Pyper Teaching">
+	<div id="contact-rel" class="contact-page">
+		<div class="contact-card">
+		</div>
 	</div>
-	<div class="bucket" id="advising">
-		<img src="icons/checklist.png" alt="Apple Icon">
-		<h3>Advising</h3>
-		<p>Information pertaining to graduation requirments, transfer credits, and course offerings</p>
+	<div id="constact-sni" class="contact-page">
+		<div class="contact-card">
+		</div>
 	</div>
-	<div class="bucket bucket-center" id="s&i">
-		<img src="icons/electives.png" alt="Apple Icon">
-		<h3>Seminary & Institute</h3>
-		<p>Information on all things relating to seminary and institute</p>
-	</div>
-	<div class="bucket" id="contact">
-		<img src="icons/faculty.png" alt="Apple Icon">
-		<h3>Contact & FAQ</h3>
-		<p>Religion faculty contact information and answers to Frequently Asked Questions</p>
+	<div id="faq">
 	</div>
 </div>
 </body>

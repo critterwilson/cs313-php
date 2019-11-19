@@ -7,7 +7,9 @@
 </head>
 <body>
 <!-- TOP NAVIGATION -->
-<img src="icons/byui.png" alt="BYUI Logo" id="logo">
+<a href="https://www.byui.edu">
+	<img src="icons/byui.png" alt="BYUI Logo" id="logo">
+</a>
 <div class="title">
 	<h1>Department of Religious Education</h1>
 </div>
@@ -18,25 +20,27 @@
 	<div class="dropdown">
 	  <button class="dropbtn" onclick="window.location.href='advising.html'">Advising</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Course Catalog</a>
+	    <a href="#">Degree Requirements</a>
+	    <a href="#">Transfer Students</a>
+	    <a href="#">Taking a 2nd REL Class</a>
+	    <a href="#">BYU Jerusalem Center</a>
 	  </div>
 	</div>
 	<div class="dropdown">
 	  <button class="dropbtn" onclick="window.location.href='sni.html'">Seminary & Institute</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Transfer Credit for Institute</a>
+	    <a href="#">Institute Offerings</a>
+	    <a href="#">Becoming a Seminary Teaching</a>
 	  </div>
 	</div>
 	<div class="dropdown">
 	  <button class="dropbtn" onclick="window.location.href='contact.html'">Contact & FAQ</button>
 	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	    <a href="#">Link 3</a>
+	    <a href="#">Religious Education Contact</a>
+	    <a href="#">Seminary & Institute Contact</a>
+	    <a href="#">FAQ</a>
 	  </div>
 	</div>
 </div>
@@ -61,22 +65,30 @@
 </div>
 <div id="body" class="main">
 	<div class="top-banner">
-		<img src="icons/studying.jpg" alt="Brother Pyper Teaching">
+		<img src="icons/taylor.jpg" alt="Brother Pyper Teaching">
 	</div>
-	<div class="bucket" id="advising">
-		<img src="icons/checklist.png" alt="Apple Icon">
-		<h3>Advising</h3>
-		<p>Information pertaining to graduation requirments, transfer credits, and course offerings</p>
-	</div>
-	<div class="bucket bucket-center" id="s&i">
-		<img src="icons/electives.png" alt="Apple Icon">
-		<h3>Seminary & Institute</h3>
-		<p>Information on all things relating to seminary and institute</p>
-	</div>
-	<div class="bucket" id="contact">
-		<img src="icons/faculty.png" alt="Apple Icon">
-		<h3>Contact & FAQ</h3>
-		<p>Religion faculty contact information and answers to Frequently Asked Questions</p>
+	<div class="bucket-container">
+		<div class="bucket" id="advising">
+			<a href="advising.html" class="bucket-link">
+				<img src="icons/checklist.png" alt="Apple Icon">
+				<h3>Advising</h3>
+				<p>Information pertaining to graduation requirments, transfer credits, and course offerings</p>
+			</a>
+		</div>
+		<div class="bucket twoOfThree" id="s&i">
+			<a href="sni.html" class="bucket-link">
+				<img src="icons/electives.png" alt="Apple Icon">
+				<h3>Seminary & Institute</h3>
+				<p>Information on all things relating to seminary and institute</p>
+			</a>
+		</div>
+		<div class="bucket" id="contact">
+			<a href="contact.html" class="bucket-link">
+				<img src="icons/faculty.png" alt="Apple Icon">
+				<h3>Contact & FAQ</h3>
+				<p>Religion faculty contact information and answers to Frequently Asked Questions</p>
+			</a>
+		</div>
 	</div>
 </div>
 </body>
