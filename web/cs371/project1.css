@@ -1,0 +1,229 @@
+.title {
+  height: auto;
+  margin: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 250px;
+  background-color: lightgrey;
+  position: relative;
+  z-index: 2;
+}
+
+.title h1{
+  font-family: "futura";
+  font-size: 3em;
+  margin-top:3px;
+  margin-bottom:6px;
+  font-weight: normal;
+}
+
+#logo {
+  position: absolute;
+  width: 110px;
+  top: 0;
+  left: 90px;
+  z-index: 5;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  align-content: center;
+  padding-left: 330px;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #2F77B6;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#active {
+  background-color: #2F77B6;
+}
+
+/* The sidebar menu */
+.sidebar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: absolute; /* Absolute Sidebar (stay in place on scroll) */
+  float: left;
+  top: 135; /* Stay at the top */
+  left: 0;
+  background-color: lightgrey; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  z-index: -2;
+  overflow-y: scroll; 
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+ul.side-info {
+  list-style: none;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 0;
+  border-left: 6px solid #2F77B6; 
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 325px; /* Same as the width of the sidebar */
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: -3;
+}
+
+.bucket {
+  width: 25%;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.bucket img {
+  width: 70%;
+}
+.bucket-center {
+  border-style: groove;
+  border-width: 0px 1px 0px 1px;
+  border-color: lightgrey;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+  table-layout: fixed;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  padding: 10px 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 10px 10px
+  padding: 8px;
+  color: black;
+  display: inline-block;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  padding: 0;  
+  color: #0275d8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  padding: 10px 10px
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.top-banner {
+  justify-content: center;
+  padding-bottom: 20px;
+} 
+
+.top-banner img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  position:relative;
+}
+
+body {
+  margin:0;
+  width:100%;
+  overflow-x: hidden; 
+  font-family: "futura";
+}

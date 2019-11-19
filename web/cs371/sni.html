@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="project1.css">
+	<script src="project1.js"></script>
+</head>
+<body>
+<!-- TOP NAVIGATION -->
+<img src="icons/byui.png" alt="BYUI Logo" id="logo">
+<div class="title">
+	<h1>Department of Religious Education</h1>
+</div>
+<div class="navbar">
+	<div class="dropdown">
+	  <button class="dropbtn" onclick="window.location.href='home.html'">Home</button>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn" onclick="window.location.href='advising.html'">Advising</button>
+	  <div class="dropdown-content">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn" id="active" onclick="window.location.href='sni.html'">Seminary & Institute</button>
+	  <div class="dropdown-content">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn" onclick="window.location.href='contact.html'">Contact & FAQ</button>
+	  <div class="dropdown-content">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	  </div>
+	</div>
+</div>
+<!-- SIDE BAR -->
+<div class="sidebar">
+	<ul class="breadcrumb">
+	  <li><a href="home.html">Home </a></li> /
+	  <li>SnI</li>
+	</ul>
+	<h2>Contact</h2>
+	<ul class="side-info">
+		<li>525 S Center St</li>
+		<li>TAY 202</li>
+		<li>Rexburg, ID 83440</li>
+		<li>208-496-3920</li>
+	</ul>
+	<h2>Announcments</h2>
+	<ul class="side-info">
+		<li><b>11/28</b> - Happy Thanksgiving! Please travel safely to and from school. We look forward to the return of all of you to finish out the semester strong. Please take a moment to remember the things you are grateful for.</li><br>
+		<li><b>11/18</b> - Religious Education has a new website! We are so thrilled to have a new and improved way to communicate with all of the students! Please take a look around: we are sure you'll love our new look.</li><br>
+		<li><b>10/31</b> - Happy Halloween! Please don't get too crazy celebrating this pagan holiday. Halloween is of the devil!</li>
+	</ul>
+</div>
+<div id="body" class="main">
+	<div class="top-banner">
+		<img src="icons/pyper.jpg" alt="Brother Pyper Teaching">
+	</div>
+	<div class="bucket" id="advising">
+		<img src="icons/checklist.png" alt="Apple Icon">
+		<h3>Advising</h3>
+		<p>Information pertaining to graduation requirments, transfer credits, and course offerings</p>
+	</div>
+	<div class="bucket bucket-center" id="s&i">
+		<img src="icons/electives.png" alt="Apple Icon">
+		<h3>Seminary & Institute</h3>
+		<p>Information on all things relating to seminary and institute</p>
+	</div>
+	<div class="bucket" id="contact">
+		<img src="icons/faculty.png" alt="Apple Icon">
+		<h3>Contact & FAQ</h3>
+		<p>Religion faculty contact information and answers to Frequently Asked Questions</p>
+	</div>
+</div>
+</body>
+</html>
