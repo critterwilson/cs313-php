@@ -270,7 +270,7 @@ body {
   margin:0;
   max-width: 1035px;
   overflow-x: hidden; 
-  font-family: "futura";
+  font-family: "lucida sans";
 }
 
 @media only screen and (min-width: 1589px) {
