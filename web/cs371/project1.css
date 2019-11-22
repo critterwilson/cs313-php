@@ -348,3 +348,63 @@ body {
   margin-top: 0;
   border-left: 6px solid #2F77B6; 
 }
+
+.contact-page {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.contact-card {
+	width: 300px;
+	height: auto;
+	margin: 10px;
+	border-radius: 5px;
+	background: #2F77B6;
+	padding: 10px;
+}
+
+.contact-card:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	transform: scale(1.1);
+  	transform-origin: center;
+}
+
+.contact-card:hover a{
+	color: white;
+}
+
+.contact-card img {
+	float: left;
+	width: 80px;
+	padding-right: 3px;
+}
+
+.contact-card a {
+	text-decoration: none;
+	color: black;
+}
+.contact-card h3 {
+	margin: 5px;
+	margin-top: 2px;
+}
+
+.contact-card p {
+	display: none;
+}
+
+.question {
+	text-decoration: none;
+	color: black;
+}
+
+.question:hover{
+	color:#2F77B6;
+	transform: scale(1.1);
+	transform-origin: left;
+}
+
+.answer {
+	display: none;
+	padding-left: 50px;
+}
