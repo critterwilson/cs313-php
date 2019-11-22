@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="project1.css">
 	<script src="project1.js"></script>
 </head>
-<body>
+<body onload="cueProper()">
 <!-- TOP NAVIGATION -->
 <a href="https://www.byui.edu">
 	<img src="icons/byui.png" alt="BYUI Logo" id="logo">
@@ -38,9 +38,9 @@
 	<div class="dropdown">
 	  <button class="dropbtn" id="active" onclick="window.location.href='contact.html'">Contact & FAQ</button>
 	  <div class="dropdown-content">
-	    <a href="#">Religious Education Contact</a>
-	    <a href="#">Seminary & Institute Contact</a>
-	    <a href="#">FAQ</a>
+	    <a href="contact.html#rel-side-button">Religious Education Contact</a>
+	    <a href="contact.html#sni-side-button">Seminary & Institute Contact</a>
+	    <a href="contact.html#faq-side-button">FAQ</a>
 	  </div>
 	</div>
 </div>
@@ -51,7 +51,7 @@
 	  <li>Contact & FAQ</li>
 	</ul>
 	<div class="side-btn-group">
-		<button onclick="show(1)" class="side-dropdown"><h2>Religious Education Contact Info</h2></button>
+		<button onclick="show(1)" class="side-dropdown" id="rel-side-button"><h2>Religious Education Contact Info</h2></button>
 		<ul id="contact-rel-list">
 			<li><a href="#1" onclick="profInfo(1)">John Doe</a></li>
 			<li><a href="#2" onclick="profInfo(2)">Jane Doe</a></li>
@@ -60,13 +60,13 @@
 			<li><a href="#5" onclick="profInfo(5)">Jeff Goldblum</a></li>
 			<li><a href="#6" onclick="profInfo(6)">Harry Potter</a></li>
 		</ul>
-		<button onclick="show(2)" class="side-dropdown"><h2>Seminary & Institute Contact Info</h2></button>
+		<button onclick="show(2)" class="side-dropdown" id="sni-side-button"><h2>Seminary & Institute Contact Info</h2></button>
 		<ul id="contact-sni-list">
 			<li><a href="#7" onclick="profInfo(7)">Jim Kurk</a></li>
 			<li><a href="#8" onclick="profInfo(8)">Obi-Wan Kenobi</a></li>
 			<li><a href="#9" onclick="profInfo(9)">Darth Vader</a></li>
 		</ul>
-		<button onclick="show(3)" class="side-dropdown"><h2>FAQ</h2></button>
+		<button type="button" onclick="show(3)" class="side-dropdown" id="faq-side-button"><h2>FAQ</h2></button>
 		<ul id="contact-faq-list">
 			<li><a href="#q1" onclick="showA(1)">Lorem ipsum dolor sit amet?</a></li>
 			<li><a href="#q2" onclick="showA(2)">Ex ea commodo consequat?</a></li>

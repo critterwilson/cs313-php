@@ -192,6 +192,8 @@ a.bucket-link {
 
 .bucket:hover {
   box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
 .twoOfThree {
