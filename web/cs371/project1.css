@@ -194,10 +194,12 @@ a.bucket-link {
 
 .twoOfThree:hover {
 	border: transparent;
+	z-index: 10;
 }
 
 .oneOfTwo:hover{
 	border: transparent;
+	z-index: 10;
 }
 
 .bucket:hover {
@@ -205,6 +207,7 @@ a.bucket-link {
   transform: scale(1.1);
   transform-origin: center;
   border: transparent;
+  z-index: 10;
 }
 
 .twoOfThree {
