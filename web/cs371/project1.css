@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
 .title {
   height: auto;
   margin: 0;
@@ -12,7 +14,7 @@
 }
 
 .title h1{
-  font-family: "futura";
+  font-family: "Alata", sans-serif;
   font-size: 3em;
   margin-top:3px;
   margin-bottom:6px;

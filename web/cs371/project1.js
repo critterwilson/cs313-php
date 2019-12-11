@@ -1,3 +1,10 @@
+var OSName="Unknown OS";
+if (navigator.appVersion.indexOf("Win")!=-1){
+	document.getElementsByTagName("BODY").style.fontFamily = "Verdana";
+}
+
+
+
 function show(id) {
 	switch (id) {
 		case 1:
