@@ -274,7 +274,7 @@ body {
   margin:0;
   max-width: 1035px;
   overflow-x: hidden; 
-  font-family: "lucida sans";
+  font-family: "Alata", sans-serif;
 }
 
 @media only screen and (min-width: 1589px) {
