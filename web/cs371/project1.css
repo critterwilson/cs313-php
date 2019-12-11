@@ -192,6 +192,14 @@ a.bucket-link {
   color: black;
 }
 
+.twoOfThree:hover {
+	border: transparent;
+}
+
+.oneOfTwo:hover{
+	border: transparent;
+}
+
 .bucket:hover {
   box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
   transform: scale(1.1);
@@ -208,6 +216,7 @@ a.bucket-link {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .oneOfTwo {
   border-style: groove;
   border-width: 0px 1px 0px 0px;
@@ -216,14 +225,6 @@ a.bucket-link {
   margin-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.twoOfThree:hover {
-	border: transparent;
-}
-
-.oneOfTwo:hover{
-	border: transparent;
 }
 
 /* Style the list */
