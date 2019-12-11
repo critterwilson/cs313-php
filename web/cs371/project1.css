@@ -196,6 +196,7 @@ a.bucket-link {
   box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
   transform: scale(1.1);
   transform-origin: center;
+  border: transparent;
 }
 
 .twoOfThree {
@@ -218,11 +219,11 @@ a.bucket-link {
 }
 
 .twoOfThree:hover {
-	border: none;
+	border: transparent;
 }
 
 .oneOfTwo:hover{
-	border: none;
+	border: transparent;
 }
 
 /* Style the list */
